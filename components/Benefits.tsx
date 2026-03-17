@@ -30,7 +30,7 @@ export default function Benefits() {
         <div className="flex flex-col lg:flex-row items-center gap-16">
           <div className="flex-1">
              <h2 className="text-3xl md:text-5xl font-black text-crimson mb-8 uppercase tracking-tighter">
-                {t.benefits.title.split(" OUR")[0]} <span className="text-saffron italic"> {t.benefits.title.split("BEHIND ")[1]}</span>
+                {t.benefits.title}
              </h2>
              <div className="space-y-12">
                 {benefits.map((b, i) => (

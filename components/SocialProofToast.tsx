@@ -42,8 +42,8 @@ export default function SocialProofToast() {
   if (!visible) return null;
 
   return (
-    <div className="fixed bottom-24 left-4 z-[60] animate-bounce-in">
-      <div className="bg-white/95 backdrop-blur shadow-2xl rounded-2xl p-4 border border-gold/20 flex items-center gap-4 max-w-[280px]">
+    <div className="fixed top-32 left-4 right-4 md:top-auto md:bottom-24 md:left-4 md:right-auto z-[60] animate-bounce-in max-w-sm mx-auto md:mx-0">
+      <div className="bg-white/95 backdrop-blur shadow-2xl rounded-2xl p-4 border border-gold/20 flex items-center gap-4">
         <div className={`w-10 h-10 rounded-full flex items-center justify-center shrink-0 ${data.type === 'call' ? 'bg-crimson' : 'bg-[#25D366]'}`}>
           {data.type === 'call' ? <Phone size={18} fill="white" className="text-white" /> : <MessageCircle size={18} fill="white" className="text-white" />}
         </div>

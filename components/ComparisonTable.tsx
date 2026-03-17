@@ -27,31 +27,31 @@ export default function ComparisonTable() {
           <table className="w-full border-collapse">
             <thead>
               <tr className="bg-cream">
-                <th className="p-6 text-left border-b-2 border-gold/20 text-gray-400 font-black uppercase tracking-widest text-xs">Features</th>
-                <th className="p-6 text-center border-b-2 border-saffron bg-saffron/5">
-                   <div className="text-saffron font-black text-lg uppercase tracking-tight italic">Vishvanath Maharaj</div>
+                <th className="p-3 md:p-6 text-left border-b-2 border-gold/20 text-gray-400 font-black uppercase tracking-widest text-[10px] md:text-xs">Features</th>
+                <th className="p-3 md:p-6 text-center border-b-2 border-saffron bg-saffron/5">
+                   <div className="text-saffron font-black text-xs md:text-lg uppercase tracking-tight italic">Guruji</div>
                 </th>
-                <th className="p-6 text-center border-b-2 border-gray-200">
-                   <div className="text-gray-400 font-black text-lg uppercase tracking-tight">Other Astrologers</div>
+                <th className="p-3 md:p-6 text-center border-b-2 border-gray-200">
+                   <div className="text-gray-400 font-black text-xs md:text-lg uppercase tracking-tight">Others</div>
                 </th>
               </tr>
             </thead>
             <tbody>
               {rows.map((row, i) => (
                 <tr key={i} className="hover:bg-cream/30 transition-colors">
-                  <td className="p-6 border-b border-gold/10 font-bold text-gray-700 text-sm md:text-base uppercase tracking-wide">
+                  <td className="p-3 md:p-6 border-b border-gold/10 font-bold text-gray-700 text-xs md:text-base uppercase tracking-wide">
                     {row.label}
                   </td>
-                  <td className="p-6 border-b border-gold/10 text-center bg-saffron/5">
+                  <td className="p-3 md:p-6 border-b border-gold/10 text-center bg-saffron/5">
                     <div className="flex flex-col items-center gap-2">
-                      <CheckCircle2 className="text-green-500" size={24} />
-                      <span className="font-black text-gray-900 text-sm md:text-base uppercase">{row.guruji}</span>
+                      <CheckCircle2 className="text-green-500" size={18} />
+                      <span className="font-black text-gray-900 text-[10px] md:text-base uppercase">{row.guruji}</span>
                     </div>
                   </td>
-                  <td className="p-6 border-b border-gold/10 text-center">
+                  <td className="p-3 md:p-6 border-b border-gold/10 text-center">
                     <div className="flex flex-col items-center gap-2 opacity-40">
-                      <XCircle className="text-red-400" size={24} />
-                      <span className="font-bold text-gray-500 text-sm md:text-base uppercase">{row.others}</span>
+                      <XCircle className="text-red-400" size={18} />
+                      <span className="font-bold text-gray-500 text-[10px] md:text-base uppercase">{row.others}</span>
                     </div>
                   </td>
                 </tr>

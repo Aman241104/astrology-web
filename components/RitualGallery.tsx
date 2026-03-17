@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useLanguage } from "@/context/LanguageContext";
+import Image from "next/image";
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
@@ -34,10 +35,10 @@ export default function RitualGallery() {
   }, [t]);
 
   const gallery = [
-    { label: "Maha Havan", color: "from-saffron/20 to-crimson/20" },
-    { label: "Vedic Pooja", color: "from-gold/20 to-saffron/20" },
-    { label: "Astro Ritual", color: "from-crimson/20 to-gold/20" },
-    { label: "Mantra Siddhi", color: "from-saffron/20 to-gold/20" },
+    { label: "Maha Havan", img: "https://images.unsplash.com/photo-1605662758112-92a061803259?auto=format&fit=crop&q=80&w=400&h=530" },
+    { label: "Vedic Pooja", img: "https://images.unsplash.com/photo-1544923246-77307dd654ca?auto=format&fit=crop&q=80&w=400&h=530" },
+    { label: "Astro Ritual", img: "https://images.unsplash.com/photo-1605662657375-31f452097e3c?auto=format&fit=crop&q=80&w=400&h=530" },
+    { label: "Mantra Siddhi", img: "https://images.unsplash.com/photo-1627394186532-4e4b5182903e?auto=format&fit=crop&q=80&w=400&h=530" },
   ];
 
   return (
@@ -55,11 +56,13 @@ export default function RitualGallery() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
           {gallery.map((item, i) => (
             <div key={i} className="ritual-card opacity-0 scale-90 group relative aspect-[3/4] rounded-3xl overflow-hidden shadow-xl border-4 border-white bg-white transition-all duration-500">
-               <div className={`absolute inset-0 bg-gradient-to-br ${item.color} flex items-center justify-center text-center p-6`}>
-                  <div className="text-gold/40 font-black text-lg uppercase tracking-widest leading-tight opacity-50">
-                    [ Ritual Photo {i + 1} ]
-                  </div>
-               </div>
+               <Image 
+                 src={item.img} 
+                 alt={item.label} 
+                 fill 
+                 className="object-cover group-hover:scale-110 transition-transform duration-500"
+                 sizes="(max-width: 768px) 50vw, 25vw"
+               />
                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-6">
                   <div className="text-white font-black uppercase tracking-widest text-sm">{item.label}</div>
                </div>

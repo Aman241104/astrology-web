@@ -22,7 +22,7 @@ export default function FAQ() {
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-5xl font-black text-crimson mb-4 uppercase tracking-tight flex items-center justify-center gap-3">
             <HelpCircle size={32} className="text-gold" />
-            {t.faq.title.split(" ASKED")[0]} <span className="text-saffron"> {t.faq.title.split("FREQUENTLY ")[1]}</span>
+            {t.faq.title}
           </h2>
           <p className="text-gray-500 font-bold uppercase tracking-widest text-xs">{t.faq.sub}</p>
         </div>

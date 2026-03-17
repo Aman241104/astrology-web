@@ -22,13 +22,6 @@ export default function Home() {
 
   return (
     <main className="min-h-screen">
-      {/* Live Results Ticker */}
-      <div className="bg-crimson text-white py-2 text-center overflow-hidden h-10 flex items-center border-b border-gold/20">
-         <div className="whitespace-nowrap animate-marquee font-bold text-xs uppercase tracking-[0.2em]">
-           🔥 RECENT SUCCESS: Rahul from Delhi just got his ex-back in 24 hours! | 🙏 Pooja from Mumbai stopped her divorce! | ✨ Ankit from UK doubled his business revenue!
-         </div>
-      </div>
-
       <Navbar />
       <Hero />
       <TrustBar />
@@ -44,7 +37,7 @@ export default function Home() {
       <section className="py-20 px-4 bg-white overflow-hidden">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl md:text-5xl font-black text-center text-crimson mb-12 uppercase tracking-tight">
-            {t.testimonials.title.split(" SUCCESS")[0]} <span className="text-saffron"> {t.testimonials.title.split("OUR ")[1]}</span>
+            {t.testimonials.title}
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -83,27 +76,36 @@ export default function Home() {
 
       {/* Final CTA */}
       <section className="py-24 px-4 bg-crimson text-white text-center relative overflow-hidden">
-        <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] opacity-10 pointer-events-none"></div>
+        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?auto=format&fit=crop&q=80&w=1600')] bg-cover bg-center mix-blend-overlay opacity-30 pointer-events-none"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-crimson via-transparent to-transparent"></div>
         
         <div className="max-w-4xl mx-auto relative z-10">
-          <h2 className="text-4xl md:text-6xl font-black mb-8 uppercase tracking-tighter leading-none">{t.footer.ctaTitle}</h2>
-          <p className="text-xl md:text-2xl mb-12 font-bold text-saffron drop-shadow-sm uppercase">{t.footer.ctaSub}</p>
+          <h2 className="text-5xl md:text-8xl font-black mb-8 uppercase tracking-tighter leading-[0.85]">{t.footer.ctaTitle}</h2>
+          <p className="text-2xl md:text-4xl mb-12 font-black text-saffron drop-shadow-lg uppercase italic underline decoration-gold/30 underline-offset-8">
+            {t.footer.ctaSub}
+          </p>
           
-          <div className="flex flex-col md:flex-row items-center justify-center gap-12 mb-12">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-12 mb-16">
             <a 
               href="tel:+919929563493"
-              className="w-full sm:w-auto bg-white text-crimson px-12 py-6 rounded-2xl font-black text-2xl hover:scale-105 transition-all shadow-2xl shadow-black/20"
+              className="w-full sm:w-auto bg-white text-crimson px-16 py-8 rounded-[40px] font-black text-3xl md:text-5xl hover:scale-105 transition-all shadow-[0_20px_50px_rgba(0,0,0,0.4)] active:scale-95 border-b-8 border-gray-200"
             >
-              {t.footer.callBtn}
+              {t.footer.callBtn.split(": ")[1]}
             </a>
 
             {/* QR Code for Desktop to Mobile handoff */}
-            <div className="hidden lg:flex flex-col items-center gap-2">
-               <div className="bg-white p-2 rounded-xl shadow-lg">
-                  <QrCode size={80} className="text-gray-800" />
+            <div className="hidden lg:flex flex-col items-center gap-3">
+               <div className="bg-white p-3 rounded-3xl shadow-2xl rotate-3 hover:rotate-0 transition-transform">
+                  <QrCode size={120} className="text-gray-900" />
                </div>
-               <span className="text-[10px] font-black uppercase opacity-60">Scan to WhatsApp</span>
+               <span className="text-xs font-black uppercase tracking-[0.2em] text-saffron">Scan to WhatsApp</span>
             </div>
+          </div>
+
+          <div className="bg-black/20 p-8 rounded-[40px] border border-white/10 backdrop-blur-sm mb-12">
+             <p className="text-lg md:text-2xl font-bold uppercase tracking-wide leading-relaxed">
+               Don't wait for a miracle. <span className="text-saffron">MAKE IT HAPPEN.</span> Maharaj has helped thousands of people just like you to get their love back, stop divorce, and remove black magic. <span className="underline decoration-saffron">Your solution is just one call away.</span>
+             </p>
           </div>
           
           <div className="text-xs font-medium opacity-50 uppercase tracking-[0.2em]">{t.footer.copyright}</div>

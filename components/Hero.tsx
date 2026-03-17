@@ -5,6 +5,7 @@ import gsap from "gsap";
 import { useLanguage } from "@/context/LanguageContext";
 import { MessageCircle, PhoneCall, Star, ShieldCheck, Clock } from "lucide-react";
 import CosmicSnapshot from "./CosmicSnapshot";
+import Image from "next/image";
 
 export default function Hero() {
   const containerRef = useRef(null);
@@ -32,34 +33,38 @@ export default function Hero() {
   }, []);
 
   return (
-    <section ref={containerRef} className="pt-24 pb-12 px-4 bg-gradient-to-b from-cream to-white overflow-hidden">
-      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12">
+    <section ref={containerRef} className="pt-44 md:pt-40 pb-12 px-4 bg-gradient-to-b from-cream to-white overflow-hidden relative">
+      {/* Background Astrology Pattern */}
+      <div className="absolute inset-0 opacity-[0.03] pointer-events-none overflow-hidden">
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[1000px] border-2 border-gold rounded-full"></div>
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] border border-gold/40 rounded-full"></div>
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1200px] h-[1200px] border border-gold/20 rounded-full"></div>
+        <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')]"></div>
+      </div>
+
+      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12 relative z-10">
         
         {/* Left Side: Content */}
         <div className="flex-1 text-center lg:text-left">
           <div className="reveal-text opacity-0 translate-y-10 flex flex-col sm:flex-row items-center gap-3 mb-6 justify-center lg:justify-start">
-            <div className="inline-flex items-center gap-2 bg-saffron/10 text-saffron font-bold px-4 py-1.5 rounded-full text-xs md:text-sm border border-saffron/20">
-              <Star size={14} fill="currentColor" />
-              {t.hero.privacy}
+            <div className="inline-flex items-center gap-2 bg-crimson text-white font-black px-5 py-2 rounded-full text-xs md:text-sm animate-pulse shadow-xl shadow-crimson/20">
+              <Star size={14} fill="white" />
+              100% SUCCESS GUARANTEE
             </div>
-            <div className="inline-flex items-center gap-2 bg-crimson text-white font-bold px-4 py-1.5 rounded-full text-xs md:text-sm animate-pulse">
-              {t.hero.freeConsult}
-            </div>
-            <div className="hidden sm:flex items-center gap-2 text-crimson font-black text-xs uppercase tracking-tighter">
-               <span className="w-2 h-2 bg-red-500 rounded-full animate-ping"></span>
-               ONLY 4 SLOTS LEFT TODAY
+            <div className="inline-flex items-center gap-2 bg-saffron text-white font-black px-5 py-2 rounded-full text-xs md:text-sm shadow-xl shadow-saffron/20">
+              PAY AFTER RESULTS
             </div>
           </div>
           
-          <h1 className="reveal-text opacity-0 translate-y-10 text-4xl md:text-7xl font-black text-crimson leading-[1.0] mb-6 tracking-tighter uppercase">
+          <h1 className="reveal-text opacity-0 translate-y-10 text-5xl md:text-8xl font-black text-crimson leading-[0.9] mb-8 tracking-tighter uppercase">
             {t.hero.title}
           </h1>
           
-          <p className="reveal-text opacity-0 translate-y-10 text-xl md:text-2xl text-gray-800 mb-8 max-w-2xl font-bold leading-tight uppercase">
+          <p className="reveal-text opacity-0 translate-y-10 text-2xl md:text-4xl text-gray-800 mb-8 max-w-2xl font-black leading-none uppercase italic text-shadow-gold">
             {t.hero.sub}
           </p>
 
-          <p className="reveal-text opacity-0 translate-y-10 text-md md:text-lg text-gray-600 mb-10 max-w-2xl font-medium leading-relaxed">
+          <p className="reveal-text opacity-0 translate-y-10 text-lg md:text-xl text-gray-600 mb-10 max-w-2xl font-bold leading-tight uppercase">
             {t.hero.desc}
           </p>
 
@@ -70,7 +75,7 @@ export default function Hero() {
           <div className="reveal-text opacity-0 translate-y-10 flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start">
             <a 
               href="https://wa.me/919929563493"
-              className="w-full sm:w-auto bg-[#25D366] hover:bg-[#20bd5a] text-white px-8 py-4 rounded-xl font-black text-lg flex items-center justify-center gap-3 shadow-xl shadow-green-200 transition-all hover:scale-105"
+              className="w-full sm:w-auto bg-[#25D366] hover:bg-[#20bd5a] text-white px-8 py-4 rounded-xl font-black text-lg flex items-center justify-center gap-3 shadow-xl shadow-green-200 transition-all hover:scale-105 active:scale-95"
             >
               <MessageCircle fill="white" />
               {t.hero.whatsapp}
@@ -78,7 +83,7 @@ export default function Hero() {
             
             <a 
               href="tel:+919929563493"
-              className="w-full sm:w-auto bg-crimson hover:bg-crimson/90 text-white px-8 py-4 rounded-xl font-black text-lg flex items-center justify-center gap-3 shadow-xl shadow-crimson/20 transition-all hover:scale-105"
+              className="w-full sm:w-auto bg-crimson hover:bg-crimson/90 text-white px-8 py-4 rounded-xl font-black text-lg flex items-center justify-center gap-3 shadow-xl shadow-crimson/20 transition-all hover:scale-105 active:scale-95"
             >
               <PhoneCall fill="white" />
               {t.hero.call}
@@ -103,14 +108,19 @@ export default function Hero() {
 
         {/* Right Side: Image Placeholder */}
         <div className="reveal-img opacity-0 translate-x-10 relative w-full lg:w-[450px] aspect-[4/5] bg-gradient-to-tr from-saffron/20 to-gold/20 rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
-           <div className="absolute inset-0 flex items-center justify-center text-gold/30 font-black text-2xl uppercase tracking-widest text-center p-8">
-              [ {t.hero.maharajName} ]
-           </div>
+           <Image 
+             src="https://images.unsplash.com/photo-1518104593124-ac2e82a5eb9d?auto=format&fit=crop&q=80&w=450&h=560" 
+             alt="Love & Relationship Problem Solution"
+             fill
+             priority
+             className="object-cover"
+             sizes="(max-width: 768px) 100vw, 450px"
+           />
            {/* Gradient Overlay */}
            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
            <div className="absolute bottom-6 left-6 right-6 text-white text-center">
-             <div className="font-black text-xl italic uppercase tracking-wider">{t.hero.maharajName}</div>
-             <div className="text-xs font-medium opacity-80">{t.hero.goldMedalist}</div>
+             <div className="font-black text-xl italic uppercase tracking-wider">100% Guaranteed Solutions</div>
+             <div className="text-xs font-medium opacity-80 uppercase tracking-widest">Pay After Results</div>
            </div>
         </div>
       </div>

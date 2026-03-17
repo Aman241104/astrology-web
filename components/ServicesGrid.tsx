@@ -5,6 +5,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useLanguage } from "@/context/LanguageContext";
 import { Heart, Users, Home, Briefcase, ShieldAlert } from "lucide-react";
+import Image from "next/image";
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
@@ -38,12 +39,42 @@ export default function ServicesGrid() {
   }, [t]);
 
   const services = [
-    { title: t.services.loveMarriage.title, desc: t.services.loveMarriage.desc, icon: <Heart className="text-crimson" fill="currentColor" /> },
-    { title: t.services.getLoveBack.title, desc: t.services.getLoveBack.desc, icon: <Users className="text-saffron" fill="currentColor" /> },
-    { title: t.services.stopDivorce.title, desc: t.services.stopDivorce.desc, icon: <Home className="text-crimson" fill="currentColor" /> },
-    { title: t.services.blackMagic.title, desc: t.services.blackMagic.desc, icon: <ShieldAlert className="text-gold" fill="currentColor" /> },
-    { title: t.services.careerMoney.title, desc: t.services.careerMoney.desc, icon: <Briefcase className="text-saffron" fill="currentColor" /> },
-    { title: t.services.muthkarni.title, desc: t.services.muthkarni.desc, icon: <Users className="text-crimson" fill="currentColor" /> },
+    { 
+      title: t.services.loveMarriage.title, 
+      desc: t.services.loveMarriage.desc, 
+      img: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&q=80&w=300&h=200",
+      icon: <Heart size={20} className="text-white" fill="currentColor" />
+    },
+    { 
+      title: t.services.getLoveBack.title, 
+      desc: t.services.getLoveBack.desc, 
+      img: "https://images.unsplash.com/photo-1516589174184-c685266e430c?auto=format&fit=crop&q=80&w=300&h=200",
+      icon: <Users size={20} className="text-white" fill="currentColor" />
+    },
+    { 
+      title: t.services.stopDivorce.title, 
+      desc: t.services.stopDivorce.desc, 
+      img: "https://images.unsplash.com/photo-1484863137850-59afccd31986?auto=format&fit=crop&q=80&w=300&h=200",
+      icon: <Home size={20} className="text-white" fill="currentColor" />
+    },
+    { 
+      title: t.services.blackMagic.title, 
+      desc: t.services.blackMagic.desc, 
+      img: "https://images.unsplash.com/photo-1515023115689-589c33041d3c?auto=format&fit=crop&q=80&w=300&h=200",
+      icon: <ShieldAlert size={20} className="text-white" fill="currentColor" />
+    },
+    { 
+      title: t.services.careerMoney.title, 
+      desc: t.services.careerMoney.desc, 
+      img: "https://images.unsplash.com/photo-1454165833467-03a669d449f5?auto=format&fit=crop&q=80&w=300&h=200",
+      icon: <Briefcase size={20} className="text-white" fill="currentColor" />
+    },
+    { 
+      title: t.services.muthkarni.title, 
+      desc: t.services.muthkarni.desc, 
+      img: "https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?auto=format&fit=crop&q=80&w=300&h=200",
+      icon: <Users size={20} className="text-white" fill="currentColor" />
+    },
   ];
 
   return (
@@ -51,7 +82,7 @@ export default function ServicesGrid() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-5xl font-black text-crimson mb-4 uppercase tracking-tight">
-            {t.services.title.split(" SPECIALIZED")[0]} <span className="text-saffron"> {t.services.title.split("OUR ")[1]}</span>
+            {t.services.title}
           </h2>
           <div className="w-24 h-1.5 bg-gold mx-auto rounded-full"></div>
           <p className="mt-6 text-gray-600 font-medium max-w-2xl mx-auto">
@@ -63,20 +94,33 @@ export default function ServicesGrid() {
           {services.map((s, i) => (
             <div 
               key={i}
-              className="service-card opacity-0 translate-y-10 group p-8 rounded-3xl bg-cream border border-gold/10 hover:border-saffron/40 transition-all duration-300 shadow-sm hover:shadow-xl hover:-translate-y-2 flex flex-col items-center text-center"
+              className="service-card opacity-0 translate-y-10 group rounded-3xl bg-white border border-gold/10 hover:border-saffron/40 transition-all duration-300 shadow-sm hover:shadow-xl overflow-hidden flex flex-col"
             >
-              <div className="w-16 h-16 rounded-2xl bg-white flex items-center justify-center mb-6 shadow-md group-hover:scale-110 transition-transform">
-                {s.icon}
+              <div className="relative h-48 w-full overflow-hidden">
+                <Image 
+                  src={s.img} 
+                  alt={s.title} 
+                  fill 
+                  className="object-cover group-hover:scale-110 transition-transform duration-500"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
+                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-all"></div>
+                <div className="absolute top-4 left-4 w-10 h-10 rounded-xl bg-crimson flex items-center justify-center shadow-lg">
+                  {s.icon}
+                </div>
               </div>
-              <h3 className="text-xl font-black text-gray-800 mb-3 uppercase tracking-wide">{s.title}</h3>
-              <p className="text-gray-600 text-sm leading-relaxed font-medium">{s.desc}</p>
-              
-              <a 
-                href="https://wa.me/919929563493"
-                className="mt-6 text-crimson font-bold text-xs uppercase tracking-widest border-b-2 border-crimson/20 group-hover:border-crimson transition-all"
-              >
-                {t.services.getSolution}
-              </a>
+
+              <div className="p-8 text-center flex-1 flex flex-col">
+                <h3 className="text-xl font-black text-gray-800 mb-3 uppercase tracking-wide">{s.title}</h3>
+                <p className="text-gray-600 text-sm leading-relaxed font-medium mb-6 flex-1">{s.desc}</p>
+                
+                <a 
+                  href="https://wa.me/919929563493"
+                  className="w-full bg-crimson/5 text-crimson py-3 rounded-xl font-black text-xs uppercase tracking-widest hover:bg-crimson hover:text-white transition-all active:scale-95 inline-block"
+                >
+                  {t.services.getSolution}
+                </a>
+              </div>
             </div>
           ))}
         </div>

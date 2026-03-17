@@ -17,7 +17,6 @@ export const translations = {
       goldMedalist: "Gold Medalist Astrologer"
     },
     trustBar: {
-      asSeenOn: "AS SEEN ON & TRUSTED BY",
       privacyText: "100% PRIVACY",
       globalText: "SERVING GLOBALLY",
       awardText: "AWARD WINNER",
@@ -153,7 +152,6 @@ export const translations = {
       goldMedalist: "स्वर्ण पदक विजेता ज्योतिषी"
     },
     trustBar: {
-      asSeenOn: "जैसा कि देखा गया और भरोसा किया गया",
       privacyText: "100% गोपनीयता",
       globalText: "वैश्विक स्तर पर सेवा",
       awardText: "पुरस्कार विजेता",
@@ -289,7 +287,6 @@ export const translations = {
       goldMedalist: "ગોલ્ડ મેડાલિસ્ટ જ્યોતિષી"
     },
     trustBar: {
-      asSeenOn: "જેમ કે જોવામાં આવ્યું અને વિશ્વાસ કરવામાં આવ્યો",
       privacyText: "100% ગોપનીયતા",
       globalText: "વૈશ્વિક સ્તરે સેવા",
       awardText: "એવોર્ડ વિજેતા",
@@ -425,7 +422,6 @@ export const translations = {
       goldMedalist: "গোল্ড মেডেলিস্ট জ্যোতিষী"
     },
     trustBar: {
-      asSeenOn: "যেমনটি দেখা গেছে এবং বিশ্বস্ত",
       privacyText: "১০০% গোপনীয়তা",
       globalText: "বিশ্বব্যাপী সেবা",
       awardText: "পুরস্কার বিজয়ী",
@@ -561,7 +557,6 @@ export const translations = {
       goldMedalist: "గోల్డ్ మెడలిస్ట్ జ్యోతిష్యుడు"
     },
     trustBar: {
-      asSeenOn: "చూసినట్లుగా & విశ్వసించబడినట్లుగా",
       privacyText: "100% గోప్యత",
       globalText: "ప్రపంచవ్యాప్త సేవ",
       awardText: "అవార్డు విజేత",
@@ -697,7 +692,6 @@ export const translations = {
       goldMedalist: "सुवर्णपदक विजेते ज्योतिषी"
     },
     trustBar: {
-      asSeenOn: "जसे पाहिले गेले आणि विश्वासार्ह",
       privacyText: "१००% गोपनीयता",
       globalText: "जागतिक स्तरावर सेवा",
       awardText: "पुरस्कार विजेते",
@@ -833,7 +827,6 @@ export const translations = {
       goldMedalist: "தங்கப் பதக்கம் வென்ற ஜோதிடர்"
     },
     trustBar: {
-      asSeenOn: "பார்க்கப்பட்டவை & நம்பப்பட்டவை",
       privacyText: "100% தனியுரிமை",
       globalText: "உலகளாவிய சேவை",
       awardText: "விருது வென்றவர்",

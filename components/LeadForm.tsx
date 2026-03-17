@@ -28,7 +28,7 @@ export default function LeadForm() {
         
         <div className="flex-1">
            <h2 className="text-3xl md:text-5xl font-black text-crimson mb-6 uppercase tracking-tight">{t.leadForm.urgentHelp}</h2>
-           <p className="text-xl text-gray-700 font-bold mb-8">{t.leadForm.sub.split(" FREE")[0]} <span className="text-saffron italic underline underline-offset-4">{t.leadForm.sub.split("Guruji will contact you for a ")[1]}</span></p>
+           <p className="text-xl text-gray-700 font-bold mb-8">{t.leadForm.sub}</p>
            
            <ul className="space-y-4 font-black text-gray-500 uppercase tracking-widest text-xs">
               <li className="flex items-center gap-3">✓ {t.leadForm.hook1}</li>
@@ -51,9 +51,18 @@ export default function LeadForm() {
               <div>
                 <label className="block text-xs font-black text-gray-400 uppercase tracking-[0.2em] mb-2">Your Zodiac Sign</label>
                 <select className="w-full bg-cream/30 border-2 border-gold/10 rounded-2xl px-6 py-4 font-bold text-gray-800 focus:border-saffron outline-none transition-all appearance-none">
-                  <option>Aries</option><option>Taurus</option><option>Gemini</option><option>Cancer</option>
-                  <option>Leo</option><option>Virgo</option><option>Libra</option><option>Scorpio</option>
-                  <option>Sagittarius</option><option>Capricorn</option><option>Aquarius</option><option>Pisces</option>
+                  <option>Aries (Mar 21 - Apr 19)</option>
+                  <option>Taurus (Apr 20 - May 20)</option>
+                  <option>Gemini (May 21 - Jun 20)</option>
+                  <option>Cancer (Jun 21 - Jul 22)</option>
+                  <option>Leo (Jul 23 - Aug 22)</option>
+                  <option>Virgo (Aug 23 - Sep 22)</option>
+                  <option>Libra (Sep 23 - Oct 22)</option>
+                  <option>Scorpio (Oct 23 - Nov 21)</option>
+                  <option>Sagittarius (Nov 22 - Dec 21)</option>
+                  <option>Capricorn (Dec 22 - Jan 19)</option>
+                  <option>Aquarius (Jan 20 - Feb 18)</option>
+                  <option>Pisces (Feb 19 - Mar 20)</option>
                 </select>
               </div>
             </div>
@@ -61,7 +70,7 @@ export default function LeadForm() {
               <label className="block text-xs font-black text-gray-400 uppercase tracking-[0.2em] mb-2">{t.leadForm.problem}</label>
               <textarea required className="w-full bg-cream/30 border-2 border-gold/10 rounded-2xl px-6 py-4 font-bold text-gray-800 focus:border-saffron outline-none transition-all min-h-[120px]"></textarea>
             </div>
-            <button type="submit" className="w-full bg-crimson text-white py-5 rounded-2xl font-black text-xl flex items-center justify-center gap-3 hover:bg-crimson/90 transition-all shadow-xl shadow-crimson/20">
+            <button type="submit" className="w-full bg-crimson text-white py-5 rounded-2xl font-black text-xl flex items-center justify-center gap-3 hover:bg-crimson/90 transition-all shadow-xl shadow-crimson/20 active:scale-95">
               <Send fill="white" size={24} />
               {t.leadForm.submit}
             </button>

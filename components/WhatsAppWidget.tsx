@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { MessageCircle, X, Send } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
+import Image from "next/image";
 
 export default function WhatsAppWidget() {
   const [isOpen, setIsOpen] = useState(false);
@@ -34,7 +35,15 @@ export default function WhatsAppWidget() {
       {isOpen && (
         <div className="w-80 bg-white rounded-[32px] shadow-3xl border border-gold/10 overflow-hidden animate-bounce-in">
           <div className="bg-[#075E54] p-6 text-white flex items-center gap-4">
-            <div className="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center font-black text-xl italic">V</div>
+            <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-white/20 relative">
+              <Image 
+                src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&q=80&w=100&h=100" 
+                alt="Vishvanath Maharaj"
+                fill
+                className="object-cover"
+                sizes="48px"
+              />
+            </div>
             <div>
               <h4 className="font-black text-sm uppercase tracking-tight">Vishvanath Maharaj</h4>
               <div className="flex items-center gap-1.5">
@@ -57,7 +66,7 @@ export default function WhatsAppWidget() {
           <div className="p-4 bg-white flex items-center gap-2">
             <a 
               href="https://wa.me/919929563493"
-              className="flex-1 bg-[#25D366] text-white py-3 rounded-xl font-black text-xs flex items-center justify-center gap-2 hover:bg-[#20bd5a] transition-all"
+              className="flex-1 bg-[#25D366] text-white py-3 rounded-xl font-black text-xs flex items-center justify-center gap-2 hover:bg-[#20bd5a] transition-all active:scale-95"
             >
               START CHAT ON WHATSAPP
               <Send size={14} fill="white" />

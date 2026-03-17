@@ -28,8 +28,14 @@ export default function WorkingProcess() {
   ];
 
   return (
-    <section className="py-20 bg-cream/50 px-4">
-      <div className="max-w-7xl mx-auto">
+    <section className="py-20 bg-cream/50 px-4 relative overflow-hidden">
+      {/* Background Astrology Pattern */}
+      <div className="absolute inset-0 opacity-[0.03] pointer-events-none overflow-hidden">
+        <div className="absolute top-1/2 left-0 -translate-y-1/2 w-[600px] h-[600px] border border-gold/40 rounded-full"></div>
+        <div className="absolute top-1/2 right-0 -translate-y-1/2 w-[400px] h-[400px] border border-gold/20 rounded-full"></div>
+      </div>
+
+      <div className="max-w-7xl mx-auto relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-black text-crimson mb-4 uppercase tracking-tight">{t.workingProcess.title}</h2>
           <p className="text-gray-600 font-bold uppercase tracking-widest text-sm italic">{t.workingProcess.sub}</p>
