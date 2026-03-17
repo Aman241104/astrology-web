@@ -6,15 +6,16 @@ import TrustBar from "@/components/TrustBar";
 import ServicesGrid from "@/components/ServicesGrid";
 import AboutMaharaj from "@/components/AboutMaharaj";
 import ComparisonTable from "@/components/ComparisonTable";
+import LeadForm from "@/components/LeadForm";
 import RitualGallery from "@/components/RitualGallery";
 import Benefits from "@/components/Benefits";
-import LeadForm from "@/components/LeadForm";
 import WorkingProcess from "@/components/WorkingProcess";
 import FAQ from "@/components/FAQ";
 import StickyCTAs from "@/components/StickyCTAs";
 import SocialProofToast from "@/components/SocialProofToast";
-import FloatingActionButton from "@/components/FloatingActionButton";
+import WhatsAppWidget from "@/components/WhatsAppWidget";
 import { useLanguage } from "@/context/LanguageContext";
+import { QrCode } from "lucide-react";
 
 export default function Home() {
   const { t } = useLanguage();
@@ -88,13 +89,21 @@ export default function Home() {
           <h2 className="text-4xl md:text-6xl font-black mb-8 uppercase tracking-tighter leading-none">{t.footer.ctaTitle}</h2>
           <p className="text-xl md:text-2xl mb-12 font-bold text-saffron drop-shadow-sm uppercase">{t.footer.ctaSub}</p>
           
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-12">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-12 mb-12">
             <a 
               href="tel:+919929563493"
               className="w-full sm:w-auto bg-white text-crimson px-12 py-6 rounded-2xl font-black text-2xl hover:scale-105 transition-all shadow-2xl shadow-black/20"
             >
               {t.footer.callBtn}
             </a>
+
+            {/* QR Code for Desktop to Mobile handoff */}
+            <div className="hidden lg:flex flex-col items-center gap-2">
+               <div className="bg-white p-2 rounded-xl shadow-lg">
+                  <QrCode size={80} className="text-gray-800" />
+               </div>
+               <span className="text-[10px] font-black uppercase opacity-60">Scan to WhatsApp</span>
+            </div>
           </div>
           
           <div className="text-xs font-medium opacity-50 uppercase tracking-[0.2em]">{t.footer.copyright}</div>
@@ -106,7 +115,7 @@ export default function Home() {
 
       <StickyCTAs />
       <SocialProofToast />
-      <FloatingActionButton />
+      <WhatsAppWidget />
     </main>
   );
 }

@@ -12,17 +12,17 @@ export default function Hero() {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      gsap.from(".reveal-text", {
-        y: 60,
-        opacity: 0,
+      gsap.to(".reveal-text", {
+        y: 0,
+        opacity: 1,
         duration: 1.2,
         stagger: 0.2,
         ease: "power4.out",
       });
       
-      gsap.from(".reveal-img", {
-        x: 100,
-        opacity: 0,
+      gsap.to(".reveal-img", {
+        x: 0,
+        opacity: 1,
         duration: 1.5,
         ease: "power3.out",
         delay: 0.5
@@ -37,7 +37,7 @@ export default function Hero() {
         
         {/* Left Side: Content */}
         <div className="flex-1 text-center lg:text-left">
-          <div className="reveal-text flex flex-col sm:flex-row items-center gap-3 mb-6 justify-center lg:justify-start">
+          <div className="reveal-text opacity-0 translate-y-10 flex flex-col sm:flex-row items-center gap-3 mb-6 justify-center lg:justify-start">
             <div className="inline-flex items-center gap-2 bg-saffron/10 text-saffron font-bold px-4 py-1.5 rounded-full text-xs md:text-sm border border-saffron/20">
               <Star size={14} fill="currentColor" />
               {t.hero.privacy}
@@ -51,23 +51,23 @@ export default function Hero() {
             </div>
           </div>
           
-          <h1 className="reveal-text text-4xl md:text-7xl font-black text-crimson leading-[1.0] mb-6 tracking-tighter uppercase">
+          <h1 className="reveal-text opacity-0 translate-y-10 text-4xl md:text-7xl font-black text-crimson leading-[1.0] mb-6 tracking-tighter uppercase">
             {t.hero.title}
           </h1>
           
-          <p className="reveal-text text-xl md:text-2xl text-gray-800 mb-8 max-w-2xl font-bold leading-tight uppercase">
+          <p className="reveal-text opacity-0 translate-y-10 text-xl md:text-2xl text-gray-800 mb-8 max-w-2xl font-bold leading-tight uppercase">
             {t.hero.sub}
           </p>
 
-          <p className="reveal-text text-md md:text-lg text-gray-600 mb-10 max-w-2xl font-medium leading-relaxed">
+          <p className="reveal-text opacity-0 translate-y-10 text-md md:text-lg text-gray-600 mb-10 max-w-2xl font-medium leading-relaxed">
             {t.hero.desc}
           </p>
 
-          <div className="reveal-text mb-10">
+          <div className="reveal-text opacity-0 translate-y-10 mb-10">
              <CosmicSnapshot />
           </div>
 
-          <div className="reveal-text flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start">
+          <div className="reveal-text opacity-0 translate-y-10 flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start">
             <a 
               href="https://wa.me/919929563493"
               className="w-full sm:w-auto bg-[#25D366] hover:bg-[#20bd5a] text-white px-8 py-4 rounded-xl font-black text-lg flex items-center justify-center gap-3 shadow-xl shadow-green-200 transition-all hover:scale-105"
@@ -85,7 +85,7 @@ export default function Hero() {
             </a>
           </div>
 
-          <div className="reveal-text mt-10 grid grid-cols-3 gap-4 border-t border-gold/10 pt-8">
+          <div className="reveal-text opacity-0 translate-y-10 mt-10 grid grid-cols-3 gap-4 border-t border-gold/10 pt-8">
             <div className="flex flex-col items-center lg:items-start gap-1">
               <ShieldCheck className="text-gold" size={24} />
               <span className="text-[10px] font-black text-gray-500 uppercase">{t.hero.privacy}</span>
@@ -102,7 +102,7 @@ export default function Hero() {
         </div>
 
         {/* Right Side: Image Placeholder */}
-        <div className="reveal-img relative w-full lg:w-[450px] aspect-[4/5] bg-gradient-to-tr from-saffron/20 to-gold/20 rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
+        <div className="reveal-img opacity-0 translate-x-10 relative w-full lg:w-[450px] aspect-[4/5] bg-gradient-to-tr from-saffron/20 to-gold/20 rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
            <div className="absolute inset-0 flex items-center justify-center text-gold/30 font-black text-2xl uppercase tracking-widest text-center p-8">
               [ {t.hero.maharajName} ]
            </div>

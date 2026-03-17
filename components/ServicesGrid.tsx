@@ -15,54 +15,35 @@ export default function ServicesGrid() {
   const { t } = useLanguage();
 
   useEffect(() => {
-    const ctx = gsap.context(() => {
-      gsap.from(".service-card", {
-        y: 60,
-        opacity: 0,
-        duration: 0.8,
-        stagger: 0.15,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: sectionRef.current,
-          start: "top 80%",
-          toggleActions: "play none none none"
-        }
-      });
-    }, sectionRef);
-    return () => ctx.revert();
-  }, []);
+    const timeout = setTimeout(() => {
+      const ctx = gsap.context(() => {
+        // Use gsap.to since we have opacity-0 as initial state
+        gsap.to(".service-card", {
+          y: 0,
+          opacity: 1,
+          duration: 0.8,
+          stagger: 0.15,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: sectionRef.current,
+            start: "top 80%",
+            toggleActions: "play none none none"
+          }
+        });
+      }, sectionRef);
+      return () => ctx.revert();
+    }, 100);
+    
+    return () => clearTimeout(timeout);
+  }, [t]);
 
   const services = [
-    {
-      title: t.services.loveMarriage.title,
-      desc: t.services.loveMarriage.desc,
-      icon: <Heart className="text-crimson" fill="currentColor" />,
-    },
-    {
-      title: t.services.getLoveBack.title,
-      desc: t.services.getLoveBack.desc,
-      icon: <Users className="text-saffron" fill="currentColor" />,
-    },
-    {
-      title: t.services.stopDivorce.title,
-      desc: t.services.stopDivorce.desc,
-      icon: <Home className="text-crimson" fill="currentColor" />,
-    },
-    {
-      title: t.services.blackMagic.title,
-      desc: t.services.blackMagic.desc,
-      icon: <ShieldAlert className="text-gold" fill="currentColor" />,
-    },
-    {
-      title: t.services.careerMoney.title,
-      desc: t.services.careerMoney.desc,
-      icon: <Briefcase className="text-saffron" fill="currentColor" />,
-    },
-    {
-      title: t.services.muthkarni.title,
-      desc: t.services.muthkarni.desc,
-      icon: <Users className="text-crimson" fill="currentColor" />,
-    },
+    { title: t.services.loveMarriage.title, desc: t.services.loveMarriage.desc, icon: <Heart className="text-crimson" fill="currentColor" /> },
+    { title: t.services.getLoveBack.title, desc: t.services.getLoveBack.desc, icon: <Users className="text-saffron" fill="currentColor" /> },
+    { title: t.services.stopDivorce.title, desc: t.services.stopDivorce.desc, icon: <Home className="text-crimson" fill="currentColor" /> },
+    { title: t.services.blackMagic.title, desc: t.services.blackMagic.desc, icon: <ShieldAlert className="text-gold" fill="currentColor" /> },
+    { title: t.services.careerMoney.title, desc: t.services.careerMoney.desc, icon: <Briefcase className="text-saffron" fill="currentColor" /> },
+    { title: t.services.muthkarni.title, desc: t.services.muthkarni.desc, icon: <Users className="text-crimson" fill="currentColor" /> },
   ];
 
   return (
@@ -82,7 +63,7 @@ export default function ServicesGrid() {
           {services.map((s, i) => (
             <div 
               key={i}
-              className="service-card group p-8 rounded-3xl bg-cream border border-gold/10 hover:border-saffron/40 transition-all duration-300 shadow-sm hover:shadow-xl hover:-translate-y-2 flex flex-col items-center text-center"
+              className="service-card opacity-0 translate-y-10 group p-8 rounded-3xl bg-cream border border-gold/10 hover:border-saffron/40 transition-all duration-300 shadow-sm hover:shadow-xl hover:-translate-y-2 flex flex-col items-center text-center"
             >
               <div className="w-16 h-16 rounded-2xl bg-white flex items-center justify-center mb-6 shadow-md group-hover:scale-110 transition-transform">
                 {s.icon}
