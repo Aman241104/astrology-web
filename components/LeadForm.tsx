@@ -1,0 +1,74 @@
+"use client";
+
+import { useState } from "react";
+import { useLanguage } from "@/context/LanguageContext";
+import { Send } from "lucide-react";
+
+export default function LeadForm() {
+  const { t } = useLanguage();
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    setSubmitted(true);
+  };
+
+  if (submitted) {
+    return (
+      <div className="bg-green-50 p-12 rounded-3xl border border-green-200 text-center animate-pulse">
+        <h3 className="text-2xl font-black text-green-700 mb-2">{t.leadForm.successTitle}</h3>
+        <p className="text-green-600 font-bold uppercase tracking-widest text-xs">{t.leadForm.successSub}</p>
+      </div>
+    );
+  }
+
+  return (
+    <section id="contact" className="py-20 px-4 bg-gradient-to-tr from-saffron/5 to-gold/5">
+      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16">
+        
+        <div className="flex-1">
+           <h2 className="text-3xl md:text-5xl font-black text-crimson mb-6 uppercase tracking-tight">{t.leadForm.urgentHelp}</h2>
+           <p className="text-xl text-gray-700 font-bold mb-8">{t.leadForm.sub.split(" FREE")[0]} <span className="text-saffron italic underline underline-offset-4">{t.leadForm.sub.split("Guruji will contact you for a ")[1]}</span></p>
+           
+           <ul className="space-y-4 font-black text-gray-500 uppercase tracking-widest text-xs">
+              <li className="flex items-center gap-3">✓ {t.leadForm.hook1}</li>
+              <li className="flex items-center gap-3">✓ {t.leadForm.hook2}</li>
+              <li className="flex items-center gap-3">✓ {t.leadForm.hook3}</li>
+           </ul>
+        </div>
+
+        <div className="flex-1 w-full bg-white p-10 rounded-[40px] shadow-2xl border-4 border-gold/10">
+          <form onSubmit={handleSubmit} className="space-y-6">
+            <div>
+              <label className="block text-xs font-black text-gray-400 uppercase tracking-[0.2em] mb-2">{t.leadForm.name}</label>
+              <input required type="text" className="w-full bg-cream/30 border-2 border-gold/10 rounded-2xl px-6 py-4 font-bold text-gray-800 focus:border-saffron outline-none transition-all" />
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label className="block text-xs font-black text-gray-400 uppercase tracking-[0.2em] mb-2">{t.leadForm.phone}</label>
+                <input required type="tel" className="w-full bg-cream/30 border-2 border-gold/10 rounded-2xl px-6 py-4 font-bold text-gray-800 focus:border-saffron outline-none transition-all" />
+              </div>
+              <div>
+                <label className="block text-xs font-black text-gray-400 uppercase tracking-[0.2em] mb-2">Your Zodiac Sign</label>
+                <select className="w-full bg-cream/30 border-2 border-gold/10 rounded-2xl px-6 py-4 font-bold text-gray-800 focus:border-saffron outline-none transition-all appearance-none">
+                  <option>Aries</option><option>Taurus</option><option>Gemini</option><option>Cancer</option>
+                  <option>Leo</option><option>Virgo</option><option>Libra</option><option>Scorpio</option>
+                  <option>Sagittarius</option><option>Capricorn</option><option>Aquarius</option><option>Pisces</option>
+                </select>
+              </div>
+            </div>
+            <div>
+              <label className="block text-xs font-black text-gray-400 uppercase tracking-[0.2em] mb-2">{t.leadForm.problem}</label>
+              <textarea required className="w-full bg-cream/30 border-2 border-gold/10 rounded-2xl px-6 py-4 font-bold text-gray-800 focus:border-saffron outline-none transition-all min-h-[120px]"></textarea>
+            </div>
+            <button type="submit" className="w-full bg-crimson text-white py-5 rounded-2xl font-black text-xl flex items-center justify-center gap-3 hover:bg-crimson/90 transition-all shadow-xl shadow-crimson/20">
+              <Send fill="white" size={24} />
+              {t.leadForm.submit}
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+  );
+}
