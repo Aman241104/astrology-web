@@ -33,7 +33,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section ref={containerRef} className="pt-44 md:pt-40 pb-12 px-4 bg-gradient-to-b from-cream to-white overflow-hidden relative">
+    <section ref={containerRef} className="pt-36 md:pt-40 pb-12 px-4 bg-gradient-to-b from-cream to-white overflow-hidden relative">
       {/* Background Astrology Pattern */}
       <div className="absolute inset-0 opacity-[0.03] pointer-events-none overflow-hidden">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[1000px] border-2 border-gold rounded-full"></div>

@@ -17,7 +17,7 @@ export default function WhatsAppWidget() {
   }, []);
 
   return (
-    <div className="fixed bottom-24 right-6 z-[70] flex flex-col items-end gap-4">
+    <div className="fixed bottom-28 right-6 z-[70] flex flex-col items-end gap-4">
       {/* Speech Bubble Prompt */}
       {showPrompt && !isOpen && (
         <div className="bg-white p-4 rounded-2xl shadow-2xl border border-gold/20 max-w-[200px] animate-bounce-in relative">
