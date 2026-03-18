@@ -6,6 +6,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useLanguage } from "@/context/LanguageContext";
 import { Star, ShieldCheck, Heart, Sparkles } from "lucide-react";
 import Image from "next/image";
+import MandalaSVG from "./MandalaSVG";
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
@@ -36,11 +37,15 @@ export default function AboutMaharaj() {
   }, [t]);
 
   return (
-    <section ref={sectionRef} id="about" className="py-24 px-4 bg-cream/30">
-      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16">
+    <section ref={sectionRef} id="about" className="py-24 px-4 bg-cream/30 relative overflow-hidden">
+      {/* Decorative Background Mandalas */}
+      <MandalaSVG className="absolute -top-24 -left-24 w-96 h-96 text-gold opacity-[0.05] animate-[spin_180s_linear_infinite]" />
+      <MandalaSVG className="absolute -bottom-24 -right-24 w-[500px] h-[500px] text-saffron opacity-[0.03] animate-[spin_240s_linear_infinite_reverse]" />
+      
+      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16 relative z-10">
         
         {/* Left Side: Detail */}
-        <div className="about-reveal opacity-0 -translate-x-10 flex-1 order-2 lg:order-1">
+        <div className="about-reveal opacity-0 -translate-x-10 flex-1 order-2 lg:order-1 w-full lg:w-auto">
           <div className="inline-flex items-center gap-2 bg-saffron/10 text-saffron font-bold px-4 py-1 rounded-full text-xs mb-6 uppercase tracking-widest border border-saffron/20">
              <Star size={14} fill="currentColor" />
              {t.about.meetTheMaster}
@@ -54,7 +59,7 @@ export default function AboutMaharaj() {
             <p>{t.about.bio1}</p>
 
             <p>{t.about.bio2}</p>            <p className="font-bold text-gray-900 border-l-4 border-gold pl-6 py-2 bg-gold/5">
-              "{t.about.quote}" — {t.hero.maharajName}
+              &quot;{t.about.quote}&quot; — {t.hero.maharajName}
             </p>
           </div>
 
@@ -77,7 +82,7 @@ export default function AboutMaharaj() {
         <div className="about-reveal opacity-0 translate-x-10 flex-1 order-1 lg:order-2 w-full lg:w-auto relative">
            <div className="relative z-10 w-full aspect-[4/5] rounded-[40px] overflow-hidden shadow-3xl border-8 border-white bg-gradient-to-br from-gold/10 to-saffron/10">
              <Image 
-               src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&q=80&w=450&h=560" 
+               src="/images/maharaj.png" 
                alt={t.hero.maharajName}
                fill
                className="object-cover"

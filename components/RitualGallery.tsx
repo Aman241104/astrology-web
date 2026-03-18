@@ -5,6 +5,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useLanguage } from "@/context/LanguageContext";
 import Image from "next/image";
+import DecorativeCorner from "./DecorativeCorner";
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
@@ -35,10 +36,10 @@ export default function RitualGallery() {
   }, [t]);
 
   const gallery = [
-    { label: "Maha Havan", img: "https://images.unsplash.com/photo-1605662758112-92a061803259?auto=format&fit=crop&q=80&w=400&h=530" },
-    { label: "Vedic Pooja", img: "https://images.unsplash.com/photo-1544923246-77307dd654ca?auto=format&fit=crop&q=80&w=400&h=530" },
-    { label: "Astro Ritual", img: "https://images.unsplash.com/photo-1605662657375-31f452097e3c?auto=format&fit=crop&q=80&w=400&h=530" },
-    { label: "Mantra Siddhi", img: "https://images.unsplash.com/photo-1627394186532-4e4b5182903e?auto=format&fit=crop&q=80&w=400&h=530" },
+    { label: "Maha Havan", img: "/images/rituals/maha-havan.png" },
+    { label: "Vedic Pooja", img: "/images/rituals/vedic-pooja.png" },
+    { label: "Astro Ritual", img: "/images/rituals/astro-ritual.png" },
+    { label: "Mantra Siddhi", img: "/images/rituals/mantra-siddhi.png" },
   ];
 
   return (
@@ -56,6 +57,9 @@ export default function RitualGallery() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
           {gallery.map((item, i) => (
             <div key={i} className="ritual-card opacity-0 scale-90 group relative aspect-[3/4] rounded-3xl overflow-hidden shadow-xl border-4 border-white bg-white transition-all duration-500">
+               <DecorativeCorner className="absolute top-2 left-2 z-20 opacity-30 group-hover:opacity-100 transition-opacity scale-75" />
+               <DecorativeCorner className="absolute bottom-2 right-2 z-20 rotate-180 opacity-30 group-hover:opacity-100 transition-opacity scale-75" />
+
                <Image 
                  src={item.img} 
                  alt={item.label} 

@@ -23,28 +23,28 @@ export default function ComparisonTable() {
           <div className="w-24 h-1.5 bg-gold mx-auto rounded-full"></div>
         </div>
 
-        <div className="overflow-x-auto">
-          <table className="w-full border-collapse">
+        <div className="overflow-x-auto pb-6 scrollbar-hide">
+          <table className="w-full border-collapse min-w-[600px] md:min-w-0">
             <thead>
               <tr className="bg-cream">
-                <th className="p-3 md:p-6 text-left border-b-2 border-gold/20 text-gray-400 font-black uppercase tracking-widest text-[10px] md:text-xs">Features</th>
+                <th className="p-3 md:p-6 text-left border-b-2 border-gold/20 text-gray-400 font-black uppercase tracking-widest text-[10px] md:text-xs whitespace-nowrap">Features</th>
                 <th className="p-3 md:p-6 text-center border-b-2 border-saffron bg-saffron/5">
-                   <div className="text-saffron font-black text-xs md:text-lg uppercase tracking-tight italic">Guruji</div>
+                   <div className="text-saffron font-black text-xs md:text-lg uppercase tracking-tight italic whitespace-nowrap">Guruji</div>
                 </th>
                 <th className="p-3 md:p-6 text-center border-b-2 border-gray-200">
-                   <div className="text-gray-400 font-black text-xs md:text-lg uppercase tracking-tight">Others</div>
+                   <div className="text-gray-400 font-black text-xs md:text-lg uppercase tracking-tight whitespace-nowrap">Others</div>
                 </th>
               </tr>
             </thead>
             <tbody>
               {rows.map((row, i) => (
                 <tr key={i} className="hover:bg-cream/30 transition-colors">
-                  <td className="p-3 md:p-6 border-b border-gold/10 font-bold text-gray-700 text-xs md:text-base uppercase tracking-wide">
+                  <td className="p-3 md:p-6 border-b border-gold/10 font-bold text-gray-700 text-xs md:text-base uppercase tracking-wide whitespace-nowrap">
                     {row.label}
                   </td>
                   <td className="p-3 md:p-6 border-b border-gold/10 text-center bg-saffron/5">
                     <div className="flex flex-col items-center gap-2">
-                      <CheckCircle2 className="text-green-500" size={18} />
+                      <CheckCircle2 className="text-saffron" size={18} />
                       <span className="font-black text-gray-900 text-[10px] md:text-base uppercase">{row.guruji}</span>
                     </div>
                   </td>

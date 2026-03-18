@@ -43,7 +43,7 @@ export default function LanguageSwitcher() {
       </button>
       
       {isOpen && (
-        <div className="absolute right-0 top-full mt-2 w-36 bg-white shadow-2xl rounded-2xl border border-gold/10 z-[100] overflow-hidden animate-in fade-in slide-in-from-top-2 duration-200">
+        <div className="absolute right-0 top-full mt-2 w-36 bg-white shadow-2xl rounded-2xl border border-gold/10 z-[200] overflow-hidden animate-in fade-in slide-in-from-top-2 duration-200">
           <div className="py-1">
             {languages.map((lang) => (
               <button

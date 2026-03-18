@@ -20,8 +20,8 @@ export default function FAQ() {
     <section className="py-20 bg-white px-4">
       <div className="max-w-3xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-5xl font-black text-crimson mb-4 uppercase tracking-tight flex items-center justify-center gap-3">
-            <HelpCircle size={32} className="text-gold" />
+          <h2 className="text-2xl md:text-5xl font-black text-crimson mb-4 uppercase tracking-tight flex items-center justify-center gap-2 md:gap-3">
+            <HelpCircle className="text-gold w-6 h-6 md:w-8 md:h-8" />
             {t.faq.title}
           </h2>
           <p className="text-gray-500 font-bold uppercase tracking-widest text-xs">{t.faq.sub}</p>

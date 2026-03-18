@@ -2,6 +2,7 @@
 
 import { useLanguage } from "@/context/LanguageContext";
 import { CheckCircle2, Zap, Shield, Heart } from "lucide-react";
+import MandalaSVG from "./MandalaSVG";
 
 export default function Benefits() {
   const { t } = useLanguage();
@@ -26,7 +27,10 @@ export default function Benefits() {
 
   return (
     <section className="py-24 px-4 bg-white overflow-hidden relative">
-      <div className="max-w-7xl mx-auto">
+      <MandalaSVG className="absolute top-0 right-0 w-[600px] h-[600px] text-gold opacity-[0.03] translate-x-1/2 -translate-y-1/2" />
+      <MandalaSVG className="absolute bottom-0 left-0 w-[400px] h-[400px] text-saffron opacity-[0.02] -translate-x-1/2 translate-y-1/2" />
+      
+      <div className="max-w-7xl mx-auto relative z-10">
         <div className="flex flex-col lg:flex-row items-center gap-16">
           <div className="flex-1">
              <h2 className="text-3xl md:text-5xl font-black text-crimson mb-8 uppercase tracking-tighter">

@@ -2,13 +2,11 @@
 
 import { useState, useEffect } from "react";
 import { MessageCircle, X, Send } from "lucide-react";
-import { useLanguage } from "@/context/LanguageContext";
 import Image from "next/image";
 
 export default function WhatsAppWidget() {
   const [isOpen, setIsOpen] = useState(false);
   const [showPrompt, setShowPrompt] = useState(false);
-  const { t } = useLanguage();
 
   useEffect(() => {
     // Show prompt after 8 seconds
@@ -17,7 +15,7 @@ export default function WhatsAppWidget() {
   }, []);
 
   return (
-    <div className="fixed bottom-28 right-6 z-[70] flex flex-col items-end gap-4">
+    <div className="fixed bottom-6 md:bottom-12 right-6 z-[70] hidden lg:flex flex-col items-end gap-4">
       {/* Speech Bubble Prompt */}
       {showPrompt && !isOpen && (
         <div className="bg-white p-4 rounded-2xl shadow-2xl border border-gold/20 max-w-[200px] animate-bounce-in relative">
@@ -34,10 +32,10 @@ export default function WhatsAppWidget() {
       {/* Chat Window */}
       {isOpen && (
         <div className="w-80 bg-white rounded-[32px] shadow-3xl border border-gold/10 overflow-hidden animate-bounce-in">
-          <div className="bg-[#075E54] p-6 text-white flex items-center gap-4">
+          <div className="bg-crimson p-6 text-white flex items-center gap-4">
             <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-white/20 relative">
               <Image 
-                src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&q=80&w=100&h=100" 
+                src="/images/maharaj.png" 
                 alt="Vishvanath Maharaj"
                 fill
                 className="object-cover"
@@ -47,7 +45,7 @@ export default function WhatsAppWidget() {
             <div>
               <h4 className="font-black text-sm uppercase tracking-tight">Vishvanath Maharaj</h4>
               <div className="flex items-center gap-1.5">
-                <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
+                <span className="w-2 h-2 bg-saffron rounded-full animate-pulse"></span>
                 <span className="text-[10px] font-bold opacity-80 uppercase">Online Now</span>
               </div>
             </div>
@@ -66,7 +64,7 @@ export default function WhatsAppWidget() {
           <div className="p-4 bg-white flex items-center gap-2">
             <a 
               href="https://wa.me/919929563493"
-              className="flex-1 bg-[#25D366] text-white py-3 rounded-xl font-black text-xs flex items-center justify-center gap-2 hover:bg-[#20bd5a] transition-all active:scale-95"
+              className="flex-1 bg-saffron text-white py-3 rounded-xl font-black text-xs flex items-center justify-center gap-2 hover:bg-saffron/90 transition-all active:scale-95"
             >
               START CHAT ON WHATSAPP
               <Send size={14} fill="white" />
@@ -78,9 +76,9 @@ export default function WhatsAppWidget() {
       {/* Toggle Button */}
       <button 
         onClick={() => setIsOpen(!isOpen)}
-        className="w-16 h-16 bg-[#25D366] rounded-full shadow-2xl flex items-center justify-center text-white hover:scale-110 active:scale-95 transition-all group relative"
+        className="w-16 h-16 bg-saffron rounded-full shadow-2xl flex items-center justify-center text-white hover:scale-110 active:scale-95 transition-all group relative"
       >
-        <div className="absolute inset-0 rounded-full bg-[#25D366] animate-ping opacity-20"></div>
+        <div className="absolute inset-0 rounded-full bg-saffron animate-ping opacity-20"></div>
         <MessageCircle size={32} fill="white" className="relative z-10" />
       </button>
     </div>

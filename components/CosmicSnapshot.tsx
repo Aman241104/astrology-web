@@ -21,7 +21,7 @@ export default function CosmicSnapshot() {
   ];
 
   return (
-    <div className="bg-white/80 backdrop-blur-sm border border-gold/20 rounded-[32px] p-6 shadow-xl flex justify-around gap-4 max-w-sm mx-auto lg:mx-0 reveal-text">
+    <div className="bg-white/80 backdrop-blur-sm border border-gold/20 rounded-[32px] p-4 md:p-6 shadow-xl flex justify-around gap-2 md:gap-4 max-w-[280px] md:max-w-sm mx-auto lg:mx-0 reveal-text scale-90 md:scale-100 origin-center lg:origin-left">
       {items.map((item, i) => (
         <div key={i} className="flex flex-col items-center gap-2">
           <div className="relative w-16 h-16 flex items-center justify-center">

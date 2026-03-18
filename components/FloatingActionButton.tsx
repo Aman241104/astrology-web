@@ -1,12 +1,10 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { useLanguage } from "@/context/LanguageContext";
 import { MessageCircle } from "lucide-react";
 
 export default function FloatingActionButton() {
   const [visible, setVisible] = useState(false);
-  const { t } = useLanguage();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,11 +22,10 @@ export default function FloatingActionButton() {
 
   return (
     <div className="fixed bottom-24 right-4 z-50 animate-bounce-in hidden lg:block">
-      <a 
+      <a
         href="https://wa.me/919929563493"
-        className="bg-[#25D366] text-white p-4 rounded-full shadow-2xl flex items-center gap-3 hover:scale-110 transition-transform group"
-      >
-        <div className="bg-white/20 p-2 rounded-full">
+        className="bg-saffron text-white p-4 rounded-full shadow-2xl flex items-center gap-3 hover:scale-110 transition-transform group"
+      >        <div className="bg-white/20 p-2 rounded-full">
           <MessageCircle fill="white" size={24} />
         </div>
         <span className="font-black text-sm pr-4 uppercase tracking-tighter">Consult Maharaj Now</span>

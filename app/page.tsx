@@ -2,10 +2,13 @@
 
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
+import TrustBanner from "@/components/TrustBanner";
+import CategoryBar from "@/components/CategoryBar";
 import TrustBar from "@/components/TrustBar";
 import ServicesGrid from "@/components/ServicesGrid";
 import AboutMaharaj from "@/components/AboutMaharaj";
 import ComparisonTable from "@/components/ComparisonTable";
+import WhyChooseUs from "@/components/WhyChooseUs";
 import LeadForm from "@/components/LeadForm";
 import RitualGallery from "@/components/RitualGallery";
 import Benefits from "@/components/Benefits";
@@ -24,10 +27,13 @@ export default function Home() {
     <main className="min-h-screen">
       <Navbar />
       <Hero />
+      <TrustBanner />
+      <CategoryBar />
       <TrustBar />
       <ServicesGrid />
       <AboutMaharaj />
       <ComparisonTable />
+      <WhyChooseUs />
       <LeadForm />
       <RitualGallery />
       <Benefits />
@@ -50,7 +56,7 @@ export default function Home() {
                 <div className="flex gap-1 mb-4">
                    {[...Array(5)].map((_, j) => <span key={j} className="text-gold">★</span>)}
                 </div>
-                <p className="text-gray-700 italic mb-6 font-medium">"{test.text}"</p>
+                <p className="text-gray-700 italic mb-6 font-medium">&quot;{test.text}&quot;</p>
                 <div className="font-black text-crimson italic tracking-widest text-xs">{test.name}</div>
               </div>
             ))}
@@ -104,7 +110,7 @@ export default function Home() {
 
           <div className="bg-black/20 p-8 rounded-[40px] border border-white/10 backdrop-blur-sm mb-12">
              <p className="text-lg md:text-2xl font-bold uppercase tracking-wide leading-relaxed">
-               Don't wait for a miracle. <span className="text-saffron">MAKE IT HAPPEN.</span> Maharaj has helped thousands of people just like you to get their love back, stop divorce, and remove black magic. <span className="underline decoration-saffron">Your solution is just one call away.</span>
+               Don&apos;t wait for a miracle. <span className="text-saffron">MAKE IT HAPPEN.</span> Maharaj has helped thousands of people just like you to get their love back, stop divorce, and remove black magic. <span className="underline decoration-saffron">Your solution is just one call away.</span>
              </p>
           </div>
           

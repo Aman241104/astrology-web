@@ -6,6 +6,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useLanguage } from "@/context/LanguageContext";
 import { Heart, Users, Home, Briefcase, ShieldAlert } from "lucide-react";
 import Image from "next/image";
+import MandalaSVG from "./MandalaSVG";
+import DecorativeCorner from "./DecorativeCorner";
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
@@ -42,81 +44,96 @@ export default function ServicesGrid() {
     { 
       title: t.services.loveMarriage.title, 
       desc: t.services.loveMarriage.desc, 
-      img: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&q=80&w=300&h=200",
+      img: "/images/services/love-marriage.png",
       icon: <Heart size={20} className="text-white" fill="currentColor" />
     },
     { 
       title: t.services.getLoveBack.title, 
       desc: t.services.getLoveBack.desc, 
-      img: "https://images.unsplash.com/photo-1516589174184-c685266e430c?auto=format&fit=crop&q=80&w=300&h=200",
+      img: "/images/services/get-love-back.png",
       icon: <Users size={20} className="text-white" fill="currentColor" />
     },
     { 
       title: t.services.stopDivorce.title, 
       desc: t.services.stopDivorce.desc, 
-      img: "https://images.unsplash.com/photo-1484863137850-59afccd31986?auto=format&fit=crop&q=80&w=300&h=200",
+      img: "/images/services/stop-divorce.png",
       icon: <Home size={20} className="text-white" fill="currentColor" />
     },
     { 
       title: t.services.blackMagic.title, 
       desc: t.services.blackMagic.desc, 
-      img: "https://images.unsplash.com/photo-1515023115689-589c33041d3c?auto=format&fit=crop&q=80&w=300&h=200",
+      img: "/images/services/black-magic.png",
       icon: <ShieldAlert size={20} className="text-white" fill="currentColor" />
     },
     { 
       title: t.services.careerMoney.title, 
       desc: t.services.careerMoney.desc, 
-      img: "https://images.unsplash.com/photo-1454165833467-03a669d449f5?auto=format&fit=crop&q=80&w=300&h=200",
+      img: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=100&w=600&h=400",
       icon: <Briefcase size={20} className="text-white" fill="currentColor" />
     },
     { 
       title: t.services.muthkarni.title, 
       desc: t.services.muthkarni.desc, 
-      img: "https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?auto=format&fit=crop&q=80&w=300&h=200",
+      img: "/images/services/muthkarni.png",
       icon: <Users size={20} className="text-white" fill="currentColor" />
     },
   ];
 
   return (
-    <section ref={sectionRef} id="services" className="py-20 px-4 bg-white">
-      <div className="max-w-7xl mx-auto">
+    <section ref={sectionRef} id="services" className="py-20 px-4 bg-white relative overflow-hidden">
+      {/* Decorative Background */}
+      <MandalaSVG className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1200px] h-[1200px] text-gold opacity-[0.03] animate-[spin_300s_linear_infinite]" />
+      <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] opacity-[0.05]"></div>
+
+      <div className="max-w-7xl mx-auto relative z-10">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-5xl font-black text-crimson mb-4 uppercase tracking-tight">
+          <h2 className="text-4xl md:text-7xl font-black text-crimson mb-4 uppercase tracking-tighter">
             {t.services.title}
           </h2>
-          <div className="w-24 h-1.5 bg-gold mx-auto rounded-full"></div>
-          <p className="mt-6 text-gray-600 font-medium max-w-2xl mx-auto">
+          <div className="w-32 h-2 bg-gold mx-auto rounded-full mb-6"></div>
+          <p className="text-gray-700 font-bold max-w-2xl mx-auto text-lg md:text-xl uppercase opacity-80">
             {t.services.subTitle}
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
           {services.map((s, i) => (
             <div 
               key={i}
-              className="service-card opacity-0 translate-y-10 group rounded-3xl bg-white border border-gold/10 hover:border-saffron/40 transition-all duration-300 shadow-sm hover:shadow-xl overflow-hidden flex flex-col"
+              className="service-card opacity-0 translate-y-10 group rounded-[40px] bg-white border border-gold/10 hover:border-saffron/60 transition-all duration-500 shadow-xl hover:shadow-[0_20px_80px_rgba(255,153,51,0.15)] overflow-hidden flex flex-col relative"
             >
-              <div className="relative h-48 w-full overflow-hidden">
+              <DecorativeCorner className="absolute top-4 left-4 z-20 opacity-0 group-hover:opacity-100 transition-opacity" />
+              <DecorativeCorner className="absolute top-4 right-4 z-20 rotate-90 opacity-0 group-hover:opacity-100 transition-opacity" />
+              <DecorativeCorner className="absolute bottom-4 left-4 z-20 -rotate-90 opacity-0 group-hover:opacity-100 transition-opacity" />
+              <DecorativeCorner className="absolute bottom-4 right-4 z-20 rotate-180 opacity-0 group-hover:opacity-100 transition-opacity" />
+
+              <div className="relative h-64 w-full overflow-hidden">
                 <Image 
                   src={s.img} 
                   alt={s.title} 
                   fill 
-                  className="object-cover group-hover:scale-110 transition-transform duration-500"
+                  className="object-cover group-hover:scale-110 transition-transform duration-700"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
-                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-all"></div>
-                <div className="absolute top-4 left-4 w-10 h-10 rounded-xl bg-crimson flex items-center justify-center shadow-lg">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                
+                {/* Status Badge */}
+                <div className="absolute top-4 right-4 bg-saffron text-white px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-widest shadow-lg">
+                  Effective Solution
+                </div>
+
+                <div className="absolute top-4 left-4 w-12 h-12 rounded-2xl bg-crimson flex items-center justify-center shadow-2xl border border-white/20">
                   {s.icon}
                 </div>
               </div>
 
-              <div className="p-8 text-center flex-1 flex flex-col">
-                <h3 className="text-xl font-black text-gray-800 mb-3 uppercase tracking-wide">{s.title}</h3>
-                <p className="text-gray-600 text-sm leading-relaxed font-medium mb-6 flex-1">{s.desc}</p>
+              <div className="p-10 text-center flex-1 flex flex-col">
+                <h3 className="text-2xl font-black text-gray-900 mb-4 uppercase tracking-tight group-hover:text-crimson transition-colors">{s.title}</h3>
+                <p className="text-gray-600 text-base leading-relaxed font-medium mb-8 flex-1 uppercase tracking-wide opacity-90">{s.desc}</p>
                 
                 <a 
                   href="https://wa.me/919929563493"
-                  className="w-full bg-crimson/5 text-crimson py-3 rounded-xl font-black text-xs uppercase tracking-widest hover:bg-crimson hover:text-white transition-all active:scale-95 inline-block"
+                  className="w-full bg-crimson text-white py-4 rounded-2xl font-black text-sm uppercase tracking-widest hover:bg-saffron transition-all active:scale-95 shadow-xl shadow-crimson/20"
                 >
                   {t.services.getSolution}
                 </a>

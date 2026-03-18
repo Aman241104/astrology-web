@@ -15,9 +15,9 @@ export default function LeadForm() {
 
   if (submitted) {
     return (
-      <div className="bg-green-50 p-12 rounded-3xl border border-green-200 text-center animate-pulse">
-        <h3 className="text-2xl font-black text-green-700 mb-2">{t.leadForm.successTitle}</h3>
-        <p className="text-green-600 font-bold uppercase tracking-widest text-xs">{t.leadForm.successSub}</p>
+      <div className="bg-saffron/10 p-12 rounded-3xl border border-saffron/20 text-center animate-pulse">
+        <h3 className="text-2xl font-black text-crimson mb-2">{t.leadForm.successTitle}</h3>
+        <p className="text-saffron font-bold uppercase tracking-widest text-xs">{t.leadForm.successSub}</p>
       </div>
     );
   }
@@ -48,22 +48,27 @@ export default function LeadForm() {
                 <label className="block text-xs font-black text-gray-400 uppercase tracking-[0.2em] mb-2">{t.leadForm.phone}</label>
                 <input required type="tel" className="w-full bg-cream/30 border-2 border-gold/10 rounded-2xl px-6 py-4 font-bold text-gray-800 focus:border-saffron outline-none transition-all" />
               </div>
-              <div>
+              <div className="relative">
                 <label className="block text-xs font-black text-gray-400 uppercase tracking-[0.2em] mb-2">Your Zodiac Sign</label>
-                <select className="w-full bg-cream/30 border-2 border-gold/10 rounded-2xl px-6 py-4 font-bold text-gray-800 focus:border-saffron outline-none transition-all appearance-none">
-                  <option>Aries (Mar 21 - Apr 19)</option>
-                  <option>Taurus (Apr 20 - May 20)</option>
-                  <option>Gemini (May 21 - Jun 20)</option>
-                  <option>Cancer (Jun 21 - Jul 22)</option>
-                  <option>Leo (Jul 23 - Aug 22)</option>
-                  <option>Virgo (Aug 23 - Sep 22)</option>
-                  <option>Libra (Sep 23 - Oct 22)</option>
-                  <option>Scorpio (Oct 23 - Nov 21)</option>
-                  <option>Sagittarius (Nov 22 - Dec 21)</option>
-                  <option>Capricorn (Dec 22 - Jan 19)</option>
-                  <option>Aquarius (Jan 20 - Feb 18)</option>
-                  <option>Pisces (Feb 19 - Mar 20)</option>
-                </select>
+                <div className="relative">
+                  <select className="w-full bg-cream/30 border-2 border-gold/10 rounded-2xl px-6 py-4 font-bold text-gray-800 focus:border-saffron outline-none transition-all appearance-none cursor-pointer">
+                    <option>Aries (Mar 21 - Apr 19)</option>
+                    <option>Taurus (Apr 20 - May 20)</option>
+                    <option>Gemini (May 21 - Jun 20)</option>
+                    <option>Cancer (Jun 21 - Jul 22)</option>
+                    <option>Leo (Jul 23 - Aug 22)</option>
+                    <option>Virgo (Aug 23 - Sep 22)</option>
+                    <option>Libra (Sep 23 - Oct 22)</option>
+                    <option>Scorpio (Oct 23 - Nov 21)</option>
+                    <option>Sagittarius (Nov 22 - Dec 21)</option>
+                    <option>Capricorn (Dec 22 - Jan 19)</option>
+                    <option>Aquarius (Jan 20 - Feb 18)</option>
+                    <option>Pisces (Feb 19 - Mar 20)</option>
+                  </select>
+                  <div className="absolute right-6 top-1/2 -translate-y-1/2 pointer-events-none text-gold">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+                  </div>
+                </div>
               </div>
             </div>
             <div>

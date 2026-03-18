@@ -13,11 +13,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Astrologer Vishvanath Maharaj | 100% Guaranteed Problem Solutions",
+  title: "Astrologer Vishvanath Maharaj | Expert Problem Solutions",
   description: "Get instant solutions for Love Marriage, Intercaste Marriage, Get Ex Back, and Career Problems from Vishvanath Maharaj. Trusted by 50,000+ clients worldwide.",
 };
 
 import { LanguageProvider } from "@/context/LanguageContext";
+import AstroElements from "@/components/AstroElements";
 
 export default function RootLayout({
   children,
@@ -28,7 +29,7 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Astrologer Vishvanath Maharaj",
-    "image": "https://yourdomain.com/maharaj-photo.jpg",
+    "image": "/images/maharaj.png",
     "telephone": "+91-9929563493",
     "address": {
       "@type": "PostalAddress",
@@ -53,6 +54,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <LanguageProvider>
+          <AstroElements />
           {children}
         </LanguageProvider>
       </body>
