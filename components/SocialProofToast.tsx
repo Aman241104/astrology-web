@@ -1,7 +1,8 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { MessageCircle, Phone, X } from "lucide-react";
+import { Phone, X } from "lucide-react";
+import WhatsAppIcon from "./WhatsAppIcon";
 
 const locations = ["Mumbai", "Delhi", "Ahmedabad", "Surat", "London", "Dubai", "New York", "Bangalore", "Pune", "Jaipur"];
 const names = ["Rahul", "Priya", "Amit", "Sneh", "Ibrahim", "Ankit", "Deepa", "Vikram", "Meera", "Karan"];
@@ -49,7 +50,7 @@ export default function SocialProofToast() {
           <X size={14} />
         </button>
         <div className={`w-8 h-8 md:w-10 md:h-10 rounded-full flex items-center justify-center shrink-0 ${data.type === 'call' ? 'bg-crimson' : 'bg-saffron'}`}>
-          {data.type === 'call' ? <Phone size={14} fill="white" className="text-white md:w-[18px] md:h-[18px]" /> : <MessageCircle size={14} fill="white" className="text-white md:w-[18px] md:h-[18px]" />}
+          {data.type === 'call' ? <Phone size={14} fill="white" className="text-white md:w-[18px] md:h-[18px]" /> : <WhatsAppIcon size={14} className="text-white md:w-[18px] md:h-[18px]" />}
         </div>
         <div>
           <p className="text-[8px] md:text-[10px] font-black text-gray-400 uppercase tracking-widest leading-none mb-1">Recent Activity</p>

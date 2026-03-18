@@ -1,8 +1,9 @@
 "use client";
 
 import { useLanguage } from "@/context/LanguageContext";
-import { Star, MessageCircle } from "lucide-react";
+import { Star } from "lucide-react";
 import { useState } from "react";
+import WhatsAppIcon from "./WhatsAppIcon";
 
 export default function WhyChooseUs() {
   const { t } = useLanguage();
@@ -100,7 +101,7 @@ export default function WhyChooseUs() {
                   rel="noopener noreferrer"
                   className="bg-[#FFB800] hover:bg-white text-black font-black px-12 py-5 rounded-2xl shadow-[0_20px_50px_rgba(255,184,0,0.4)] transition-all duration-500 hover:scale-105 flex items-center gap-4 active:scale-95 group/btn"
                 >
-                  <MessageCircle className="group-hover/btn:scale-110 transition-transform" size={28} />
+                  <WhatsAppIcon className="group-hover/btn:scale-110 transition-transform" size={28} />
                   <span className="text-xl md:text-2xl uppercase tracking-tighter">
                     {t.whyChooseUs.chatBtn}
                   </span>

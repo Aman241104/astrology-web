@@ -1,7 +1,8 @@
 "use client";
 
 import { useLanguage } from "@/context/LanguageContext";
-import { MessageCircle, Search, Sparkles } from "lucide-react";
+import { Search, Sparkles } from "lucide-react";
+import WhatsAppIcon from "./WhatsAppIcon";
 
 export default function WorkingProcess() {
   const { t } = useLanguage();
@@ -10,7 +11,7 @@ export default function WorkingProcess() {
     {
       title: t.workingProcess.s1Title,
       desc: t.workingProcess.s1Desc,
-      icon: <MessageCircle className="text-white" size={32} />,
+      icon: <WhatsAppIcon className="text-white" size={32} />,
       color: "bg-saffron"
     },
     {

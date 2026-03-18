@@ -1,9 +1,9 @@
 "use client";
 
 import { useLanguage } from "@/context/LanguageContext";
-import { MessageCircle, PhoneCall, Star, ShieldCheck, Clock } from "lucide-react";
+import { PhoneCall, Star, ShieldCheck, Clock } from "lucide-react";
 import CosmicSnapshot from "./CosmicSnapshot";
-import Image from "next/image";
+import WhatsAppIcon from "./WhatsAppIcon";
 
 export default function Hero() {
   const { t } = useLanguage();
@@ -30,15 +30,15 @@ export default function Hero() {
             </div>
           </div>
           
-          <h1 className="reveal-text text-5xl md:text-8xl font-black text-crimson leading-[0.9] mb-2 tracking-tighter uppercase">
+          <h1 className="reveal-text text-5xl md:text-8xl font-black text-crimson leading-[0.9] mb-4 tracking-tighter uppercase">
             {t.hero.title}
           </h1>
           
-          <p className="reveal-text text-2xl md:text-4xl text-gray-800 mb-2 max-w-2xl font-black leading-none uppercase italic text-shadow-gold">
+          <p className="reveal-text text-xl md:text-4xl text-gray-800 mb-2 max-w-2xl font-black leading-tight uppercase italic text-shadow-gold">
             {t.hero.sub}
           </p>
 
-          <p className="reveal-text text-lg md:text-xl text-gray-600 mb-3 max-w-2xl font-bold leading-tight uppercase">
+          <p className="reveal-text text-base md:text-xl text-gray-600 mb-6 max-w-2xl font-bold leading-tight uppercase">
             {t.hero.desc}
           </p>
 
@@ -51,7 +51,7 @@ export default function Hero() {
               href="https://wa.me/919929563493"
               className="w-full sm:w-auto bg-[#25D366] hover:bg-[#20bd5a] text-white px-8 py-4 rounded-xl font-black text-lg flex items-center justify-center gap-3 shadow-xl shadow-green-200 transition-all hover:scale-105 active:scale-95"
             >
-              <MessageCircle fill="white" />
+              <WhatsAppIcon />
               {t.hero.whatsapp}
             </a>
             

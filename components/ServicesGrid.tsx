@@ -1,10 +1,11 @@
 "use client";
 
 import { useLanguage } from "@/context/LanguageContext";
-import { Heart, Users, Home, Briefcase, ShieldAlert, MessageCircle } from "lucide-react";
+import { Heart, Users, Home, Briefcase, ShieldAlert } from "lucide-react";
 import Image from "next/image";
 import MandalaSVG from "./MandalaSVG";
 import ZodiacWheel from "./ZodiacWheel";
+import WhatsAppIcon from "./WhatsAppIcon";
 
 export default function ServicesGrid() {
   const { t } = useLanguage();
@@ -112,7 +113,7 @@ export default function ServicesGrid() {
                     href="https://wa.me/919929563493"
                     className="inline-flex items-center gap-3 bg-gradient-to-br from-gold to-saffron hover:from-saffron hover:to-crimson text-white px-10 py-4 rounded-2xl font-black text-sm uppercase tracking-widest transition-all active:scale-95 shadow-[0_10px_30px_rgba(212,175,55,0.3)] hover:shadow-[0_15px_40px_rgba(212,175,55,0.5)] w-full justify-center"
                   >
-                    <MessageCircle size={18} fill="white" />
+                    <WhatsAppIcon size={18} />
                     {t.hero.whatsapp.split(" ")[0]} Now
                   </a>
                 </div>

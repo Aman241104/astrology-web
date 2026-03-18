@@ -1,8 +1,9 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { MessageCircle, X, Send } from "lucide-react";
+import { X, Send } from "lucide-react";
 import Image from "next/image";
+import WhatsAppIcon from "./WhatsAppIcon";
 
 export default function WhatsAppWidget() {
   const [isOpen, setIsOpen] = useState(false);
@@ -79,7 +80,7 @@ export default function WhatsAppWidget() {
         className="w-16 h-16 bg-saffron rounded-full shadow-2xl flex items-center justify-center text-white hover:scale-110 active:scale-95 transition-all group relative"
       >
         <div className="absolute inset-0 rounded-full bg-saffron animate-ping opacity-20"></div>
-        <MessageCircle size={32} fill="white" className="relative z-10" />
+        <WhatsAppIcon size={32} className="relative z-10" />
       </button>
     </div>
   );
