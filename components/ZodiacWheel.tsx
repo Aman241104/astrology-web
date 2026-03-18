@@ -4,7 +4,7 @@ const ZodiacWheel = ({ className }: { className?: string }) => {
   const signs = ['♈', '♉', '♊', '♋', '♌', '♍', '♎', '♏', '♐', '♑', '♒', '♓'];
   
   return (
-    <div className={`relative ${className}`}>
+    <div className={className}>
       <svg viewBox="0 0 400 400" className="w-full h-full animate-[spin_120s_linear_infinite] opacity-20">
         <circle cx="200" cy="200" r="190" fill="none" stroke="currentColor" strokeWidth="1" strokeDasharray="5 5" />
         <circle cx="200" cy="200" r="150" fill="none" stroke="currentColor" strokeWidth="0.5" />

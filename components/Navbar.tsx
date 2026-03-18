@@ -48,17 +48,17 @@ export default function Navbar() {
       </nav>
 
       {/* Sub-header CTA - Hidden on mobile to save vertical space */}
-      <div className="hidden md:block bg-crimson text-white py-3 px-4 border-t border-white/10 shadow-2xl relative z-[1000]">
+      <div className="hidden md:block bg-crimson text-white py-1 px-4 border-t border-white/10 shadow-2xl relative z-[1000]">
         <div className="max-w-7xl mx-auto flex items-center justify-between gap-4">
-          <p className="hidden md:block text-xs font-black uppercase tracking-[0.2em] text-white/90 italic">
+          <p className="hidden md:block text-[10px] font-black uppercase tracking-[0.2em] text-white/90 italic">
             &quot;Astrology Is Just A Finger Pointing At Reality&quot;
           </p>
           
-          <a href="tel:+919929563493" className="flex-1 md:flex-none flex items-center justify-center gap-4">
-            <div className="w-8 h-8 md:w-12 md:h-12 rounded-full bg-white flex items-center justify-center shrink-0 shadow-2xl animate-bounce">
-              <Phone size={18} className="text-crimson md:w-6 md:h-6" fill="currentColor" />
+          <a href="tel:+919929563493" className="flex-1 md:flex-none flex items-center justify-center gap-3">
+            <div className="w-6 h-6 md:w-8 md:h-8 rounded-full bg-white flex items-center justify-center shrink-0 shadow-2xl animate-bounce">
+              <Phone size={14} className="text-crimson md:w-4 md:h-4" fill="currentColor" />
             </div>
-            <span className="text-sm md:text-2xl font-black uppercase tracking-tighter drop-shadow-md">Every Problem Solution In One Phone Call</span>
+            <span className="text-sm md:text-lg font-black uppercase tracking-tighter drop-shadow-md">Every Problem Solution In One Phone Call</span>
           </a>
 
           <div className="hidden lg:flex items-center gap-2 text-xs font-black uppercase tracking-widest text-saffron">

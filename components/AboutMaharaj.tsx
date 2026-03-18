@@ -1,69 +1,41 @@
 "use client";
 
-import { useEffect, useRef } from "react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useLanguage } from "@/context/LanguageContext";
 import { Star, ShieldCheck, Heart, Sparkles } from "lucide-react";
 import Image from "next/image";
 import MandalaSVG from "./MandalaSVG";
 
-if (typeof window !== "undefined") {
-  gsap.registerPlugin(ScrollTrigger);
-}
-
 export default function AboutMaharaj() {
-  const sectionRef = useRef(null);
   const { t } = useLanguage();
 
-  useEffect(() => {
-    const timeout = setTimeout(() => {
-      const ctx = gsap.context(() => {
-        gsap.to(".about-reveal", {
-          opacity: 1,
-          x: 0,
-          duration: 1,
-          stagger: 0.2,
-          ease: "power3.out",
-          scrollTrigger: {
-            trigger: sectionRef.current,
-            start: "top 70%",
-          }
-        });
-      }, sectionRef);
-      return () => ctx.revert();
-    }, 100);
-    return () => clearTimeout(timeout);
-  }, [t]);
-
   return (
-    <section ref={sectionRef} id="about" className="py-24 px-4 bg-cream/30 relative overflow-hidden">
+    <section id="about" className="py-6 px-4 bg-cream/30 relative overflow-hidden">
       {/* Decorative Background Mandalas */}
       <MandalaSVG className="absolute -top-24 -left-24 w-96 h-96 text-gold opacity-[0.05] animate-[spin_180s_linear_infinite]" />
       <MandalaSVG className="absolute -bottom-24 -right-24 w-[500px] h-[500px] text-saffron opacity-[0.03] animate-[spin_240s_linear_infinite_reverse]" />
       
-      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16 relative z-10">
+      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-8 relative z-10">
         
         {/* Left Side: Detail */}
-        <div className="about-reveal opacity-0 -translate-x-10 flex-1 order-2 lg:order-1 w-full lg:w-auto">
-          <div className="inline-flex items-center gap-2 bg-saffron/10 text-saffron font-bold px-4 py-1 rounded-full text-xs mb-6 uppercase tracking-widest border border-saffron/20">
-             <Star size={14} fill="currentColor" />
+        <div className="about-reveal flex-1 order-2 lg:order-1 w-full lg:w-auto">
+          <div className="inline-flex items-center gap-2 bg-saffron/10 text-saffron font-bold px-4 py-1 rounded-full text-[10px] mb-1 uppercase tracking-widest border border-saffron/20">
+             <Star size={12} fill="currentColor" />
              {t.about.meetTheMaster}
           </div>
           
-          <h2 className="text-4xl md:text-5xl font-black text-crimson mb-8 leading-none uppercase tracking-tighter">
+          <h2 className="text-3xl md:text-5xl font-black text-crimson mb-2 leading-none uppercase tracking-tighter">
             {t.about.title}
           </h2>
           
-          <div className="space-y-6 text-gray-700 font-medium text-lg leading-relaxed">
+          <div className="space-y-2 text-gray-700 font-medium text-sm md:text-base leading-relaxed">
             <p>{t.about.bio1}</p>
 
-            <p>{t.about.bio2}</p>            <p className="font-bold text-gray-900 border-l-4 border-gold pl-6 py-2 bg-gold/5">
+            <p>{t.about.bio2}</p>            <p className="font-bold text-gray-900 border-l-4 border-gold pl-4 py-1 bg-gold/5 italic text-sm md:text-base">
               &quot;{t.about.quote}&quot; — {t.hero.maharajName}
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mt-4">
             {[
               { title: t.about.vashikaranExp, icon: <Heart size={20} className="text-crimson" fill="currentColor" /> },
               { title: t.about.kalaJadooExp, icon: <ShieldCheck size={20} className="text-gold" /> },
@@ -79,24 +51,32 @@ export default function AboutMaharaj() {
         </div>
 
         {/* Right Side: Image/Graphics */}
-        <div className="about-reveal opacity-0 translate-x-10 flex-1 order-1 lg:order-2 w-full lg:w-auto relative">
-           <div className="relative z-10 w-full aspect-[4/5] rounded-[40px] overflow-hidden shadow-3xl border-8 border-white bg-gradient-to-br from-gold/10 to-saffron/10">
+        <div className="about-reveal flex-1 order-1 lg:order-2 w-full lg:w-auto relative group">
+           {/* Spiritual Aura Particles */}
+           <div className="absolute -top-10 -left-10 w-20 h-20 bg-gold/20 rounded-full blur-2xl animate-pulse"></div>
+           <div className="absolute -bottom-10 -right-10 w-24 h-24 bg-crimson/10 rounded-full blur-2xl animate-pulse delay-700"></div>
+
+           <div className="relative z-10 w-full aspect-[4/5] rounded-[40px] md:rounded-[60px] overflow-hidden shadow-[0_64px_120px_-20px_rgba(212,175,55,0.25)] border-8 border-white bg-gradient-to-br from-gold/10 to-saffron/10">
+             {/* Conic Glow Overlay */}
+             <div className="absolute -inset-40 bg-gradient-conic from-gold/20 via-transparent to-gold/20 animate-[spin_20s_linear_infinite] opacity-40 blur-3xl z-0"></div>
+             
              <Image 
                src="/images/maharaj.png" 
                alt={t.hero.maharajName}
                fill
-               className="object-cover"
+               className="object-cover z-0 grayscale-[30%] group-hover:grayscale-0 transition-all duration-1000 scale-105 group-hover:scale-110"
                sizes="(max-width: 768px) 100vw, 450px"
              />
-             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
-             <div className="absolute bottom-8 left-0 w-full text-center text-white px-6">
-               <div className="text-sm font-black uppercase tracking-[0.3em] mb-2">{t.about.awardWinner}</div>
-               <div className="text-3xl font-black italic uppercase leading-none">{t.hero.maharajName}</div>
+             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent z-10"></div>
+             <div className="absolute bottom-10 left-0 w-full text-center text-white px-8 z-20">
+               <div className="text-xs font-black uppercase tracking-[0.4em] mb-3 text-saffron drop-shadow-lg">{t.about.awardWinner}</div>
+               <div className="text-4xl font-black italic uppercase leading-none drop-shadow-2xl">{t.hero.maharajName}</div>
              </div>
            </div>
-           <div className="absolute -top-6 -right-6 w-32 h-32 bg-gold text-white rounded-full flex flex-col items-center justify-center text-center p-4 shadow-xl z-20 border-4 border-white rotate-12">
-              <div className="text-xl font-black leading-none mb-1">20+</div>
-              <div className="text-[10px] font-bold uppercase leading-none">{t.about.yrsExp}</div>
+           
+           <div className="absolute -top-8 -right-8 w-36 h-36 bg-gold text-white rounded-full flex flex-col items-center justify-center text-center p-6 shadow-2xl z-30 border-8 border-white rotate-12 hover:rotate-0 transition-transform duration-500">
+              <div className="text-3xl font-black leading-none mb-1">20+</div>
+              <div className="text-[11px] font-black uppercase leading-tight tracking-widest">{t.about.yrsExp}</div>
            </div>
         </div>
 

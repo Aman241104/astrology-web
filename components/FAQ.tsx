@@ -17,28 +17,28 @@ export default function FAQ() {
   ];
 
   return (
-    <section className="py-20 bg-white px-4">
+    <section className="py-6 bg-white px-4">
       <div className="max-w-3xl mx-auto">
-        <div className="text-center mb-12">
-          <h2 className="text-2xl md:text-5xl font-black text-crimson mb-4 uppercase tracking-tight flex items-center justify-center gap-2 md:gap-3">
-            <HelpCircle className="text-gold w-6 h-6 md:w-8 md:h-8" />
+        <div className="text-center mb-4">
+          <h2 className="text-xl md:text-3xl font-black text-crimson mb-1 uppercase tracking-tight flex items-center justify-center gap-2 md:gap-3">
+            <HelpCircle className="text-gold w-5 h-5 md:w-6 md:h-6" />
             {t.faq.title}
           </h2>
-          <p className="text-gray-500 font-bold uppercase tracking-widest text-xs">{t.faq.sub}</p>
+          <p className="text-gray-500 font-bold uppercase tracking-widest text-[9px]">{t.faq.sub}</p>
         </div>
 
-        <div className="space-y-4">
+        <div className="space-y-2">
           {faqs.map((f, i) => (
-            <div key={i} className="border border-gold/10 rounded-2xl overflow-hidden bg-cream/20">
+            <div key={i} className="border border-gold/10 rounded-lg overflow-hidden bg-cream/20">
               <button 
                 onClick={() => setOpenIndex(openIndex === i ? null : i)}
-                className="w-full flex items-center justify-between p-6 text-left hover:bg-gold/5 transition-colors"
+                className="w-full flex items-center justify-between p-3 md:p-4 text-left hover:bg-gold/5 transition-colors"
               >
-                <span className="font-bold text-gray-800 text-lg">{f.q}</span>
-                {openIndex === i ? <ChevronUp className="text-saffron" /> : <ChevronDown className="text-gray-400" />}
+                <span className="font-bold text-gray-800 text-sm md:text-base">{f.q}</span>
+                {openIndex === i ? <ChevronUp className="text-saffron" size={18} /> : <ChevronDown className="text-gray-400" size={18} />}
               </button>
               {openIndex === i && (
-                <div className="p-6 pt-0 text-gray-600 font-medium leading-relaxed border-t border-gold/5 bg-white/50">
+                <div className="p-3 md:p-4 pt-0 text-gray-600 font-medium text-xs md:text-sm leading-relaxed border-t border-gold/5 bg-white/50">
                   {f.a}
                 </div>
               )}

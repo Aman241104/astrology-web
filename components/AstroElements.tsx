@@ -20,9 +20,6 @@ const AstroElements = () => {
       delay: `${Math.random() * 5}s`,
       duration: `${Math.random() * 3 + 2}s`
     }));
-    setStars(newStars);
-
-    // Generate random floating zodiac signs
     const newZodiacs = Array.from({ length: 12 }).map((_, i) => ({
       id: i,
       top: `${Math.random() * 100}%`,
@@ -32,7 +29,13 @@ const AstroElements = () => {
       duration: `${Math.random() * 10 + 10}s`,
       size: Math.random() * 20 + 20
     }));
-    setZodiacs(newZodiacs);
+
+    const timer = setTimeout(() => {
+      setStars(newStars);
+      setZodiacs(newZodiacs);
+    }, 0);
+
+    return () => clearTimeout(timer);
   }, []);
 
   return (

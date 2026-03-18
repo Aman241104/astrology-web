@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { MessageCircle, Phone } from "lucide-react";
+import { MessageCircle, Phone, X } from "lucide-react";
 
 const locations = ["Mumbai", "Delhi", "Ahmedabad", "Surat", "London", "Dubai", "New York", "Bangalore", "Pune", "Jaipur"];
 const names = ["Rahul", "Priya", "Amit", "Sneh", "Ibrahim", "Ankit", "Deepa", "Vikram", "Meera", "Karan"];
@@ -40,8 +40,14 @@ export default function SocialProofToast() {
   if (!visible) return null;
 
   return (
-    <div className="fixed top-24 left-4 right-4 md:top-auto md:bottom-24 md:left-4 md:right-auto z-[60] animate-bounce-in max-w-[280px] md:max-w-sm mx-auto md:mx-0">
-      <div className="bg-white/95 backdrop-blur shadow-2xl rounded-2xl p-3 md:p-4 border border-gold/20 flex items-center gap-3 md:gap-4">
+    <div className="fixed top-24 left-4 right-4 md:top-auto md:bottom-24 md:left-4 md:right-auto z-[60] animate-bounce-in max-w-[280px] md:max-w-sm mx-auto md:mx-0 group">
+      <div className="bg-white/95 backdrop-blur shadow-2xl rounded-2xl p-3 md:p-4 border border-gold/20 flex items-center gap-3 md:gap-4 relative overflow-hidden">
+        <button 
+          onClick={() => setVisible(false)}
+          className="absolute top-1 right-1 p-1 text-gray-400 hover:text-crimson transition-colors rounded-full hover:bg-gray-100"
+        >
+          <X size={14} />
+        </button>
         <div className={`w-8 h-8 md:w-10 md:h-10 rounded-full flex items-center justify-center shrink-0 ${data.type === 'call' ? 'bg-crimson' : 'bg-saffron'}`}>
           {data.type === 'call' ? <Phone size={14} fill="white" className="text-white md:w-[18px] md:h-[18px]" /> : <MessageCircle size={14} fill="white" className="text-white md:w-[18px] md:h-[18px]" />}
         </div>

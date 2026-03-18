@@ -7,26 +7,26 @@
 
 ## 2. Hero Section (The "Immediate Solution" Hook)
 *   **Headline (H1):** 🕉️ World's No.1 Astrologer Vishvanath Maharaj
-*   **Sub-headline:** Get 100% Guaranteed Solutions for All Your Life Problems within 24 Hours. **Pay After Results - No Advance Required.**
+*   **Sub-headline:** Get Effective Solutions for All Your Life Problems within 24 Hours. **Complete Privacy & 100% Satisfaction.**
 *   **Key Points:**
     *   20+ Years of Vedic Experience
     *   50,000+ Happy Clients Globally
-    *   100% Risk-Free & Permanent Results
+    *   Risk-Free & Permanent Results
 *   **Primary CTA:** [Chat on WhatsApp Now] (Green, large, GSAP floating effect)
 *   **Secondary CTA:** [Talk to Guruji for FREE]
 
 ## 3. Trust Bar (Proof & Authority)
 *   **Badges:**
     *   Verified Vedic Expert
-    *   100% Confidentiality
+    *   Complete Confidentiality
     *   Result in 24-48 Hours
-    *   No Fees Before Results
+    *   100% Satisfaction Guaranteed
 
 ## 4. Main Services Grid (Expanded Categories)
 *   **Block 1: Love Marriage & Intercaste Marriage**
     *   *Text:* Convince parents for love marriage. Resolve intercaste obstacles instantly with Vedic remedies.
 *   **Block 2: Get Lost Love Back (Vashikaran)**
-    *   *Text:* Bring back your ex-partner or desired person in your life within 24 hours. Permanent bond guaranteed.
+    *   *Text:* Bring back your ex-partner or desired person in your life within 24 hours. Permanent bond.
 *   **Block 3: Stop Divorce & Family Disputes**
     *   *Text:* Resolve husband-wife arguments, stop separation, and end extra-marital affairs permanently.
 *   **Block 4: Business, Job & Financial Growth**
@@ -36,7 +36,7 @@
 *   **Block 6: Childless Couple & Health Issues**
     *   *Text:* Specialized remedies for couples facing childbirth issues or chronic health problems.
 
-## 5. Our Guarantee (The Conversion Hook)
+## 5. Our Commitment (The Conversion Hook)
 ... [existing content] ...
 
 ## 6. Meet India’s Renowned Astrologer Vishvanath Maharaj (Detailed Bio)
@@ -53,7 +53,7 @@
 
 ## 5. About Maharaj (The "Guru" Narrative)
 *   **Headline:** Meet India’s Renowned Astrologer Vishvanath Maharaj
-*   **Copy:** With over two decades of experience, Vishvanath Maharaj has helped thousands of people navigate life's toughest challenges. Specialized in Vedic Astrology, Vashikaran, and Black Magic removal, Maharaj is known for his compassionate guidance and 100% accurate predictions.
+*   **Copy:** With over two decades of experience, Vishvanath Maharaj has helped thousands of people navigate life's toughest challenges. Specialized in Vedic Astrology, Vashikaran, and Black Magic removal, Maharaj is known for his compassionate guidance and accurate predictions.
 
 ## 6. Testimonials (The Social Proof)
 *   **Testimonial 1:** "I was about to lose my love, but Maharaj's remedies worked in just 3 days! We are now happily married." - *Riya S.*
@@ -61,7 +61,7 @@
 
 ## 7. FAQ Section (Handling Objections)
 *   **Q: Is my consultation private?**
-    *   *A:* Yes, 100%. We never share client details with anyone.
+    *   *A:* Yes, Complete. We never share client details with anyone.
 *   **Q: How long does it take to see results?**
     *   *A:* Most clients experience positive changes within 24 to 48 hours.
 
