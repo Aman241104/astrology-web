@@ -18,7 +18,7 @@ import StickyCTAs from "@/components/StickyCTAs";
 import SocialProofToast from "@/components/SocialProofToast";
 import WhatsAppWidget from "@/components/WhatsAppWidget";
 import { useLanguage } from "@/context/LanguageContext";
-import { QrCode } from "lucide-react";
+import { QrCode, Star } from "lucide-react";
 
 export default function Home() {
   const { t } = useLanguage();
@@ -41,29 +41,42 @@ export default function Home() {
         <WorkingProcess />
         
         {/* Testimonials */}
-        <section className="py-16 md:py-24 px-4 bg-white overflow-hidden">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-2xl md:text-4xl font-black text-center text-crimson mb-3 uppercase tracking-tight">
-            {t.testimonials.title}
-          </h2>
+        <section className="py-24 md:py-32 px-4 bg-white overflow-hidden relative">
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[1000px] bg-gold/5 rounded-full blur-[100px] pointer-events-none"></div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            {[
-              { text: t.testimonials.t1Text, name: t.testimonials.t1Name },
-              { text: t.testimonials.t2Text, name: t.testimonials.t2Name },
-              { text: t.testimonials.t3Text, name: t.testimonials.t3Name }
-            ].map((test, i) => (
-              <div key={i} className="bg-cream/40 p-4 rounded-2xl shadow-sm border border-gold/10 hover:shadow-lg transition-shadow">
-                <div className="flex gap-1 mb-2">
-                   {[...Array(5)].map((_, j) => <span key={j} className="text-gold text-xs">★</span>)}
-                </div>
-                <p className="text-gray-700 italic mb-2 font-medium text-xs md:text-sm">&quot;{test.text}&quot;</p>
-                <div className="font-black text-crimson italic tracking-widest text-[10px]">{test.name}</div>
+          <div className="max-w-7xl mx-auto relative z-10">
+            <div className="text-center mb-16 md:mb-24">
+              <div className="inline-block bg-crimson/10 text-crimson px-6 py-2 rounded-full font-black text-xs md:text-sm uppercase tracking-[0.3em] mb-4 border border-crimson/20">
+                Testimonials
               </div>
-            ))}
+              <h2 className="text-4xl md:text-6xl font-black text-crimson mb-6 uppercase tracking-tighter drop-shadow-sm">
+                {t.testimonials.title}
+              </h2>
+              <div className="w-24 h-1 bg-gold/30 mx-auto rounded-full"></div>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+              {[
+                { text: t.testimonials.t1Text, name: t.testimonials.t1Name },
+                { text: t.testimonials.t2Text, name: t.testimonials.t2Name },
+                { text: t.testimonials.t3Text, name: t.testimonials.t3Name }
+              ].map((test, i) => (
+                <div key={i} className="group bg-cream/20 p-8 md:p-12 rounded-[40px] shadow-[0_20px_50px_rgba(212,175,55,0.05)] border border-gold/10 hover:shadow-[0_40px_100px_rgba(212,175,55,0.15)] transition-all duration-500 hover:-translate-y-3 hover:bg-white">
+                  <div className="flex gap-1.5 mb-6">
+                     {[...Array(5)].map((_, j) => <Star key={j} className="text-gold fill-gold" size={18} />)}
+                  </div>
+                  <p className="text-gray-700 italic mb-8 font-bold text-lg md:text-xl leading-relaxed text-shadow-sm">&quot;{test.text}&quot;</p>
+                  <div className="flex items-center gap-4">
+                    <div className="w-12 h-12 rounded-full bg-crimson/10 flex items-center justify-center font-black text-crimson italic shadow-inner">
+                      {test.name.charAt(0)}
+                    </div>
+                    <div className="font-black text-crimson italic tracking-widest text-xs md:text-sm uppercase">{test.name}</div>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
       <FAQ />
 
