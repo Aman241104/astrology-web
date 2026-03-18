@@ -8,10 +8,10 @@ export default function RitualGallery() {
   const { t } = useLanguage();
 
   const gallery = [
-    { label: "Maha Havan", img: "/images/rituals/maha-havan.png" },
-    { label: "Vedic Pooja", img: "/images/rituals/vedic-pooja.png" },
-    { label: "Astro Ritual", img: "/images/rituals/astro-ritual.png" },
-    { label: "Mantra Siddhi", img: "/images/rituals/mantra-siddhi.png" },
+    { label: "Maha Havan", img: "/images/rituals/maha-havan-3842912874.png" },
+    { label: "Vedic Pooja", img: "/images/rituals/vedic-pooja-3842959859.png" },
+    { label: "Astro Ritual", img: "/images/rituals/astro-ritual-3843005940.png" },
+    { label: "Mantra Siddhi", img: "/images/rituals/mantra-siddhi-3843060169.png" },
   ];
 
   return (

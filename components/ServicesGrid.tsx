@@ -13,25 +13,25 @@ export default function ServicesGrid() {
     { 
       title: t.services.loveMarriage.title, 
       desc: t.services.loveMarriage.desc, 
-      img: "/images/services/love-marriage.png",
+      img: "/images/services/love-marriage-3842579264.png",
       icon: <Heart size={20} className="text-white" fill="currentColor" />
     },
     { 
       title: t.services.getLoveBack.title, 
       desc: t.services.getLoveBack.desc, 
-      img: "/images/services/get-love-back.png",
+      img: "/images/services/get-love-back-1773844157683.png",
       icon: <Users size={20} className="text-white" fill="currentColor" />
     },
     { 
       title: t.services.stopDivorce.title, 
       desc: t.services.stopDivorce.desc, 
-      img: "/images/services/stop-divorce.png",
+      img: "/images/services/stop-divorce-3842628694.png",
       icon: <Home size={20} className="text-white" fill="currentColor" />
     },
     { 
       title: t.services.blackMagic.title, 
       desc: t.services.blackMagic.desc, 
-      img: "/images/services/black-magic.png",
+      img: "/images/services/black-magic-3842692124.png",
       icon: <ShieldAlert size={20} className="text-white" fill="currentColor" />
     },
     { 
@@ -43,7 +43,7 @@ export default function ServicesGrid() {
     { 
       title: t.services.muthkarni.title, 
       desc: t.services.muthkarni.desc, 
-      img: "/images/services/muthkarni.png",
+      img: "/images/services/muthkarni-3842830963.png",
       icon: <Users size={20} className="text-white" fill="currentColor" />
     },
   ];

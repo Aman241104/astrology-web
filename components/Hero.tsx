@@ -83,7 +83,7 @@ export default function Hero() {
         {/* Right Side: Image/Video Container */}
         <div className="reveal-img relative w-full lg:w-[450px] aspect-[4/5] bg-gradient-to-tr from-saffron/20 to-gold/20 rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
            <video 
-             src="/images/hero-main.mp4" 
+             src="/images/hero-main-pinterest.mp4" 
              className="w-full h-full object-cover"
              autoPlay 
              loop 
