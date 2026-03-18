@@ -81,15 +81,64 @@ export default function Home() {
       <FAQ />
 
       {/* Global & Regional Presence Banner */}
-      <section className="bg-gold/10 py-12 md:py-20 px-4 border-y border-gold/20">
-         <div className="max-w-7xl mx-auto text-center">
-            <h3 className="text-sm md:text-lg font-black text-gray-800 uppercase mb-2 tracking-tighter">Serving Major Cities Across India & Globally</h3>
-            <div className="flex flex-wrap justify-center gap-2 md:gap-4 font-bold text-gray-500 text-[8px] md:text-xs max-w-5xl mx-auto uppercase tracking-widest leading-loose">
-               <span>Mumbai</span> <span>•</span> <span>Delhi</span> <span>•</span> <span>Bangalore</span> <span>•</span> <span>Hyderabad</span> <span>•</span> <span>Ahmedabad</span> <span>•</span> 
-               <span>Chennai</span> <span>•</span> <span>Kolkata</span> <span>•</span> <span>Surat</span> <span>•</span> <span>Pune</span> <span>•</span> <span>Jaipur</span> <span>•</span> 
-               <span>Lucknow</span> <span>•</span> <span>Kanpur</span> <span>•</span> <span>Nagpur</span> <span>•</span> <span>Indore</span> <span>•</span> <span>Thane</span> <span>•</span> 
-               <span>Bhopal</span> <span>•</span> <span>Patna</span> <span>•</span> <span>Vadodara</span> <span>•</span> <span>UAE</span> <span>•</span> <span>USA</span> <span>•</span> 
-               <span>UK</span> <span>•</span> <span>Canada</span> <span>•</span> <span>Australia</span>
+      <section className="bg-gold/5 py-16 md:py-24 px-4 relative overflow-hidden">
+         {/* Decorative Border with Pattern */}
+         <div className="absolute top-0 left-0 w-full h-2 bg-[radial-gradient(circle,rgba(212,175,55,0.4)_1px,transparent_1px)] bg-[length:16px_16px]"></div>
+         <div className="absolute bottom-0 left-0 w-full h-2 bg-[radial-gradient(circle,rgba(212,175,55,0.4)_1px,transparent_1px)] bg-[length:16px_16px]"></div>
+         
+         <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-gold to-transparent"></div>
+         <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-gold to-transparent"></div>
+
+         <div className="max-w-7xl mx-auto text-center relative z-10">
+            <div className="inline-block bg-white px-6 py-2 rounded-full border border-gold/30 shadow-sm mb-6">
+              <h3 className="text-xs md:text-sm font-black text-crimson uppercase tracking-[0.4em]">Serving Major Cities Across India & Globally</h3>
+            </div>
+            <div className="flex flex-wrap justify-center gap-x-6 gap-y-4 font-black text-gray-400 text-[10px] md:text-sm max-w-6xl mx-auto uppercase tracking-[0.2em] leading-relaxed">
+               <span className="hover:text-gold transition-colors cursor-default">Mumbai</span>
+               <span className="text-gold/30">•</span>
+               <span className="hover:text-gold transition-colors cursor-default">Delhi</span>
+               <span className="text-gold/30">•</span>
+               <span className="hover:text-gold transition-colors cursor-default">Bangalore</span>
+               <span className="text-gold/30">•</span>
+               <span className="hover:text-gold transition-colors cursor-default">Hyderabad</span>
+               <span className="text-gold/30">•</span>
+               <span className="hover:text-gold transition-colors cursor-default">Ahmedabad</span>
+               <span className="text-gold/30">•</span>
+               <span className="hover:text-gold transition-colors cursor-default">Chennai</span>
+               <span className="text-gold/30">•</span>
+               <span className="hover:text-gold transition-colors cursor-default">Kolkata</span>
+               <span className="text-gold/30">•</span>
+               <span className="hover:text-gold transition-colors cursor-default">Surat</span>
+               <span className="text-gold/30">•</span>
+               <span className="hover:text-gold transition-colors cursor-default">Pune</span>
+               <span className="text-gold/30">•</span>
+               <span className="hover:text-gold transition-colors cursor-default">Jaipur</span>
+               <span className="text-gold/30">•</span>
+               <span className="hover:text-gold transition-colors cursor-default">Lucknow</span>
+               <span className="text-gold/30">•</span>
+               <span className="hover:text-gold transition-colors cursor-default">Kanpur</span>
+               <span className="text-gold/30">•</span>
+               <span className="hover:text-gold transition-colors cursor-default">Nagpur</span>
+               <span className="text-gold/30">•</span>
+               <span className="hover:text-gold transition-colors cursor-default">Indore</span>
+               <span className="text-gold/30">•</span>
+               <span className="hover:text-gold transition-colors cursor-default">Thane</span>
+               <span className="text-gold/30">•</span>
+               <span className="hover:text-gold transition-colors cursor-default">Bhopal</span>
+               <span className="text-gold/30">•</span>
+               <span className="hover:text-gold transition-colors cursor-default">Patna</span>
+               <span className="text-gold/30">•</span>
+               <span className="hover:text-gold transition-colors cursor-default">Vadodara</span>
+               <span className="text-gold/30">•</span>
+               <span className="hover:text-gold transition-colors cursor-default text-crimson">UAE</span>
+               <span className="text-gold/30">•</span>
+               <span className="hover:text-gold transition-colors cursor-default text-crimson">USA</span>
+               <span className="text-gold/30">•</span>
+               <span className="hover:text-gold transition-colors cursor-default text-crimson">UK</span>
+               <span className="text-gold/30">•</span>
+               <span className="hover:text-gold transition-colors cursor-default text-crimson">Canada</span>
+               <span className="text-gold/30">•</span>
+               <span className="hover:text-gold transition-colors cursor-default text-crimson">Australia</span>
             </div>
          </div>
       </section>

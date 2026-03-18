@@ -7,8 +7,12 @@ export default function VishvaBanner() {
   const { t } = useLanguage();
 
   return (
-    <section className="bg-white py-10 md:py-14 border-b border-gold/10">
-      <div className="max-w-7xl mx-auto px-4">
+    <section className="bg-white py-12 md:py-16 relative overflow-hidden border-b-4 border-gold/10">
+      {/* Decorative background element */}
+      <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-gold/30 to-transparent"></div>
+      <div className="absolute top-0 right-0 w-64 h-64 bg-gold/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+      
+      <div className="max-w-7xl mx-auto px-4 relative z-10">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-8 md:gap-12">
           
           {/* Left: Rating & Name */}
