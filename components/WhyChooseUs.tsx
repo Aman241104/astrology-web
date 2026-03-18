@@ -20,7 +20,7 @@ export default function WhyChooseUs() {
   if (!t.whyChooseUs) return null;
 
   return (
-    <section className="relative py-4 px-4 bg-crimson overflow-hidden min-h-[300px] flex items-center">
+    <section className="relative py-16 md:py-24 px-4 bg-crimson overflow-hidden min-h-[300px] flex items-center">
       {/* Bokeh Background Elements */}
       <div className="absolute inset-0 z-0 pointer-events-none">
         {bokehElements.map((el) => (

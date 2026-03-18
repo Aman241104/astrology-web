@@ -9,7 +9,7 @@ export default function AboutMaharaj() {
   const { t } = useLanguage();
 
   return (
-    <section id="about" className="py-6 px-4 bg-cream/30 relative overflow-hidden">
+    <section id="about" className="py-16 md:py-24 px-4 bg-cream/30 relative overflow-hidden">
       {/* Decorative Background Mandalas */}
       <MandalaSVG className="absolute -top-24 -left-24 w-96 h-96 text-gold opacity-[0.05] animate-[spin_180s_linear_infinite]" />
       <MandalaSVG className="absolute -bottom-24 -right-24 w-[500px] h-[500px] text-saffron opacity-[0.03] animate-[spin_240s_linear_infinite_reverse]" />
@@ -74,9 +74,10 @@ export default function AboutMaharaj() {
              </div>
            </div>
            
-           <div className="absolute -top-8 -right-8 w-36 h-36 bg-gold text-white rounded-full flex flex-col items-center justify-center text-center p-6 shadow-2xl z-30 border-8 border-white rotate-12 hover:rotate-0 transition-transform duration-500">
-              <div className="text-3xl font-black leading-none mb-1">20+</div>
-              <div className="text-[11px] font-black uppercase leading-tight tracking-widest">{t.about.yrsExp}</div>
+           <div className="absolute -top-12 -right-12 w-44 h-44 bg-gradient-to-br from-gold to-saffron text-white rounded-full flex flex-col items-center justify-center text-center p-6 shadow-[0_20px_50px_rgba(212,175,55,0.4)] z-30 border-[12px] border-white rotate-12 hover:rotate-0 transition-all duration-700 cursor-default group/badge">
+              <div className="text-4xl font-black leading-none mb-1 group-hover/badge:scale-110 transition-transform">20+</div>
+              <div className="text-[10px] font-black uppercase leading-tight tracking-[0.2em] opacity-90">{t.about.yrsExp}</div>
+              <div className="absolute inset-0 rounded-full border-2 border-white/20 animate-ping opacity-20"></div>
            </div>
         </div>
 

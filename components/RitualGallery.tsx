@@ -15,7 +15,7 @@ export default function RitualGallery() {
   ];
 
   return (
-    <section className="py-6 px-4 bg-cream/20 overflow-hidden">
+    <section className="py-16 md:py-24 px-4 bg-cream/20 overflow-hidden">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-3">
           <h2 className="text-2xl md:text-4xl font-black text-crimson mb-1 uppercase tracking-tighter">

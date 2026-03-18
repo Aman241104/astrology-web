@@ -41,7 +41,7 @@ export default function Home() {
         <WorkingProcess />
         
         {/* Testimonials */}
-        <section className="py-6 px-4 bg-white overflow-hidden">
+        <section className="py-16 md:py-24 px-4 bg-white overflow-hidden">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-2xl md:text-4xl font-black text-center text-crimson mb-3 uppercase tracking-tight">
             {t.testimonials.title}
@@ -68,7 +68,7 @@ export default function Home() {
       <FAQ />
 
       {/* Global & Regional Presence Banner */}
-      <section className="bg-gold/10 py-4 px-4 border-y border-gold/20">
+      <section className="bg-gold/10 py-12 md:py-20 px-4 border-y border-gold/20">
          <div className="max-w-7xl mx-auto text-center">
             <h3 className="text-sm md:text-lg font-black text-gray-800 uppercase mb-2 tracking-tighter">Serving Major Cities Across India & Globally</h3>
             <div className="flex flex-wrap justify-center gap-2 md:gap-4 font-bold text-gray-500 text-[8px] md:text-xs max-w-5xl mx-auto uppercase tracking-widest leading-loose">
@@ -82,7 +82,7 @@ export default function Home() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-6 px-4 bg-crimson text-white text-center relative overflow-hidden">
+      <section className="py-16 md:py-24 px-4 bg-crimson text-white text-center relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?auto=format&fit=crop&q=80&w=1600')] bg-cover bg-center mix-blend-overlay opacity-30 pointer-events-none"></div>
         <div className="absolute inset-0 bg-gradient-to-t from-crimson via-transparent to-transparent"></div>
         

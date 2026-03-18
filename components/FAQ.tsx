@@ -17,7 +17,7 @@ export default function FAQ() {
   ];
 
   return (
-    <section className="py-6 bg-white px-4">
+    <section className="py-16 md:py-24 bg-white px-4">
       <div className="max-w-3xl mx-auto">
         <div className="text-center mb-4">
           <h2 className="text-xl md:text-3xl font-black text-crimson mb-1 uppercase tracking-tight flex items-center justify-center gap-2 md:gap-3">

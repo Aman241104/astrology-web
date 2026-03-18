@@ -28,7 +28,7 @@ export default function WorkingProcess() {
   ];
 
   return (
-    <section className="py-4 bg-cream/50 px-4 relative overflow-hidden">
+    <section className="py-16 md:py-24 bg-cream/50 px-4 relative overflow-hidden">
       {/* Background Astrology Pattern */}
       <div className="absolute inset-0 opacity-[0.03] pointer-events-none overflow-hidden">
         <div className="absolute top-1/2 left-0 -translate-y-1/2 w-[600px] h-[600px] border border-gold/40 rounded-full"></div>

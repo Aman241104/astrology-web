@@ -23,7 +23,7 @@ export default function LeadForm() {
   }
 
   return (
-    <section id="contact" className="py-6 px-4 bg-gradient-to-tr from-saffron/5 to-gold/5">
+    <section id="contact" className="py-16 md:py-24 px-4 bg-gradient-to-tr from-saffron/5 to-gold/5">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-6">
         
         <div className="flex-1">

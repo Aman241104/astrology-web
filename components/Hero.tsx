@@ -9,7 +9,7 @@ export default function Hero() {
   const { t } = useLanguage();
 
   return (
-    <section className="pt-24 md:pt-40 pb-0 px-4 bg-white overflow-hidden relative">
+    <section className="pt-32 md:pt-48 pb-16 md:pb-24 px-4 bg-white overflow-hidden relative">
       {/* Background Astrology Pattern - Simplified */}
       <div className="absolute inset-0 opacity-[0.05] pointer-events-none overflow-hidden">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] border-2 border-gold rounded-full opacity-20"></div>
@@ -80,15 +80,15 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Right Side: Image Placeholder */}
+        {/* Right Side: Image/Video Container */}
         <div className="reveal-img relative w-full lg:w-[450px] aspect-[4/5] bg-gradient-to-tr from-saffron/20 to-gold/20 rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
-           <Image 
-             src="/images/hero-new.png" 
-             alt="Love & Relationship Problem Solution"
-             fill
-             priority
-             className="object-cover"
-             sizes="(max-width: 768px) 100vw, 450px"
+           <video 
+             src="/images/hero-main.mp4" 
+             className="w-full h-full object-cover"
+             autoPlay 
+             loop 
+             muted 
+             playsInline
            />
            {/* Gradient Overlay */}
            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>

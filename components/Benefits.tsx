@@ -26,7 +26,7 @@ export default function Benefits() {
   ];
 
   return (
-    <section className="py-6 px-4 bg-white overflow-hidden relative">
+    <section className="py-16 md:py-24 px-4 bg-white overflow-hidden relative">
       <MandalaSVG className="absolute top-0 right-0 w-[600px] h-[600px] text-gold opacity-[0.03] translate-x-1/2 -translate-y-1/2" />
       <MandalaSVG className="absolute bottom-0 left-0 w-[400px] h-[400px] text-saffron opacity-[0.02] -translate-x-1/2 translate-y-1/2" />
       
