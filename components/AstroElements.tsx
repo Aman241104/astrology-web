@@ -3,25 +3,25 @@
 import React, { useEffect, useState } from 'react';
 
 const AstroElements = () => {
-  const [stars, setStars] = useState<{ id: number; top: string; left: string; size: number; delay: string; duration: string }[]>([]);
-
-  useEffect(() => {
-    // Generate random stars
-    const newStars = Array.from({ length: 40 }).map((_, i) => ({
+  const [hasMounted, setHasMounted] = useState(false);
+  const [stars] = useState(() => 
+    Array.from({ length: 40 }).map((_, i) => ({
       id: i,
       top: `${Math.random() * 100}%`,
       left: `${Math.random() * 100}%`,
       size: Math.random() * 2 + 1,
       delay: `${Math.random() * 5}s`,
       duration: `${Math.random() * 3 + 2}s`
-    }));
+    }))
+  );
 
-    setStars(newStars);
+  useEffect(() => {
+    setHasMounted(true);
   }, []);
 
   return (
     <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden opacity-[0.15]">
-      {stars.map((star) => (
+      {hasMounted && stars.map((star) => (
         <div
           key={`star-${star.id}`}
           className="absolute bg-white rounded-full animate-pulse shadow-[0_0_15px_rgba(255,255,255,0.8)]"

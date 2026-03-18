@@ -2,21 +2,28 @@
 
 import { useLanguage } from "@/context/LanguageContext";
 import { Star } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import WhatsAppIcon from "./WhatsAppIcon";
 
 export default function WhyChooseUs() {
   const { t } = useLanguage();
-  const [bokehElements] = useState(() => {
-    return [...Array(20)].map((_, i) => ({
+  const [hasMounted, setHasMounted] = useState(false);
+  const [bokehElements] = useState(() => 
+    [...Array(20)].map((_, i) => ({
       id: i,
       width: `${Math.random() * 120 + 30}px`,
       height: `${Math.random() * 120 + 30}px`,
       top: `${Math.random() * 100}%`,
       left: `${Math.random() * 100}%`,
       opacity: Math.random() * 0.4,
-    }));
-  });
+      delay: `${Math.random() * 5}s`,
+      duration: `${Math.random() * 3 + 2}s`
+    }))
+  );
+
+  useEffect(() => {
+    setHasMounted(true);
+  }, []);
 
   if (!t.whyChooseUs) return null;
 
@@ -24,7 +31,7 @@ export default function WhyChooseUs() {
     <section className="relative py-24 md:py-32 px-4 bg-crimson overflow-hidden min-h-[500px] flex items-center">
       {/* Bokeh Background Elements */}
       <div className="absolute inset-0 z-0 pointer-events-none">
-        {bokehElements.map((el) => (
+        {hasMounted && bokehElements.map((el) => (
           <div
             key={el.id}
             className="absolute rounded-full bg-white/10 blur-[2px] animate-pulse"
@@ -34,8 +41,8 @@ export default function WhyChooseUs() {
               top: el.top,
               left: el.left,
               opacity: el.opacity,
-              animationDelay: `${Math.random() * 5}s`,
-              animationDuration: `${Math.random() * 3 + 2}s`
+              animationDelay: el.delay,
+              animationDuration: el.duration
             }}
           />
         ))}
