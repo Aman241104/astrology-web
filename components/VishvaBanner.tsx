@@ -27,10 +27,10 @@ export default function VishvaBanner() {
                <span className="text-[10px] md:text-xs font-black text-gray-400 ml-2 uppercase tracking-[0.2em]">World Class Expert</span>
             </div>
             <h2 className="text-4xl md:text-6xl font-black text-crimson mb-2 uppercase tracking-tighter leading-tight drop-shadow-sm">
-              {t.hero.maharajName}
+              {t.hero.expertName}
             </h2>
             <div className="inline-flex bg-gold/10 text-gold border border-gold/20 px-4 py-1.5 rounded-full font-black text-[10px] md:text-xs uppercase italic tracking-wider">
-              🏆 10 Times Gold-Medalist Astrologer
+              🏆 World-Renowned Relationship Expert
             </div>
           </div>
 

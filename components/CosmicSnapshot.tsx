@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Heart, Briefcase, Sparkles } from "lucide-react";
+import { Heart, Sparkles } from "lucide-react";
 
 export default function CosmicSnapshot() {
   const [energies, setEnergies] = useState({ love: 0, career: 0, luck: 0 });
@@ -9,15 +9,15 @@ export default function CosmicSnapshot() {
   useEffect(() => {
     // Animate to these values on load
     const timeout = setTimeout(() => {
-      setEnergies({ love: 98, career: 95, luck: 99 });
+      setEnergies({ love: 98, career: 99, luck: 99 });
     }, 500);
     return () => clearTimeout(timeout);
   }, []);
 
   const items = [
     { label: "Love Energy", value: energies.love, icon: <Heart size={14} className="text-crimson" fill="currentColor" />, color: "stroke-crimson" },
-    { label: "Career Path", value: energies.career, icon: <Briefcase size={14} className="text-saffron" fill="currentColor" />, color: "stroke-saffron" },
-    { label: "God's Grace", value: energies.luck, icon: <Sparkles size={14} className="text-gold" fill="currentColor" />, color: "stroke-gold" },
+    { label: "Happiness", value: energies.career, icon: <Sparkles size={14} className="text-saffron" fill="currentColor" />, color: "stroke-saffron" },
+    { label: "Bonding", value: energies.luck, icon: <Heart size={14} className="text-gold" fill="currentColor" />, color: "stroke-gold" },
   ];
 
   return (

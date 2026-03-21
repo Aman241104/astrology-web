@@ -1,10 +1,8 @@
 "use client";
 
 import { useLanguage } from "@/context/LanguageContext";
-import { Heart, Users, Home, Briefcase, ShieldAlert } from "lucide-react";
+import { Heart, Users, Home, HeartOff, MessageCircle, ShieldCheck } from "lucide-react";
 import Image from "next/image";
-import MandalaSVG from "./MandalaSVG";
-import ZodiacWheel from "./ZodiacWheel";
 import WhatsAppIcon from "./WhatsAppIcon";
 
 export default function ServicesGrid() {
@@ -30,22 +28,22 @@ export default function ServicesGrid() {
       icon: <Home size={20} className="text-white" fill="currentColor" />
     },
     { 
-      title: t.services.blackMagic.title, 
-      desc: t.services.blackMagic.desc, 
-      img: "/images/services/black-magic-3842692124.png",
-      icon: <ShieldAlert size={20} className="text-white" fill="currentColor" />
+      title: t.services.relationshipProblem.title, 
+      desc: t.services.relationshipProblem.desc, 
+      img: "/images/new/relationship-issue.png",
+      icon: <HeartOff size={20} className="text-white" fill="currentColor" />
     },
     { 
-      title: t.services.careerMoney.title, 
-      desc: t.services.careerMoney.desc, 
-      img: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=100&w=600&h=400",
-      icon: <Briefcase size={20} className="text-white" fill="currentColor" />
+      title: t.services.loveBackSolution.title, 
+      desc: t.services.loveBackSolution.desc, 
+      img: "/images/services/get-love-back.png",
+      icon: <MessageCircle size={20} className="text-white" fill="currentColor" />
     },
     { 
-      title: t.services.muthkarni.title, 
-      desc: t.services.muthkarni.desc, 
-      img: "/images/services/muthkarni-3842830963.png",
-      icon: <Users size={20} className="text-white" fill="currentColor" />
+      title: t.services.divorceSolution.title, 
+      desc: t.services.divorceSolution.desc, 
+      img: "/images/new/divorce-solution.png",
+      icon: <ShieldCheck size={20} className="text-white" fill="currentColor" />
     },
   ];
 
@@ -53,20 +51,18 @@ export default function ServicesGrid() {
     <section id="services" className="py-20 md:py-32 px-4 bg-[#FFFDF5] relative overflow-hidden">
       {/* Decorative Background */}
       <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1515940175183-6798529cb860?auto=format&fit=crop&q=80&w=2000')] bg-cover bg-center opacity-[0.02]"></div>
-      <MandalaSVG className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1600px] h-[1400px] text-gold opacity-[0.04] animate-[spin_400s_linear_infinite]" />
-      <ZodiacWheel className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1200px] h-[1200px] text-saffron opacity-[0.02]" />
       
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="text-center mb-16 md:mb-24">
           <div className="inline-block bg-saffron/10 text-saffron px-6 py-2 rounded-full font-black text-xs md:text-sm uppercase tracking-[0.4em] mb-4 border border-saffron/20 shadow-sm">
-             {t.services.title && "Our Best Astrological Solutions"}
+             {t.services.title && "Expert Relationship Solutions"}
           </div>
           <h2 className="text-5xl md:text-7xl font-black text-crimson mb-4 uppercase tracking-tighter drop-shadow-md">
             {t.services.title}
           </h2>
           <div className="w-48 h-1.5 bg-gradient-to-r from-transparent via-gold to-transparent mx-auto rounded-full mb-6"></div>
           <p className="text-gray-700 font-bold max-w-3xl mx-auto text-lg md:text-2xl uppercase opacity-90 leading-tight italic tracking-tight">
-            &quot;Talk With Astrologer & He Can Solve Your Problems In Very Short Time...&quot;
+            &quot;Talk with our expert to solve your problems in a very short time...&quot;
           </p>
         </div>
 
@@ -93,7 +89,7 @@ export default function ServicesGrid() {
                   {/* Badge */}
                   <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-4 py-1.5 rounded-full shadow-lg border border-gold/20 flex items-center gap-2">
                     <div className="w-2 h-2 bg-saffron rounded-full animate-pulse"></div>
-                    <span className="text-[10px] font-black text-gray-800 uppercase tracking-widest">Guaranteed Result</span>
+                    <span className="text-[10px] font-black text-gray-800 uppercase tracking-widest">Verified Results</span>
                   </div>
 
                   {/* Icon Over Image */}
@@ -104,7 +100,7 @@ export default function ServicesGrid() {
 
                 {/* Content */}
                 <div className="px-6 pb-8 text-center">
-                  <div className="text-[10px] font-black text-saffron uppercase tracking-[0.4em] mb-2 drop-shadow-sm">Divine Guidance</div>
+                  <div className="text-[10px] font-black text-saffron uppercase tracking-[0.4em] mb-2 drop-shadow-sm">Relationship Expert</div>
                   <h3 className="text-2xl md:text-3xl font-black text-gray-900 mb-3 uppercase tracking-tighter group-hover:text-crimson transition-colors leading-none">{s.title}</h3>
                   <div className="w-12 h-0.5 bg-gold/30 mx-auto mb-4 group-hover:w-24 transition-all duration-500"></div>
                   <p className="text-gray-600 text-sm md:text-base leading-relaxed font-medium mb-8 min-h-[3rem] line-clamp-3 group-hover:line-clamp-none transition-all">{s.desc}</p>
@@ -117,11 +113,6 @@ export default function ServicesGrid() {
                     {t.hero.whatsapp.split(" ")[0]} Now
                   </a>
                 </div>
-              </div>
-
-              {/* Background Zodiac Number (Subtle) */}
-              <div className="absolute -top-16 -right-8 -z-10 text-[15rem] font-black text-gold/[0.03] pointer-events-none select-none italic group-hover:text-gold/[0.06] transition-all duration-700 group-hover:scale-110 group-hover:-rotate-12">
-                {['01', '05', '09', '04', '08', '12'][i % 6]}
               </div>
             </div>
           ))}

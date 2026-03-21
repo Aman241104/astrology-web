@@ -1,7 +1,7 @@
 "use client";
 
 import { useLanguage } from "@/context/LanguageContext";
-import { Star, ShieldCheck, Heart, Sparkles } from "lucide-react";
+import { Star, ShieldCheck, Heart, Sparkles, Users } from "lucide-react";
 import Image from "next/image";
 import MandalaSVG from "./MandalaSVG";
 
@@ -31,16 +31,16 @@ export default function AboutMaharaj() {
             <p>{t.about.bio1}</p>
 
             <p>{t.about.bio2}</p>            <p className="font-bold text-gray-900 border-l-4 border-gold pl-4 py-1 bg-gold/5 italic text-sm md:text-base">
-              &quot;{t.about.quote}&quot; — {t.hero.maharajName}
+              &quot;{t.about.quote}&quot; — {t.hero.expertName}
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mt-4">
             {[
-              { title: t.about.vashikaranExp, icon: <Heart size={20} className="text-crimson" fill="currentColor" /> },
-              { title: t.about.kalaJadooExp, icon: <ShieldCheck size={20} className="text-gold" /> },
-              { title: t.about.kundliExp, icon: <Sparkles size={20} className="text-saffron" /> },
-              { title: t.about.businessExp, icon: <Star size={20} className="text-gold" fill="currentColor" /> },
+              { title: t.about.relationshipExp, icon: <Heart size={20} className="text-crimson" fill="currentColor" /> },
+              { title: t.about.negativeEnergyExp, icon: <ShieldCheck size={20} className="text-gold" /> },
+              { title: t.about.marriageProblemExp, icon: <Sparkles size={20} className="text-saffron" /> },
+              { title: t.about.businessExp, icon: <Users size={20} className="text-blue-600" /> },
             ].map((item, i) => (
               <div key={i} className="flex items-center gap-3 p-4 bg-white rounded-2xl shadow-sm border border-gold/10">
                 {item.icon}
@@ -48,10 +48,10 @@ export default function AboutMaharaj() {
               </div>
             ))}
           </div>
-        </div>
+          </div>
 
-        {/* Right Side: Image/Graphics */}
-        <div className="about-reveal flex-1 order-1 lg:order-2 w-full lg:w-auto relative group">
+          {/* Right Side: Image/Graphics */}
+          <div className="about-reveal flex-1 order-1 lg:order-2 w-full lg:w-auto relative group">
            {/* Spiritual Aura Particles */}
            <div className="absolute -top-10 -left-10 w-20 h-20 bg-gold/20 rounded-full blur-2xl animate-pulse"></div>
            <div className="absolute -bottom-10 -right-10 w-24 h-24 bg-crimson/10 rounded-full blur-2xl animate-pulse delay-700"></div>
@@ -59,10 +59,10 @@ export default function AboutMaharaj() {
            <div className="relative z-10 w-full aspect-[4/5] rounded-[40px] md:rounded-[60px] overflow-hidden shadow-[0_64px_120px_-20px_rgba(212,175,55,0.25)] border-8 border-white bg-gradient-to-br from-gold/10 to-saffron/10">
              {/* Conic Glow Overlay */}
              <div className="absolute -inset-40 bg-gradient-conic from-gold/20 via-transparent to-gold/20 animate-[spin_20s_linear_infinite] opacity-40 blur-3xl z-0"></div>
-             
+
              <Image 
-               src="/images/maharaj.png" 
-               alt={t.hero.maharajName}
+               src="/images/new/expert-maharaj.png" 
+               alt={t.hero.expertName}
                fill
                className="object-cover z-0 grayscale-[30%] group-hover:grayscale-0 transition-all duration-1000 scale-105 group-hover:scale-110"
                sizes="(max-width: 768px) 100vw, 450px"
@@ -70,7 +70,7 @@ export default function AboutMaharaj() {
              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent z-10"></div>
              <div className="absolute bottom-10 left-0 w-full text-center text-white px-8 z-20">
                <div className="text-xs font-black uppercase tracking-[0.4em] mb-3 text-saffron drop-shadow-lg">{t.about.awardWinner}</div>
-               <div className="text-4xl font-black italic uppercase leading-none drop-shadow-2xl">{t.hero.maharajName}</div>
+               <div className="text-4xl font-black italic uppercase leading-none drop-shadow-2xl">{t.hero.expertName}</div>
              </div>
            </div>
            

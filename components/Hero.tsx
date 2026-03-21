@@ -2,6 +2,7 @@
 
 import { useLanguage } from "@/context/LanguageContext";
 import { PhoneCall, Star, ShieldCheck, Clock } from "lucide-react";
+import Image from "next/image";
 import CosmicSnapshot from "./CosmicSnapshot";
 import WhatsAppIcon from "./WhatsAppIcon";
 
@@ -10,7 +11,7 @@ export default function Hero() {
 
   return (
     <section className="pt-32 md:pt-48 pb-16 md:pb-24 px-4 bg-white overflow-hidden relative">
-      {/* Background Astrology Pattern - Simplified */}
+      {/* Background Pattern - Simplified */}
       <div className="absolute inset-0 opacity-[0.05] pointer-events-none overflow-hidden">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] border-2 border-gold rounded-full opacity-20"></div>
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1200px] h-[1200px] border border-gold/20 rounded-full opacity-10"></div>
@@ -23,7 +24,7 @@ export default function Hero() {
           <div className="reveal-text flex flex-col sm:flex-row items-center gap-3 mb-1 justify-center lg:justify-start">
             <div className="inline-flex items-center gap-2 bg-crimson text-white font-black px-5 py-2 rounded-full text-xs md:text-sm animate-pulse shadow-xl shadow-crimson/20">
               <Star size={14} fill="white" />
-              AUTHENTIC SUCCESS SOLUTIONS
+              RELATIONSHIP PROBLEM SOLUTIONS
             </div>
             <div className="inline-flex items-center gap-2 bg-saffron text-white font-black px-5 py-2 rounded-full text-xs md:text-sm shadow-xl shadow-saffron/20">
               100% SECURE & PRIVATE
@@ -82,18 +83,17 @@ export default function Hero() {
 
         {/* Right Side: Image/Video Container */}
         <div className="reveal-img relative w-full lg:w-[450px] aspect-[4/5] bg-gradient-to-tr from-saffron/20 to-gold/20 rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
-           <video 
-             src="/images/hero-main-pinterest.mp4" 
-             className="w-full h-full object-cover"
-             autoPlay 
-             loop 
-             muted 
-             playsInline
+           <Image 
+             src="/images/new/hero-couple.png" 
+             alt="Relationship Problem Solution"
+             fill
+             className="object-cover"
+             priority
            />
            {/* Gradient Overlay */}
            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
            <div className="absolute bottom-6 left-6 right-6 text-white text-center">
-             <div className="font-black text-xl italic uppercase tracking-wider">Authentic Spiritual Solutions</div>
+             <div className="font-black text-xl italic uppercase tracking-wider">Expert Relationship Healing</div>
              <div className="text-xs font-medium opacity-80 uppercase tracking-widest">100% Confidentiality</div>
            </div>
         </div>

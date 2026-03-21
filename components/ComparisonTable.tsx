@@ -39,7 +39,7 @@ export default function ComparisonTable() {
                        <div className="text-saffron font-black text-sm md:text-lg uppercase tracking-tight italic">Vishvanath Maharaj</div>
                     </th>
                     <th className="py-6 px-6 text-center border-b-2 border-gray-200">
-                       <div className="text-gray-400 font-black text-sm md:text-lg uppercase tracking-tight">Other Astrologers</div>
+                       <div className="text-gray-400 font-black text-sm md:text-lg uppercase tracking-tight">Other Experts</div>
                     </th>
                   </tr>
                 </thead>

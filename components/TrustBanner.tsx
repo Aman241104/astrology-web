@@ -20,15 +20,14 @@ export default function TrustBanner() {
                <div className="flex gap-0.5 text-saffron">
                  {[...Array(5)].map((_, i) => <Star key={i} size={14} fill="currentColor" />)}
                </div>
-               <span className="text-[10px] font-bold text-gray-400 ml-2 uppercase tracking-widest">No.1 Astrologer</span>
-            </div>
-            <h2 className="text-3xl md:text-5xl font-black text-crimson mb-2 uppercase tracking-tighter leading-none">
-              {t.hero.maharajName}
-            </h2>
-            <div className="inline-block bg-gold text-white px-4 py-1.5 rounded-lg font-black text-xs md:text-lg uppercase italic shadow-lg">
-              ( 10 Times Gold-Medalist Astrologer )
-            </div>
-          </div>
+               <span className="text-[10px] font-bold text-gray-400 ml-2 uppercase tracking-widest">No.1 Expert</span>
+               </div>
+               <h2 className="text-3xl md:text-5xl font-black text-crimson mb-2 uppercase tracking-tighter leading-none">
+               {t.hero.expertName}
+               </h2>
+               <div className="inline-block bg-gold text-white px-4 py-1.5 rounded-lg font-black text-xs md:text-lg uppercase italic shadow-lg">
+               ( World-Renowned Relationship Expert )
+               </div>          </div>
 
           {/* Center: Global Flags & Hook */}
           <div className="flex flex-col items-center gap-4 w-full lg:w-auto">

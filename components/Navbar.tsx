@@ -13,7 +13,7 @@ export default function Navbar() {
       {/* Top Marquee */}
       <div className="bg-crimson text-white py-1 md:py-1.5 text-center overflow-hidden h-7 md:h-9 flex items-center border-b border-gold/20 shadow-sm relative z-[1001]">
          <div className="whitespace-nowrap animate-marquee font-bold text-[9px] md:text-xs uppercase tracking-[0.2em] opacity-90">
-           🔥 RECENT SUCCESS: Rahul from Delhi just got his ex-back in 24 hours! | 🙏 Pooja from Mumbai stopped her divorce! | ✨ Ankit from UK doubled his business revenue! | 🕉️ Santosh from USA solved marriage issues! | 🧿 Maya from Canada removed black magic!
+           🔥 RECENT SUCCESS: Rahul from Delhi just got his ex-back in 24 hours! | 🙏 Pooja from Mumbai stopped her divorce! | ✨ Ankit from UK solved relationship issues! | 🕉️ Santosh from USA solved marriage issues! | 🧿 Maya from Canada found love back solutions!
          </div>
       </div>
 
@@ -51,7 +51,7 @@ export default function Navbar() {
       <div className="hidden md:block bg-crimson text-white py-1 px-4 border-t border-white/10 shadow-2xl relative z-[1000]">
         <div className="max-w-7xl mx-auto flex items-center justify-between gap-4">
           <p className="hidden md:block text-[10px] font-black uppercase tracking-[0.2em] text-white/90 italic">
-            &quot;Astrology Is Just A Finger Pointing At Reality&quot;
+            &quot;Spiritual Wisdom Is A Light Pointing At Reality&quot;
           </p>
           
           <a href="tel:+919929563493" className="flex-1 md:flex-none flex items-center justify-center gap-3">

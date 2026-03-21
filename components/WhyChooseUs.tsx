@@ -22,7 +22,8 @@ export default function WhyChooseUs() {
   );
 
   useEffect(() => {
-    setHasMounted(true);
+    const frame = requestAnimationFrame(() => setHasMounted(true));
+    return () => cancelAnimationFrame(frame);
   }, []);
 
   if (!t.whyChooseUs) return null;

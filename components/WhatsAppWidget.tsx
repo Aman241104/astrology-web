@@ -35,8 +35,8 @@ export default function WhatsAppWidget() {
         <div className="w-80 bg-white rounded-[32px] shadow-3xl border border-gold/10 overflow-hidden animate-bounce-in">
           <div className="bg-crimson p-6 text-white flex items-center gap-4">
             <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-white/20 relative">
-              <Image 
-                src="/images/maharaj.png" 
+              <Image
+                src="/images/new/expert-maharaj.png"
                 alt="Vishvanath Maharaj"
                 fill
                 className="object-cover"
@@ -55,11 +55,11 @@ export default function WhatsAppWidget() {
             </button>
           </div>
           
-          <div className="p-6 bg-[#E5DDD5] min-h-[200px] flex flex-col gap-4">
-            <div className="bg-white p-3 rounded-2xl rounded-tl-none shadow-sm max-w-[80%]">
-              <p className="text-xs font-medium text-gray-800">Pranam! I am here to help you solve your love, marriage, or career problems. Please message me your problem.</p>
-              <span className="text-[8px] text-gray-400 font-bold block mt-1 uppercase text-right">10:42 AM</span>
+          <div className="p-6 bg-gray-50/50">
+            <div className="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 mb-4">
+              <p className="text-xs font-medium text-gray-800">Pranam! I am here to help you solve your love, marriage, or relationship problems. Please message me your problem.</p>
             </div>
+            <span className="text-[8px] text-gray-400 font-bold block mt-1 uppercase text-right">10:42 AM</span>
           </div>
 
           <div className="p-4 bg-white flex items-center gap-2">

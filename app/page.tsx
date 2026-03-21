@@ -15,7 +15,6 @@ import Benefits from "@/components/Benefits";
 import WorkingProcess from "@/components/WorkingProcess";
 import FAQ from "@/components/FAQ";
 import StickyCTAs from "@/components/StickyCTAs";
-import SocialProofToast from "@/components/SocialProofToast";
 import WhatsAppWidget from "@/components/WhatsAppWidget";
 import { useLanguage } from "@/context/LanguageContext";
 import { QrCode, Star } from "lucide-react";
@@ -28,10 +27,10 @@ export default function Home() {
       <Navbar />
       <div className="relative">
         <Hero />
+        <ServicesGrid />
         <VishvaBanner />
         <CategoryBar />
         <TrustBar />
-        <ServicesGrid />
         <AboutMaharaj />
         <ComparisonTable />
         <WhyChooseUs />
@@ -173,7 +172,7 @@ export default function Home() {
 
           <div className="bg-black/20 p-4 rounded-[30px] border border-white/10 backdrop-blur-sm mb-4">
              <p className="text-sm md:text-lg font-bold uppercase tracking-wide leading-relaxed">
-               Don&apos;t wait for a miracle. <span className="text-saffron">MAKE IT HAPPEN.</span> Maharaj has helped thousands of people just like you to get their love back, stop divorce, and remove black magic. <span className="underline decoration-saffron">Your solution is just one call away.</span>
+               Don&apos;t wait for a miracle. <span className="text-saffron">MAKE IT HAPPEN.</span> Maharaj has helped thousands of people just like you to get their love back, stop divorce, and solve relationship issues. <span className="underline decoration-saffron">Your solution is just one call away.</span>
              </p>
           </div>
           
@@ -185,7 +184,6 @@ export default function Home() {
       </section>
 
       <StickyCTAs />
-      <SocialProofToast />
       <WhatsAppWidget />
       </div>
     </main>

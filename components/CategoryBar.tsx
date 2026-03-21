@@ -1,15 +1,15 @@
 "use client";
 
-import { Heart, Briefcase, Users, HeartOff, TrendingUp, Sparkles } from "lucide-react";
+import { Heart, Users, HeartOff, MessageCircle, Home, Sparkles } from "lucide-react";
 
 export default function CategoryBar() {
   const categories = [
     { label: "Love", icon: <Heart size={32} className="text-crimson" fill="currentColor" /> },
-    { label: "Career", icon: <Briefcase size={32} className="text-saffron" fill="currentColor" /> },
     { label: "Marriage", icon: <Users size={32} className="text-pink-500" fill="currentColor" /> },
-    { label: "Breakup", icon: <HeartOff size={32} className="text-gray-600" /> },
-    { label: "Business", icon: <TrendingUp size={32} className="text-blue-600" /> },
-    { label: "Healer", icon: <Sparkles size={32} className="text-gold" fill="currentColor" /> },
+    { label: "Ex Back", icon: <MessageCircle size={32} className="text-saffron" fill="currentColor" /> },
+    { label: "Relationship", icon: <HeartOff size={32} className="text-gray-600" /> },
+    { label: "Family", icon: <Home size={32} className="text-blue-600" /> },
+    { label: "Healing", icon: <Sparkles size={32} className="text-gold" fill="currentColor" /> },
   ];
 
   return (
