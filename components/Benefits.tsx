@@ -26,7 +26,7 @@ export default function Benefits() {
   ];
 
   return (
-    <section className="py-24 md:py-32 px-4 bg-white overflow-hidden relative">
+    <section className="pt-24 md:pt-32 pb-8 md:pb-12 px-4 bg-white overflow-hidden relative">
       <MandalaSVG className="absolute top-0 right-0 w-[800px] h-[800px] text-gold opacity-[0.05] translate-x-1/2 -translate-y-1/2 animate-[spin_300s_linear_infinite]" />
       <MandalaSVG className="absolute bottom-0 left-0 w-[600px] h-[600px] text-saffron opacity-[0.03] -translate-x-1/2 translate-y-1/2 animate-[spin_200s_linear_infinite]" />
       
@@ -42,7 +42,7 @@ export default function Benefits() {
              <div className="space-y-10">
                 {benefits.map((b, i) => (
                   <div key={i} className="flex gap-6 group">
-                     <div className="w-16 h-16 shrink-0 rounded-2xl bg-cream flex items-center justify-center group-hover:scale-110 group-hover:rotate-6 transition-all shadow-lg border border-gold/10">
+                     <div className="w-16 h-16 shrink-0 rounded-2xl bg-cream flex items-center justify-center group-hover:scale-110 group-hover:rotate-6 transition-all border border-gold/10">
                         <div className="scale-125">{b.icon}</div>
                      </div>
                      <div>
@@ -54,7 +54,7 @@ export default function Benefits() {
              </div>
           </div>
 
-          <div className="flex-1 bg-crimson rounded-[50px] p-10 md:p-16 text-white relative shadow-[0_50px_100px_rgba(220,38,38,0.25)] overflow-hidden border-8 border-white/5">
+          <div className="flex-1 bg-crimson rounded-[50px] p-10 md:p-16 text-white relative overflow-hidden border-8 border-white/5">
              <div className="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl"></div>
              
              <h3 className="text-2xl md:text-4xl font-black mb-10 border-b-2 border-white/20 pb-6 uppercase tracking-tighter">{t.benefits.gTitle}</h3>
@@ -79,7 +79,7 @@ export default function Benefits() {
              <div className="mt-12">
                <a 
                  href="tel:+919929563493"
-                 className="block w-full text-center bg-white text-crimson py-6 rounded-2xl font-black text-xl md:text-2xl hover:bg-cream transition-all shadow-2xl hover:scale-105 active:scale-95 uppercase tracking-tighter"
+                 className="block w-full text-center bg-white text-crimson py-6 rounded-2xl font-black text-xl md:text-2xl hover:bg-cream transition-all hover:scale-105 active:scale-95 uppercase tracking-tighter"
                >
                  {t.benefits.startJourney}
                </a>

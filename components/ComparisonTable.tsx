@@ -14,7 +14,7 @@ export default function ComparisonTable() {
   ];
 
   return (
-    <section className="py-20 md:py-32 px-4 bg-white overflow-hidden relative">
+    <section className="py-10 md:py-16 px-4 bg-white overflow-hidden relative">
       {/* Decorative Circles */}
       <div className="absolute top-0 right-0 w-[600px] h-[600px] border border-gold/5 rounded-full -translate-y-1/2 translate-x-1/3"></div>
       

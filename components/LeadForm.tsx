@@ -50,7 +50,7 @@ export default function LeadForm() {
            </ul>
         </div>
 
-        <div className="flex-1 w-full bg-white p-8 md:p-12 rounded-[40px] shadow-[0_50px_100px_rgba(0,0,0,0.1)] border-8 border-gold/5">
+        <div className="flex-1 w-full bg-white p-8 md:p-12 rounded-[40px] border-8 border-gold/5">
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>
               <label className="block text-xs font-black text-gray-400 uppercase tracking-[0.2em] mb-2">{t.leadForm.name}</label>
@@ -66,9 +66,9 @@ export default function LeadForm() {
               <label className="block text-xs font-black text-gray-400 uppercase tracking-[0.2em] mb-2">{t.leadForm.problem}</label>
               <textarea required className="w-full bg-cream/30 border-2 border-gold/10 rounded-xl px-6 py-4 font-bold text-gray-800 focus:border-saffron outline-none transition-all min-h-[120px] text-lg" placeholder="How can Guruji help you?"></textarea>
             </div>
-            <button type="submit" className="w-full bg-crimson text-white py-5 rounded-2xl font-black text-xl flex items-center justify-center gap-3 hover:bg-crimson/90 transition-all shadow-[0_20px_50px_rgba(220,38,38,0.3)] active:scale-[0.98]">
-              <Send fill="white" size={24} />
-              {t.leadForm.submit}
+            <button type="submit" className="w-full bg-crimson text-white py-5 rounded-2xl font-black text-xl flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-3 hover:bg-crimson/90 transition-all active:scale-[0.98]">
+              <Send fill="white" size={20} className="sm:w-6 sm:h-6" />
+              <span className="text-center sm:text-left">{t.leadForm.submit}</span>
             </button>
           </form>
         </div>

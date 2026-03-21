@@ -10,17 +10,32 @@ import AboutMaharaj from "@/components/AboutMaharaj";
 import ComparisonTable from "@/components/ComparisonTable";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import LeadForm from "@/components/LeadForm";
-import RitualGallery from "@/components/RitualGallery";
-import Benefits from "@/components/Benefits";
 import WorkingProcess from "@/components/WorkingProcess";
+import Benefits from "@/components/Benefits";
 import FAQ from "@/components/FAQ";
 import StickyCTAs from "@/components/StickyCTAs";
 import WhatsAppWidget from "@/components/WhatsAppWidget";
 import { useLanguage } from "@/context/LanguageContext";
-import { QrCode, Star } from "lucide-react";
+import { QrCode, Star, ChevronLeft, ChevronRight } from "lucide-react";
+import { useState } from "react";
 
 export default function Home() {
   const { t } = useLanguage();
+  const [currentTestimonial, setCurrentTestimonial] = useState(0);
+
+  const testimonials = [
+    { text: t.testimonials.t1Text, name: t.testimonials.t1Name },
+    { text: t.testimonials.t2Text, name: t.testimonials.t2Name },
+    { text: t.testimonials.t3Text, name: t.testimonials.t3Name }
+  ];
+
+  const nextTestimonial = () => {
+    setCurrentTestimonial((prev) => (prev + 1) % testimonials.length);
+  };
+
+  const prevTestimonial = () => {
+    setCurrentTestimonial((prev) => (prev - 1 + testimonials.length) % testimonials.length);
+  };
 
   return (
     <main className="min-h-screen">
@@ -35,7 +50,6 @@ export default function Home() {
         <ComparisonTable />
         <WhyChooseUs />
         <LeadForm />
-        <RitualGallery />
         <Benefits />
         <WorkingProcess />
         
@@ -48,31 +62,52 @@ export default function Home() {
               <div className="inline-block bg-crimson/10 text-crimson px-6 py-2 rounded-full font-black text-xs md:text-sm uppercase tracking-[0.3em] mb-4 border border-crimson/20">
                 Testimonials
               </div>
-              <h2 className="text-4xl md:text-6xl font-black text-crimson mb-6 uppercase tracking-tighter drop-shadow-sm">
+              <h2 className="text-4xl md:text-6xl font-black text-crimson mb-6 uppercase tracking-tighter">
                 {t.testimonials.title}
               </h2>
               <div className="w-24 h-1 bg-gold/30 mx-auto rounded-full"></div>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
-              {[
-                { text: t.testimonials.t1Text, name: t.testimonials.t1Name },
-                { text: t.testimonials.t2Text, name: t.testimonials.t2Name },
-                { text: t.testimonials.t3Text, name: t.testimonials.t3Name }
-              ].map((test, i) => (
-                <div key={i} className="group bg-cream/20 p-8 md:p-12 rounded-[40px] shadow-[0_20px_50px_rgba(212,175,55,0.05)] border border-gold/10 hover:shadow-[0_40px_100px_rgba(212,175,55,0.15)] transition-all duration-500 hover:-translate-y-3 hover:bg-white">
-                  <div className="flex gap-1.5 mb-6">
-                     {[...Array(5)].map((_, j) => <Star key={j} className="text-gold fill-gold" size={18} />)}
-                  </div>
-                  <p className="text-gray-700 italic mb-8 font-bold text-lg md:text-xl leading-relaxed text-shadow-sm">&quot;{test.text}&quot;</p>
-                  <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 rounded-full bg-crimson/10 flex items-center justify-center font-black text-crimson italic shadow-inner">
-                      {test.name.charAt(0)}
-                    </div>
-                    <div className="font-black text-crimson italic tracking-widest text-xs md:text-sm uppercase">{test.name}</div>
-                  </div>
+            <div className="relative max-w-4xl mx-auto px-2 md:px-12">
+              <div className="bg-crimson p-8 md:p-16 rounded-[40px] border border-white/10 transition-all duration-500 text-white min-h-[300px] md:min-h-[350px] flex flex-col justify-center text-center">
+                <div className="flex gap-1 mb-6 md:mb-8 justify-center">
+                   {[...Array(5)].map((_, j) => <Star key={j} className="text-gold fill-gold w-4 h-4 md:w-6 md:h-6" />)}
                 </div>
-              ))}
+                <p className="text-white italic mb-8 md:mb-10 font-bold text-lg md:text-3xl leading-relaxed px-2">&quot;{testimonials[currentTestimonial].text}&quot;</p>
+                <div className="flex items-center gap-3 md:gap-5 justify-center">
+                  <div className="w-10 h-10 md:w-14 md:h-14 rounded-full bg-white/20 flex items-center justify-center font-black text-white italic text-base md:text-xl border border-white/30">
+                    {testimonials[currentTestimonial].name.charAt(0)}
+                  </div>
+                  <div className="font-black text-gold italic tracking-[0.1em] md:tracking-[0.2em] text-xs md:text-base uppercase">{testimonials[currentTestimonial].name}</div>
+                </div>
+              </div>
+              
+              <button 
+                onClick={prevTestimonial}
+                className="absolute left-0 md:-left-4 top-1/2 -translate-y-1/2 bg-white text-crimson p-2 md:p-4 rounded-full hover:bg-gold hover:text-white transition-all duration-300 z-20 group border-2 border-crimson/10"
+                aria-label="Previous testimonial"
+              >
+                <ChevronLeft className="w-6 h-6 md:w-8 md:h-8 group-hover:scale-110 transition-transform" />
+              </button>
+              
+              <button 
+                onClick={nextTestimonial}
+                className="absolute right-0 md:-right-4 top-1/2 -translate-y-1/2 bg-white text-crimson p-2 md:p-4 rounded-full hover:bg-gold hover:text-white transition-all duration-300 z-20 group border-2 border-crimson/10"
+                aria-label="Next testimonial"
+              >
+                <ChevronRight className="w-6 h-6 md:w-8 md:h-8 group-hover:scale-110 transition-transform" />
+              </button>
+              
+              <div className="flex justify-center gap-2 md:gap-3 mt-8 md:mt-10">
+                {testimonials.map((_, i) => (
+                  <button
+                    key={i}
+                    onClick={() => setCurrentTestimonial(i)}
+                    className={`h-2 md:h-2.5 rounded-full transition-all duration-500 ${currentTestimonial === i ? "bg-crimson w-8 md:w-12" : "bg-crimson/20 w-2 md:w-2.5 hover:bg-crimson/40"}`}
+                    aria-label={`Go to testimonial ${i + 1}`}
+                  />
+                ))}
+              </div>
             </div>
           </div>
         </section>
