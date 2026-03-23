@@ -3,10 +3,12 @@
 import Navbar from "@/components/Navbar";
 import VishvaBanner from "@/components/VishvaBanner";
 import Hero from "@/components/Hero";
+import TrustBanner from "@/components/TrustBanner";
 import CategoryBar from "@/components/CategoryBar";
 import TrustBar from "@/components/TrustBar";
 import ServicesGrid from "@/components/ServicesGrid";
 import AboutMaharaj from "@/components/AboutMaharaj";
+import ExtraServices from "@/components/ExtraServices";
 import ComparisonTable from "@/components/ComparisonTable";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import LeadForm from "@/components/LeadForm";
@@ -42,11 +44,13 @@ export default function Home() {
       <Navbar />
       <div className="relative">
         <Hero />
+        <TrustBanner />
         <ServicesGrid />
         <VishvaBanner />
         <CategoryBar />
         <TrustBar />
         <AboutMaharaj />
+        <ExtraServices />
         <ComparisonTable />
         <WhyChooseUs />
         <LeadForm />

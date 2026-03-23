@@ -66,11 +66,12 @@ export default function ServicesGrid() {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 md:gap-12">
           {services.map((s, i) => (
-            <div 
+            <a 
               key={i}
-              className="service-card group relative"
+              href="https://wa.me/919929563493"
+              className="service-card group relative block"
             >
               {/* Modern Card Design */}
               <div className="bg-white rounded-[20px] md:rounded-[40px] border border-gold/10 p-1.5 md:p-2 transition-all duration-500 group-hover:-translate-y-2 h-full flex flex-col">
@@ -107,17 +108,16 @@ export default function ServicesGrid() {
                     <p className="text-gray-600 text-[10px] md:text-base leading-tight md:leading-relaxed font-medium mb-3 md:mb-8 line-clamp-2 md:line-clamp-3 group-hover:line-clamp-none transition-all">{s.desc}</p>
                   </div>
                   
-                  <a 
-                    href="https://wa.me/919929563493"
+                  <div 
                     className="inline-flex items-center gap-1.5 md:gap-3 bg-gradient-to-br from-gold to-saffron hover:from-saffron hover:to-crimson text-white px-3 md:px-10 py-2.5 md:py-4 rounded-xl md:rounded-2xl font-black text-[10px] md:text-sm uppercase tracking-wider md:tracking-widest transition-all active:scale-95 w-full justify-center mt-auto"
                   >
                     <WhatsAppIcon size={14} />
                     <span className="hidden xs:inline">{t.hero.whatsapp.split(" ")[0]} Now</span>
                     <span className="xs:hidden">Chat</span>
-                  </a>
+                  </div>
                 </div>
               </div>
-            </div>
+            </a>
           ))}
         </div>
       </div>

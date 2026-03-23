@@ -39,12 +39,12 @@ export const translations = {
       title: "OUR SPECIALIZED SERVICES",
       subTitle: "Vishvanath Maharaj provides highly accurate and permanent solutions for all your relationship and life problems.",
       getSolution: "GET SOLUTION NOW",
-      loveMarriage: { title: "LOVE MARRIAGE PROBLEMS", desc: "Solve family opposition and intercaste marriage issues. Convince your parents today." },
-      getLoveBack: { title: "GET LOVE BACK", desc: "Bring back your ex-partner within 24 hours. Powerful relationship healing solutions." },
-      stopDivorce: { title: "STOP DIVORCE", desc: "End daily arguments, stop separation, and resolve husband-wife issues permanently." },
-      relationshipProblem: { title: "RELATIONSHIP PROBLEMS", desc: "Remove negative energy and toxic influences from your life and relationships." },
-      extraMarital: { title: "EXTRA MARITAL AFFAIR", desc: "Resolve third-party interference and bring loyalty back to your partner permanently." },
-      husbandWife: { title: "HUSBAND WIFE DISPUTES", desc: "End daily arguments and restore peace and love in your married life with spiritual remedies." }
+      loveMarriage: { title: "Lost Love Back Specialist", desc: "Expert solutions to bring your lost love back into your life with powerful spiritual rituals." },
+      getLoveBack: { title: "Bring Your Love Back", desc: "Bring back your ex-partner and restore the lost spark in your relationship within 24 hours." },
+      stopDivorce: { title: "Breakup Problem Solution", desc: "Stop separation and resolve deep-rooted issues that lead to breakups and relationship endings." },
+      relationshipProblem: { title: "Ex Love Back Specialist", desc: "Specialized remedies to reconcile with your ex-lover and build a stronger, more loving future together." },
+      extraMarital: { title: "Family Problem Solution", desc: "Solve all types of family disputes, internal conflicts, and restore peace and harmony in your home." },
+      husbandWife: { title: "Husband Wife Problem Solution", desc: "End daily arguments and restore mutual understanding and love between husband and wife permanently." }
     },
     comparison: {
       title: "WHY CHOOSE VISHVANATH MAHARAJ?",
@@ -149,11 +149,12 @@ export const translations = {
       desc: "The well-known spiritual guide Vishvanath Maharaj is available to assist those who are experiencing difficulties. His spiritual answers are worthwhile, and individuals can use them to solve a variety of concerns, such as marital troubles, relationship issues, and family problems, among others. He receives visits from people all around the world who are looking for the best treatments. His treatments are the most dependable and produce the greatest outcomes. Here, people can easily obtain the most trustworthy spiritual cures. He is someone who has genuinely changed a lot of people's lives in a short amount of time.",
       chatBtn: "CHAT TO GURUJI",
       pills: [
-        "LOVE MARRIAGE EXPERT",
-        "GET YOUR LOVE BACK",
-        "STOP DIVORCE & SEPARATION",
-        "RELATIONSHIP PROBLEM SOLUTION",
-        "GET EX BACK SOLUTIONS"
+        "LOST LOVE BACK SPECIALIST",
+        "BRING YOUR LOVE BACK",
+        "BREAKUP PROBLEM SOLUTION",
+        "EX LOVE BACK SPECIALIST",
+        "FAMILY PROBLEM SOLUTION",
+        "HUSBAND WIFE PROBLEM SOLUTION"
       ],
       callUs: "Call Us For Best Solutions",
       phone: "+91-9929563493"
