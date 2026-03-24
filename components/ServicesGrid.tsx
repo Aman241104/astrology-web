@@ -87,12 +87,6 @@ export default function ServicesGrid() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-60 group-hover:opacity-80 transition-opacity"></div>
                   
-                  {/* Badge - Hidden on very small screens or made smaller */}
-                  <div className="absolute top-2 left-2 md:top-4 md:left-4 bg-white/90 backdrop-blur-md px-2 md:px-4 py-1 rounded-full border border-gold/20 flex items-center gap-1 md:gap-2">
-                    <div className="w-1.5 h-1.5 md:w-2 md:h-2 bg-saffron rounded-full animate-pulse"></div>
-                    <span className="text-[8px] md:text-[10px] font-black text-gray-800 uppercase tracking-widest">Verified</span>
-                  </div>
-
                   {/* Icon Over Image - Smaller on mobile */}
                   <div className="absolute bottom-3 md:bottom-6 left-1/2 -translate-x-1/2 w-10 h-10 md:w-16 md:h-16 rounded-xl md:rounded-2xl bg-crimson flex items-center justify-center border-2 border-white/30 group-hover:rotate-[360deg] transition-transform duration-1000 z-20">
                     <div className="scale-75 md:scale-110">{s.icon}</div>
