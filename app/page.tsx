@@ -1,8 +1,8 @@
 "use client";
 
 import Navbar from "@/components/Navbar";
-import VishvaBanner from "@/components/VishvaBanner";
 import Hero from "@/components/Hero";
+import LoveProblemBanner from "@/components/LoveProblemBanner";
 import TrustBanner from "@/components/TrustBanner";
 import CategoryBar from "@/components/CategoryBar";
 import TrustBar from "@/components/TrustBar";
@@ -44,9 +44,9 @@ export default function Home() {
       <Navbar />
       <div className="relative">
         <Hero />
-        <TrustBanner />
+        <LoveProblemBanner />
         <ServicesGrid />
-        <VishvaBanner />
+        <TrustBanner />
         <CategoryBar />
         <TrustBar />
         <AboutMaharaj />

@@ -1,7 +1,7 @@
 "use client";
 
 import { useLanguage } from "@/context/LanguageContext";
-import { Heart, Users, Home, HeartOff, Briefcase, ShieldCheck } from "lucide-react";
+import { Heart, Users, Home, HeartOff, ShieldCheck } from "lucide-react";
 import Image from "next/image";
 import WhatsAppIcon from "./WhatsAppIcon";
 

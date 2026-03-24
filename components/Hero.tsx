@@ -82,7 +82,7 @@ export default function Hero() {
         </div>
 
         {/* Right Side: Image/Video Container */}
-        <div className="reveal-img relative w-full lg:w-[450px] aspect-[4/5] bg-gradient-to-tr from-saffron/20 to-gold/20 rounded-3xl overflow-hidden border-4 border-white">
+        <div className="reveal-img relative hidden lg:block w-full lg:w-[450px] aspect-[4/5] bg-gradient-to-tr from-saffron/20 to-gold/20 rounded-3xl overflow-hidden border-4 border-white">
            <Image 
              src="/images/hero-couple-new.png" 
              alt="Relationship Problem Solution"

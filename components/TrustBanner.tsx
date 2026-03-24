@@ -12,13 +12,24 @@ export default function TrustBanner() {
           {/* Left Section: Branding & Identity */}
           <div className="flex flex-col items-center text-center">
             <div className="flex items-center gap-4 mb-2">
-              <div className="relative w-28 h-28 md:w-40 md:h-40 shrink-0 filter drop-shadow-[0_10px_15px_rgba(212,175,55,0.4)]">
-                <Image 
-                  src="/—Pngtree—3d ganesha mandap decor on_17265442.png" 
-                  alt="Lord Ganesha" 
-                  fill 
-                  className="object-contain"
-                />
+              <div className="relative w-28 h-28 md:w-40 md:h-40 shrink-0">
+                <div className="absolute inset-0 bg-gold/20 rounded-full blur-2xl"></div>
+                <div className="relative w-full h-full filter drop-shadow-[0_10px_15px_rgba(212,175,55,0.4)] flex items-center justify-center">
+                  <Image 
+                    src="/images/hero-couple-new.png" 
+                    alt="Couple" 
+                    fill 
+                    className="object-cover rounded-full border-4 border-gold/30"
+                  />
+                  <div className="absolute -bottom-2 -right-2 w-16 h-16 md:w-20 md:h-20 z-10 filter drop-shadow-md">
+                    <Image 
+                      src="/—Pngtree—3d ganesha mandap decor on_17265442.png" 
+                      alt="Lord Ganesha" 
+                      fill 
+                      className="object-contain"
+                    />
+                  </div>
+                </div>
               </div>
               <div className="flex flex-col items-center">
                 <span className="text-crimson font-black text-sm md:text-lg uppercase tracking-tight">Best Online Astrologer</span>
