@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { Phone, MessageCircle, Heart, Star } from "lucide-react";
+import { MessageCircle, Heart, Star } from "lucide-react";
 
 export default function LoveProblemBanner() {
   return (
@@ -55,7 +55,7 @@ export default function LoveProblemBanner() {
            <div className="w-full max-w-[360px] md:max-w-[650px] relative my-8 md:my-16">
               <div className="relative aspect-[4/3] rounded-[40px] md:rounded-[80px] overflow-hidden border-[12px] md:border-[20px] border-[#FFD700] shadow-[0_30px_70px_rgba(0,0,0,0.9)] scale-105">
                  <Image 
-                   src="/images/hero-couple-new.png" 
+                   src="/images/love-problem-main.png" 
                    alt="Love Problem Expert" 
                    fill 
                    className="object-cover"
@@ -65,7 +65,7 @@ export default function LoveProblemBanner() {
                  <div className="absolute top-0 right-0 w-24 h-24 bg-[#FFD700] -translate-y-1/2 translate-x-1/2 rotate-45 shadow-2xl"></div>
                  <div className="absolute bottom-0 left-0 w-24 h-24 bg-[#FFD700] translate-y-1/2 -translate-x-1/2 rotate-45 shadow-2xl"></div>
               </div>
-              
+
               {/* WhatsApp Floating Overlay */}
               <div className="absolute -bottom-8 -left-4 md:-bottom-12 md:-left-12 bg-white rounded-full p-2 md:p-4 shadow-2xl z-20 animate-pulse">
                  <div className="bg-[#25D366] p-4 md:p-8 rounded-full">
@@ -93,39 +93,6 @@ export default function LoveProblemBanner() {
                 </div>
               ))}
            </div>
-
-           {/* Deity Icon & CTA Area */}
-           <div className="flex flex-col items-center gap-8 md:gap-12 w-full">
-              <div className="relative w-32 h-32 md:w-64 md:h-64 filter drop-shadow-[0_0_50px_rgba(255,184,0,0.8)]">
-                <Image 
-                  src="/—Pngtree—3d ganesha mandap decor on_17265442.png" 
-                  alt="Vedic Remedy" 
-                  fill 
-                  className="object-contain"
-                />
-              </div>
-
-              <div className="w-full flex flex-col items-center gap-6">
-                 <div className="bg-white px-10 md:px-24 py-4 md:py-8 rounded-full shadow-3xl transform hover:scale-105 transition-all border-b-[8px] md:border-b-[15px] border-gray-300 w-full md:w-auto">
-                    <span className="text-black font-black text-lg md:text-5xl uppercase tracking-tighter block">
-                      GET PERMANENT SOLUTION NOW
-                    </span>
-                 </div>
-                 
-                 <div className="flex items-center gap-2 md:gap-10">
-                    <div className="bg-[#FFB800] p-2 md:p-8 rounded-full shadow-2xl border-4 border-white/40 animate-bounce shrink-0">
-                       <Phone size={20} className="text-black fill-black md:w-20 md:h-20" />
-                    </div>
-                    <a 
-                      href="tel:+919929563493"
-                      className="text-[7.5vw] md:text-[150px] font-black text-white tracking-tighter hover:text-[#FFD700] transition-colors leading-none drop-shadow-[0_20px_20px_rgba(0,0,0,0.6)] whitespace-nowrap"
-                    >
-                      +91-9929563493
-                    </a>
-                  </div>
-              </div>
-           </div>
-
         </div>
       </div>
     </section>
