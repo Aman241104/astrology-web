@@ -1,7 +1,7 @@
 "use client";
 
 import { useLanguage } from "@/context/LanguageContext";
-import { Heart, Users, Home, HeartOff, ShieldCheck } from "lucide-react";
+import { Heart, Users, Home, HeartOff, ShieldCheck, Flame, Users2, Briefcase } from "lucide-react";
 import Image from "next/image";
 import WhatsAppIcon from "./WhatsAppIcon";
 
@@ -12,37 +12,37 @@ export default function ServicesGrid() {
     { 
       title: t.services.loveMarriage.title, 
       desc: t.services.loveMarriage.desc, 
-      img: "/images/services/love-marriage-3842579264.png",
+      img: "/images/lost-love-back.png", 
       icon: <Heart size={20} className="text-white" fill="currentColor" />
     },
     { 
       title: t.services.getLoveBack.title, 
       desc: t.services.getLoveBack.desc, 
-      img: "/images/services/get-love-back-1773844157683.png",
+      img: "/images/love-marriage-specialist.png", 
       icon: <Users size={20} className="text-white" fill="currentColor" />
     },
     { 
       title: t.services.stopDivorce.title, 
       desc: t.services.stopDivorce.desc, 
-      img: "/images/services/stop-divorce-3842628694.png",
+      img: "/images/breakup-problem-solution.png", 
       icon: <Home size={20} className="text-white" fill="currentColor" />
     },
     { 
       title: t.services.relationshipProblem.title, 
       desc: t.services.relationshipProblem.desc, 
-      img: "/images/new/relationship-issue.png",
+      img: "/images/ex-love-back-specialist.png", 
       icon: <HeartOff size={20} className="text-white" fill="currentColor" />
     },
     { 
       title: t.services.extraMarital.title, 
       desc: t.services.extraMarital.desc, 
-      img: "/images/extra-marital-solution.png",
+      img: "/images/family-problem.png", 
       icon: <Users size={20} className="text-white" fill="currentColor" />
     },
     { 
       title: t.services.husbandWife.title, 
       desc: t.services.husbandWife.desc, 
-      img: "/images/new/divorce-solution.png",
+      img: "/images/husband-wife-problem-solution.png", 
       icon: <ShieldCheck size={20} className="text-white" fill="currentColor" />
     },
   ];

@@ -8,11 +8,6 @@ import { useState, useRef, useEffect } from "react";
 const languages: { code: Locale; label: string }[] = [
   { code: "en", label: "English" },
   { code: "hi", label: "हिंदी" },
-  { code: "gu", label: "ગુજરાતી" },
-  { code: "bn", label: "বাংলা" },
-  { code: "te", label: "తెలుగు" },
-  { code: "mr", label: "मराठी" },
-  { code: "ta", label: "தமிழ்" },
 ];
 
 

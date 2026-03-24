@@ -7,25 +7,25 @@ import WhatsAppIcon from "./WhatsAppIcon";
 export default function ExtraServices() {
   const extraServices = [
     { 
-      title: "Extra Marital Affair", 
+      title: "Extra Mateiral Affair", 
       desc: "Remove third-party interference and restore loyalty in your relationship permanently.",
-      img: "/images/extra-marital-solution.png",
+      img: "/images/extra-marital-affair.png",
       icon: <Users size={20} className="text-white" fill="currentColor" /> 
     },
-    { 
-      title: "Love Marriage Specialist", 
+    {
+      title: "Love Marriage Specialist",
       desc: "Solve intercaste marriage issues and convince parents for your happy love marriage.",
-      img: "/images/services/love-marriage-3842579264.png",
-      icon: <Heart size={20} className="text-white" fill="currentColor" /> 
+      img: "/images/love-marriage-new.png",
+      icon: <Heart size={20} className="text-white" fill="currentColor" />
     },
-    { 
-      title: "Marriage Problem Solution", 
+    {
+      title: "Marriage Problem Solution",
       desc: "Resolve deep-rooted husband-wife disputes and bring back peace to your married life.",
       img: "/images/new/divorce-solution.png",
-      icon: <ShieldCheck size={20} className="text-white" fill="currentColor" /> 
+      icon: <ShieldCheck size={20} className="text-white" fill="currentColor" />
     },
     { 
-      title: "Business Problem Solution", 
+      title: "Business problem Solution", 
       desc: "Remove financial blocks and negative energy affecting your career and business growth.",
       img: "/images/business-problem.png",
       icon: <Briefcase size={20} className="text-white" fill="currentColor" /> 
