@@ -27,7 +27,7 @@ export default function ExtraServices() {
     { 
       title: "Business problem Solution", 
       desc: "Remove financial blocks and negative energy affecting your career and business growth.",
-      img: "/images/business-problem.png",
+      img: "/images/business-problem-solution.png",
       icon: <Briefcase size={20} className="text-white" fill="currentColor" /> 
     },
   ];

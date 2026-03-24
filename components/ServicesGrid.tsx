@@ -36,7 +36,7 @@ export default function ServicesGrid() {
     { 
       title: t.services.extraMarital.title, 
       desc: t.services.extraMarital.desc, 
-      img: "/images/family-problem.png", 
+      img: "/images/family-problem-solution.png", 
       icon: <Users size={20} className="text-white" fill="currentColor" />
     },
     { 
