@@ -92,13 +92,13 @@ export default function TrustBanner() {
               Need Guidance Call & Get The Permanent Solution
             </h4>
 
-            <div className="flex items-center gap-3 mb-4">
-               <div className="bg-crimson p-2 md:p-3 rounded-full shadow-lg">
-                  <Phone size={24} className="text-white fill-white" />
+            <div className="flex items-center gap-2 md:gap-3 mb-4">
+               <div className="bg-crimson p-1.5 md:p-3 rounded-full shadow-lg shrink-0">
+                  <Phone size={18} className="text-white fill-white md:w-6 md:h-6" />
                </div>
                <a 
                  href="tel:+919929563493"
-                 className="text-3xl md:text-5xl font-black text-crimson tracking-tighter hover:scale-105 transition-transform drop-shadow-[0_1px_0_rgba(255,215,0,1)]"
+                 className="text-2xl md:text-5xl font-black text-crimson tracking-tighter hover:scale-105 transition-transform drop-shadow-[0_1px_0_rgba(255,215,0,1)] whitespace-nowrap"
                >
                  +91-9929563493
                </a>
@@ -109,8 +109,8 @@ export default function TrustBanner() {
                  <Image 
                    src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
                    alt="WhatsApp" 
-                   width={48} 
-                   height={48}
+                   width={36} 
+                   height={36}
                    className="md:w-16 md:h-16 hover:scale-110 transition-transform"
                  />
                </a>

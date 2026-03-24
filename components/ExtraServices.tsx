@@ -27,7 +27,7 @@ export default function ExtraServices() {
     { 
       title: "Business Problem Solution", 
       desc: "Remove financial blocks and negative energy affecting your career and business growth.",
-      img: "/images/rituals/maha-havan-3842912874.png",
+      img: "/images/business-problem.png",
       icon: <Briefcase size={20} className="text-white" fill="currentColor" /> 
     },
   ];
