@@ -16,19 +16,11 @@ export default function TrustBanner() {
                 <div className="absolute inset-0 bg-gold/20 rounded-full blur-2xl"></div>
                 <div className="relative w-full h-full filter drop-shadow-[0_10px_15px_rgba(212,175,55,0.4)] flex items-center justify-center">
                   <Image 
-                    src="/images/hero-couple-new.png" 
-                    alt="Couple" 
+                    src="/—Pngtree—3d ganesha mandap decor on_17265442.png" 
+                    alt="Lord Ganesha" 
                     fill 
-                    className="object-cover rounded-full border-4 border-gold/30"
+                    className="object-contain"
                   />
-                  <div className="absolute -bottom-2 -right-2 w-16 h-16 md:w-20 md:h-20 z-10 filter drop-shadow-md">
-                    <Image 
-                      src="/—Pngtree—3d ganesha mandap decor on_17265442.png" 
-                      alt="Lord Ganesha" 
-                      fill 
-                      className="object-contain"
-                    />
-                  </div>
                 </div>
               </div>
               <div className="flex flex-col items-center">
