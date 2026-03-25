@@ -10,38 +10,38 @@ export default function ServicesGrid() {
 
   const services = [
     { 
-      title: t.services.loveMarriage.title, 
-      desc: t.services.loveMarriage.desc, 
+      title: t?.services?.loveMarriage?.title || "", 
+      desc: t?.services?.loveMarriage?.desc || "", 
       img: "/images/lost-love-back.png", 
       icon: <Heart size={20} className="text-white" fill="currentColor" />
     },
     { 
-      title: t.services.getLoveBack.title, 
-      desc: t.services.getLoveBack.desc, 
+      title: t?.services?.getLoveBack?.title || "", 
+      desc: t?.services?.getLoveBack?.desc || "", 
       img: "/images/love-marriage-specialist.png", 
       icon: <Users size={20} className="text-white" fill="currentColor" />
     },
     { 
-      title: t.services.stopDivorce.title, 
-      desc: t.services.stopDivorce.desc, 
+      title: t?.services?.stopDivorce?.title || "", 
+      desc: t?.services?.stopDivorce?.desc || "", 
       img: "/images/breakup-problem-solution.png", 
       icon: <Home size={20} className="text-white" fill="currentColor" />
     },
     { 
-      title: t.services.relationshipProblem.title, 
-      desc: t.services.relationshipProblem.desc, 
+      title: t?.services?.relationshipProblem?.title || "", 
+      desc: t?.services?.relationshipProblem?.desc || "", 
       img: "/images/ex-love-back-specialist.png", 
       icon: <HeartOff size={20} className="text-white" fill="currentColor" />
     },
     { 
-      title: t.services.extraMarital.title, 
-      desc: t.services.extraMarital.desc, 
+      title: t?.services?.extraMarital?.title || "", 
+      desc: t?.services?.extraMarital?.desc || "", 
       img: "/images/family-problem-solution.png", 
       icon: <Users size={20} className="text-white" fill="currentColor" />
     },
     { 
-      title: t.services.husbandWife.title, 
-      desc: t.services.husbandWife.desc, 
+      title: t?.services?.husbandWife?.title || "", 
+      desc: t?.services?.husbandWife?.desc || "", 
       img: "/images/husband-wife-problem-solution.png", 
       icon: <ShieldCheck size={20} className="text-white" fill="currentColor" />
     },
