@@ -2,7 +2,7 @@ export type Locale = "en" | "hi";
 
 export const translations = {
   en: {
-    navbar: { logo: "VISHVANATH MAHARAJ", callNow: "CALL NOW" },
+    navbar: { logo: "ASTROLOGER PAWAN SWAMI", callNow: "CALL NOW" },
     hero: {
       freeConsult: "FIRST 5 MINS FREE CONSULTATION",
       title: "FACING PROBLEMS IN LOVE OR MARRIAGE?",
@@ -13,7 +13,7 @@ export const translations = {
       privacy: "COMPLETE PRIVACY",
       results: "24HR RESULTS",
       exp: "20+ YRS EXP",
-      expertName: "VISHVANATH MAHARAJ",
+      expertName: "ASTROLOGER PAWAN SWAMI",
       goldMedalist: "World-Renowned Spiritual Expert"
     },
     trustBar: {
@@ -26,7 +26,7 @@ export const translations = {
       qualityTitle: "HIGH QUALITY SERVICES",
       qualitySub: "Highly Effective Spiritual Remedies",
       supportTitle: "HELP / SUPPORT",
-      supportSub: "+91-9929563493",
+      supportSub: "+91-9875958008",
       trustTitle: "TRUST",
       trustSub: "Trusted by million of Customers in Past 25 Years"
     },
@@ -37,7 +37,7 @@ export const translations = {
     },
     services: {
       title: "OUR SPECIALIZED SERVICES",
-      subTitle: "Vishvanath Maharaj provides highly accurate and permanent solutions for all your relationship and life problems.",
+      subTitle: "Astrologer Pawan Swami provides highly accurate and permanent solutions for all your relationship and life problems.",
       getSolution: "GET SOLUTION NOW",
       loveMarriage: { title: "LOST LOVE BACK SPECIALIST", desc: "Overcome planetary obstacles and bring back your lost love with traditional Vedic rituals." },
       getLoveBack: { title: "BRING YOUR LOVE BACK", desc: "Get effective remedies to reunite with your partner and restore lost harmony within 24-48 hours." },
@@ -47,7 +47,7 @@ export const translations = {
       husbandWife: { title: "HUSBAND WIFE PROBLEM SOLUTION", desc: "Restore harmony and remove misunderstandings between husband and wife permanently with powerful relationship healing." }
     },
     comparison: {
-      title: "WHY CHOOSE VISHVANATH MAHARAJ?",
+      title: "WHY CHOOSE ASTROLOGER PAWAN SWAMI?",
       row1: ["CONSULTATION FEE", "FREE (FIRST 5 MINS)", "HIGH CHARGES"],
       row2: ["SERVICE METHOD", "PROFESSIONAL & ETHICAL", "GENERIC ADVICE"],
       row3: ["SUCCESS RATE", "HIGHLY SUCCESSFUL", "UNRELIABLE"],
@@ -56,8 +56,8 @@ export const translations = {
     about: {
       meetTheMaster: "MEET THE MASTER",
       title: "20+ YEARS OF ANCIENT WISDOM & SPIRITUAL GUIDANCE",
-      bio1: "Vishvanath Maharaj is a world-renowned Spiritual Guide and Relationship Expert with over two decades of dedicated service to humanity. Hailing from a prestigious lineage of spiritual gurus, he has helped over 50,000 people find their path through Life Chart Analysis and powerful spiritual rituals.",
-      bio2: "His unique approach combines traditional wisdom with a deep understanding of modern psychological challenges. Whether it's love marriage problems, family issues, or complex relationship issues, Maharaj provides permanent and effective solutions.",
+      bio1: "Astrologer Pawan Swami is a world-renowned Spiritual Guide and Relationship Expert with over two decades of dedicated service to humanity. Hailing from a prestigious lineage of spiritual gurus, he has helped over 50,000 people find their path through Life Chart Analysis and powerful spiritual rituals.",
+      bio2: "His unique approach combines traditional wisdom with a deep understanding of modern psychological challenges. Whether it's love marriage problems, family issues, or complex relationship issues, Pawan Swami provides permanent and effective solutions.",
       quote: "My mission is to illuminate your life by aligning your positive energies for immediate success and peace.",
       relationshipExp: "RELATIONSHIP EXPERTISE",
       negativeEnergyExp: "NEGATIVE ENERGY REMOVAL",
@@ -68,11 +68,11 @@ export const translations = {
     },
     ritualGallery: {
       title: "POWERFUL SPIRITUAL RITUALS",
-      sub: "Actual photos of Havans and Rituals performed by Maharaj for clients."
+      sub: "Actual photos of Havans and Rituals performed by Pawan Swami for clients."
     },
     leadForm: {
       urgentHelp: "NEED URGENT HELP?",
-      sub: "Fill the form below and Vishvanath Maharaj will contact you for a FREE Consultation.",
+      sub: "Fill the form below and Astrologer Pawan Swami will contact you for a FREE Consultation.",
       hook1: "TRANSPARENT PROCESS",
       hook2: "HIGHLY SECURE & PRIVATE",
       hook3: "RESPONSE IN 15 MINUTES",
@@ -106,7 +106,7 @@ export const translations = {
       s1Title: "STEP 1: CONTACT GURUJI",
       s1Desc: "Send your Name, Date of Birth, and Problem on WhatsApp or Call for instant response.",
       s2Title: "STEP 2: ANALYSIS",
-      s2Desc: "Vishvanath Maharaj will perform a deep study of your Life Chart and Planetary positions.",
+      s2Desc: "Astrologer Pawan Swami will perform a deep study of your Life Chart and Planetary positions.",
       s3Title: "STEP 3: SOLUTION",
       s3Desc: "Get Highly Effective spiritual remedies (Upay) and results within 24 to 48 hours."
     },
@@ -129,9 +129,9 @@ export const translations = {
     },
     testimonials: {
       title: "OUR SUCCESS STORIES",
-      t1Text: "I was about to lose my love, but Maharaj's remedies worked in just 3 days! We are now happily married.",
+      t1Text: "I was about to lose my love, but Pawan Swami's remedies worked in just 3 days! We are now happily married.",
       t1Name: "RIYA S., MUMBAI",
-      t2Text: "Maharaj solved my relationship problem when I had lost all hope. Truly a miracle! I am now seeing positive changes.",
+      t2Text: "Pawan Swami solved my relationship problem when I had lost all hope. Truly a miracle! I am now seeing positive changes.",
       t2Name: "AMIT K., DELHI",
       t3Text: "Best relationship expert. I got my ex-partner back in 24 hours. GENUINE AND EFFECTIVE work.",
       t3Name: "IBRAHIM, DUBAI"
@@ -139,14 +139,14 @@ export const translations = {
     footer: {
       ctaTitle: "DON'T LET PROBLEMS CONTROL YOUR LIFE!",
       ctaSub: "EFFECTIVE SPIRITUAL REMEDIES. RESULTS DRIVEN SOLUTIONS.",
-      callBtn: "CALL: +91-9929563493",
-      copyright: "© 2026 Vishvanath Maharaj. All Rights Reserved.",
+      callBtn: "CALL: +91-9875958008",
+      copyright: "© 2026 Astrologer Pawan Swami. All Rights Reserved.",
       disclaimer: "Disclaimer: Spiritual guidance is an ancient tradition. Individual results may vary based on planetary alignments and karmic factors. We provide dedicated effort and traditional spiritual remedies."
     },
     whyChooseUs: {
       title: "WHY CHOOSE US?",
-      subTitle: "Lets Know Why You Can Choose Vishvanath Maharaj",
-      desc: "The well-known spiritual guide Vishvanath Maharaj is available to assist those who are experiencing difficulties. His spiritual answers are worthwhile, and individuals can use them to solve a variety of concerns, such as marital troubles, relationship issues, and family problems, among others. He receives visits from people all around the world who are looking for the best treatments. His treatments are the most dependable and produce the greatest outcomes. Here, people can easily obtain the most trustworthy spiritual cures. He is someone who has genuinely changed a lot of people's lives in a short amount of time.",
+      subTitle: "Lets Know Why You Can Choose Astrologer Pawan Swami",
+      desc: "The well-known spiritual guide Astrologer Pawan Swami is available to assist those who are experiencing difficulties. His spiritual answers are worthwhile, and individuals can use them to solve a variety of concerns, such as marital troubles, relationship issues, and family problems, among others. He receives visits from people all around the world who are looking for the best treatments. His treatments are the most dependable and produce the greatest outcomes. Here, people can easily obtain the most trustworthy spiritual cures. He is someone who has genuinely changed a lot of people's lives in a short amount of time.",
       chatBtn: "CHAT TO GURUJI",
       pills: [
         "LOVE PROBLEM SPECIALIST",
@@ -157,11 +157,11 @@ export const translations = {
         "EXTRA AFFAIR REMOVAL"
       ],
       callUs: "Call Us For Best Solutions",
-      phone: "+91-9929563493"
+      phone: "+91-9875958008"
     }
   },
   hi: {
-    navbar: { logo: "विश्वनाथ महाराज", callNow: "अभी कॉल करें" },
+    navbar: { logo: "ज्योतिषी पवन स्वामी", callNow: "अभी कॉल करें" },
     hero: {
       freeConsult: "पहले 5 मिनट मुफ्त परामर्श",
       title: "प्रेम या विवाह में समस्याओं का सामना कर रहे हैं?",
@@ -172,7 +172,7 @@ export const translations = {
       privacy: "पूर्ण गोपनीयता",
       results: "24 घंटे में परिणाम",
       exp: "20+ वर्षों का अनुभव",
-      expertName: "विश्वनाथ महाराज",
+      expertName: "ज्योतिषी पवन स्वामी",
       goldMedalist: "विश्व प्रसिद्ध आध्यात्मिक विशेषज्ञ"
     },
     trustBar: {
@@ -185,7 +185,7 @@ export const translations = {
       qualityTitle: "उच्च गुणवत्ता सेवाएं",
       qualitySub: "प्रभावी आध्यात्मिक उपाय",
       supportTitle: "सहायता / समर्थन",
-      supportSub: "+91-9929563493",
+      supportSub: "+91-9875958008",
       trustTitle: "विश्वास",
       trustSub: "पिछले 25 वर्षों में लाखों ग्राहकों द्वारा भरोसा किया गया"
     },
@@ -196,17 +196,17 @@ export const translations = {
     },
     services: {
       title: "हमारी विशेष सेवाएं",
-      subTitle: "विश्वनाथ महाराज आपके सभी संबंधों और जीवन की समस्याओं के लिए अत्यधिक सटीक और स्थायी समाधान प्रदान करते हैं।",
+      subTitle: "ज्योतिषी पवन स्वामी आपके सभी संबंधों और जीवन की समस्याओं के लिए अत्यधिक सटीक और स्थायी समाधान प्रदान करते हैं।",
       getSolution: "अभी समाधान पाएं",
       loveMarriage: { title: "प्रेम विवाह", desc: "सफल प्रेम विवाह के लिए पारिवारिक विरोध और ग्रहीय बाधाओं को दूर करें।" },
       getLoveBack: { title: "पूर्व प्यार वापस", desc: "अपने पूर्व साथी को वापस लाएं और अपने रिश्ते में खोया हुआ प्यार और विश्वास बहाल करें।" },
       stopDivorce: { title: "ब्रेकअप समस्या", desc: "ब्रेकअप रोकने या अलगाव के दर्द से उबरने के लिए प्रभावी उपाय।" },
       relationshipProblem: { title: "प्रेम समस्या", desc: "सभी प्रकार के प्रेम संबंधी संघर्षों और भावनात्मक संकटों को हल करने के लिए विशेषज्ञ समाधान।" },
-      extraMarital: { title: "अतिरिक्त मामला", desc: "विवाहेतर संबंधों को समाप्त करने और अपने रिश्ते की वفاदारी सुरक्षित करने के समाधान।" },
+      extraMarital: { title: "अतिरिक्त मामला", desc: "विवाहेतर संबंधों को समाप्त करने और अपने रिश्ते की वफादारी सुरक्षित करने के समाधान।" },
       husbandWife: { title: "पति और पत्नी की समस्या", desc: "वैवाहिक विवादों को सुलझाएं और साथियों के बीच शांति, प्रेम और समझ बहाल करें।" }
     },
     comparison: {
-      title: "विश्वनाथ महाराज को क्यों चुनें?",
+      title: "ज्योतिषी पवन स्वामी को क्यों चुनें?",
       row1: ["परामर्श शुल्क", "मुफ्त (पहले 5 मिनट)", "उच्च शुल्क"],
       row2: ["सेवा पद्धति", "पेशेवर और नैतिक", "सामान्य सलाह"],
       row3: ["सफलता दर", "अत्यधिक सफल", "अविश्वसनीय"],
@@ -215,8 +215,8 @@ export const translations = {
     about: {
       meetTheMaster: "मास्टर से मिलें",
       title: "20+ वर्षों का प्राचीन ज्ञान और आध्यात्मिक मार्गदर्शन",
-      bio1: "विश्वनाथ महाराज एक विश्व प्रसिद्ध आध्यात्मिक मार्गदर्शक और संबंध विशेषज्ञ हैं, जिनके पास मानवता के लिए दो दशकों से अधिक की समर्पित सेवा है। आध्यात्मिक गुरुओं के एक प्रतिष्ठित वंश से ताल्लुक रखते हुए, उन्होंने जीवन चार्ट विश्लेषण और शक्तिशाली आध्यात्मिक अनुष्ठानों के माध्यम से 50,000 से अधिक लोगों को अपना रास्ता खोजने में मदद की है।",
-      bio2: "उनका अनूठा दृष्टिकोण आधुनिक मनोवैज्ञानिक चुनौतियों की गहरी समझ के साथ पारंपरिक ज्ञान को जोड़ता है। चाहे वह प्रेम विवाह की समस्याएं हों, पारिवारिक मुद्दे हों, या जटिल संबंध मुद्दे हों, महाराज स्थायी और प्रभावी समाधान प्रदान करते हैं।",
+      bio1: "ज्योतिषी पवन स्वामी एक विश्व प्रसिद्ध आध्यात्मिक मार्गदर्शक और संबंध विशेषज्ञ हैं, जिनके पास मानवता के लिए दो दशकों से अधिक की समर्पित सेवा है। आध्यात्मिक गुरुओं के एक प्रतिष्ठित वंश से ताल्लुक रखते हुए, उन्होंने जीवन चार्ट विश्लेषण और शक्तिशाली आध्यात्मिक अनुष्ठानों के माध्यम से 50,000 से अधिक लोगों को अपना रास्ता खोजने में मदद की है।",
+      bio2: "उनका अनूठा दृष्टिकोण आधुनिक मनोवैज्ञानिक चुनौतियों की गहरी समझ के साथ पारंपरिक ज्ञान को जोड़ता है। चाहे वह प्रेम विवाह की समस्याएं हों, पारिवारिक मुद्दे हों, या जटिल संबंध मुद्दे हों, पवन स्वामी स्थायी और प्रभावी समाधान प्रदान करते हैं।",
       quote: "मेरा मिशन तत्काल सफलता और शांति के लिए आपकी सकारात्मक ऊर्जाओं को संरेखित करके आपके जीवन को रोशन करना है।",
       relationshipExp: "संबंध विशेषज्ञता",
       negativeEnergyExp: "नकारात्मक ऊर्जा हटाना",
@@ -227,11 +227,11 @@ export const translations = {
     },
     ritualGallery: {
       title: "शक्तिशाली आध्यात्मिक अनुष्ठान",
-      sub: "महाराज द्वारा ग्राहकों के लिए किए गए हवन और अनुष्ठानों की वास्तविक तस्वीरें।"
+      sub: "पवन स्वामी द्वारा ग्राहकों के लिए किए गए हवन और अनुष्ठानों की वास्तविक तस्वीरें।"
     },
     leadForm: {
       urgentHelp: "तत्काल सहायता की आवश्यकता है?",
-      sub: "नीचे दिया गया फॉर्म भरें और विश्वनाथ महाराज मुफ्त परामर्श के लिए आपसे संपर्क करेंगे।",
+      sub: "नीचे दिया गया फॉर्म भरें और ज्योतिषी पवन स्वामी मुफ्त परामर्श के लिए आपसे संपर्क करेंगे।",
       hook1: "पारदर्शी प्रक्रिया",
       hook2: "अत्यधिक सुरक्षित और निजी",
       hook3: "15 मिनट में जवाब",
@@ -245,7 +245,7 @@ export const translations = {
     benefits: {
       title: "हमारे उपायों के पीछे का विज्ञान",
       b1Title: "प्राचीन संबंध विज्ञान",
-      b1Desc: "हम 'सात्विक' विधियों का उपयोग करते हैं—रिश्तों के संघर्षों को सुलझाने और बिना किसी दुष्प्रभाव या नकारात्मक कर्म के खोए हुए प्यार को वापस लाने के लिए एक दिव्य सकारात्मक ऊर्जा पद्धति।",
+      b1Desc: "हम 'सात्विक' विधियों का उपयोग करते हैं—रिश्तों के संघर्षों को सुलझाने और बिना किसी दुष्प्रभाव या नकारात्मक कर्म के खोए हुए प्यार को वापस लाने के लिए एक divine सकारात्मक ऊर्जा पद्धति।",
       b2Title: "आध्यात्मिक सुरक्षा",
       b2Desc: "'बुरी नजर' and नकारात्मक कंपन से पूर्ण सुरक्षा। हमारे शक्तिशाली आध्यात्मिक हवन किसी भी नकारात्मक प्रभाव को बेअसर करते हैं और आपके परिवार के भविष्य को सुरक्षित करते हैं।",
       b3Title: "जीवन चार्ट न्यूट्रलाइज़र",
@@ -265,7 +265,7 @@ export const translations = {
       s1Title: "चरण 1: गुरुजी से संपर्क करें",
       s1Desc: "त्वरित प्रतिक्रिया के लिए व्हाट्सएप या कॉल पर अपना नाम, जन्म तिथि और समस्या भेजें।",
       s2Title: "चरण 2: विश्लेषण",
-      s2Desc: "विश्वनाथ महाराज आपके जीवन चार्ट और ग्रहीय स्थितियों का गहरा अध्ययन करेंगे।",
+      s2Desc: "ज्योतिषी पवन स्वामी आपके जीवन चार्ट और ग्रहीय स्थितियों का गहरा अध्ययन करेंगे।",
       s3Title: "चरण 3: समाधान",
       s3Desc: "24 से 48 घंटों के भीतर अत्यधिक प्रभावी आध्यात्मिक उपचार और परिणाम प्राप्त करें।"
     },
@@ -288,9 +288,9 @@ export const translations = {
     },
     testimonials: {
       title: "हमारी सफलता की कहानियाँ",
-      t1Text: "मैं अपना प्यार खोने ही वाली थी, लेकिन महाराज के उपायों ने सिर्फ 3 दिनों में काम कर दिया! अब हम खुशी-खुशी शादीशुदा हैं।",
+      t1Text: "मैं अपना प्यार खोने ही वाली थी, लेकिन पवन स्वामी के उपायों ने सिर्फ 3 दिनों में काम कर दिया! अब हम खुशी-खुशी शादीशुदा हैं।",
       t1Name: "रिया एस., मुंबई",
-      t2Text: "जब मैंने सारी उम्मीद खो दी थी तब महाराज ने मेरे संबंध की समस्या को हल किया। वास्तव में एक चमत्कार! अब मैं सकारात्मक बदलाव देख रहा हूँ।",
+      t2Text: "जब मैंने सारी उम्मीद खो दी थी तब पवन स्वामी ने मेरे संबंध की समस्या को हल किया। वास्तव में एक चमत्कार! अब मैं सकारात्मक बदलाव देख रहा हूँ।",
       t2Name: "अमित के., दिल्ली",
       t3Text: "सर्वश्रेष्ठ संबंध विशेषज्ञ। मुझे मेरा पूर्व साथी 24 घंटे में वापस मिल गया। वास्तविक और प्रभावी काम।",
       t3Name: "इब्राहिम, दुबई"
@@ -298,25 +298,25 @@ export const translations = {
     footer: {
       ctaTitle: "समस्याओं को अपने जीवन को नियंत्रित न करने दें!",
       ctaSub: "प्रभावी आध्यात्मिक उपाय। परिणाम आधारित समाधान।",
-      callBtn: "कॉल करें: +91-9929563493",
-      copyright: "© 2026 विश्वनाथ महाराज। सर्वाधिकार सुरक्षित।",
+      callBtn: "कॉल करें: +91-9875958008",
+      copyright: "© 2026 ज्योतिषी पवन स्वामी। सर्वाधिकार सुरक्षित।",
       disclaimer: "अस्वीकरण: आध्यात्मिक मार्गदर्शन एक प्राचीन परंपरा है। व्यक्तिगत परिणाम ग्रहों के संरेखण और कर्म कारकों के आधार पर भिन्न हो सकते हैं। हम समर्पित प्रयास और पारंपरिक आध्यात्मिक उपाय प्रदान करते हैं।"
     },
     whyChooseUs: {
       title: "हमें क्यों चुनें?",
-      subTitle: "जानें कि आप विश्वनाथ महाराज को क्यों चुन सकते हैं",
-      desc: "प्रसिद्ध आध्यात्मिक मार्गदर्शक विश्वनाथ महाराज उन लोगों की सहायता के लिए उपलब्ध हैं जो कठिनाइयों का सामना कर रहे हैं। उनके आध्यात्मिक समाधान सार्थक हैं, और व्यक्ति उनका उपयोग विभिन्न चिंताओं को हल करने के लिए कर सकते हैं, जैसे कि वैवाहिक समस्याएं, संबंध मुद्दे और पारिवारिक समस्याएं, अन्य। उन्हें दुनिया भर के उन लोगों से मुलाकातें प्राप्त होती हैं जो सर्वोत्तम उपचार की तलाश में हैं। उनके उपचार सबसे भरोसेमंद हैं और बेहतरीन परिणाम देते हैं। यहाँ, लोग आसानी से सबसे भरोसेमंद आध्यात्मिक समाधान प्राप्त कर सकते हैं। वह ऐसे व्यक्ति हैं जिन्होंने वास्तव में कम समय में बहुत से लोगों के जीवन को बदल दिया है।",
+      subTitle: "जानें कि आप ज्योतिषी पवन स्वामी को क्यों चुन सकते हैं",
+      desc: "प्रसिद्ध आध्यात्मिक मार्गदर्शक ज्योतिषी पवन स्वामी उन लोगों की सहायता के लिए उपलब्ध हैं जो कठिनाइयों का सामना कर रहे हैं। उनके आध्यात्मिक समाधान सार्थक हैं, और व्यक्ति उनका उपयोग विभिन्न चिंताओं को हल करने के लिए कर सकते हैं, जैसे कि वैवाहिक समस्याएं, संबंध मुद्दे और पारिवारिक समस्याएं, अन्य। उन्हें दुनिया भर के उन लोगों से मुलाकातें प्राप्त होती हैं जो सर्वोत्तम उपचार की तलाश में हैं। उनके उपचार सबसे भरोसेमंद हैं और बेहतरीन परिणाम देते हैं। यहाँ, लोग आसानी से सबसे भरोसेमंद आध्यात्मिक समाधान प्राप्त कर सकते हैं। वह ऐसे व्यक्ति हैं जिन्होंने वास्तव में कम समय में बहुत से लोगों के जीवन को बदल दिया है।",
       chatBtn: "गुरुजी से बात करें",
       pills: [
         "प्रेम समस्या विशेषज्ञ",
         "प्रेम विवाह समाधान",
-        "ब्रेકઅપ સમસ્યા ઉપચાર",
+        "ब्रेકઅપ સમસ્યા ઉપचार",
         "पूर्व प्यार वापस",
         "पति पत्नी विवाद",
         "अतिरिक्त मामला निवारण"
       ],
       callUs: "सर्वोत्तम समाधान के लिए हमें कॉल करें",
-      phone: "+91-9929563493"
+      phone: "+91-9875958008"
     }
   }
 };

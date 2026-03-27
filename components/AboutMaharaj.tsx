@@ -5,7 +5,7 @@ import { Star, ShieldCheck, Heart, Sparkles, Users } from "lucide-react";
 import Image from "next/image";
 import MandalaSVG from "./MandalaSVG";
 
-export default function AboutMaharaj() {
+export default function AboutExpert() {
   const { t } = useLanguage();
 
   return (
@@ -30,7 +30,8 @@ export default function AboutMaharaj() {
           <div className="space-y-2 text-gray-700 font-medium text-sm md:text-base leading-relaxed">
             <p>{t.about.bio1}</p>
 
-            <p>{t.about.bio2}</p>            <p className="font-bold text-gray-900 border-l-4 border-gold pl-4 py-1 bg-gold/5 italic text-sm md:text-base">
+            <p>{t.about.bio2}</p>
+            <p className="font-bold text-gray-900 border-l-4 border-gold pl-4 py-1 bg-gold/5 italic text-sm md:text-base">
               &quot;{t.about.quote}&quot; — {t.hero.expertName}
             </p>
           </div>

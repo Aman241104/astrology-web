@@ -26,7 +26,7 @@ export default function TrustBanner() {
               <div className="flex flex-col items-center">
                 <span className="text-crimson font-black text-sm md:text-lg uppercase tracking-tight">Best Online Astrologer</span>
                 <h2 className="text-3xl md:text-5xl font-black text-crimson uppercase tracking-tighter drop-shadow-[0_2px_0_rgba(255,215,0,1)]">
-                  VISHVANATH <br className="hidden md:block" /> MAHARAJ
+                  ASTROLOGER <br className="hidden md:block" /> PAWAN SWAMI
                 </h2>
               </div>
             </div>
@@ -89,13 +89,13 @@ export default function TrustBanner() {
                   <Phone size={18} className="text-white fill-white md:w-6 md:h-6" />
                </div>
                <a 
-                 href="tel:+919929563493"
+                 href="tel:+919875958008"
                  className="text-2xl md:text-5xl font-black text-crimson tracking-tighter hover:scale-105 transition-transform drop-shadow-[0_1px_0_rgba(255,215,0,1)] whitespace-nowrap"
                >
-                 +91-9929563493
+                 +91-9875958008
                </a>
                <a 
-                 href="https://wa.me/919929563493"
+                 href="https://wa.me/919875958008"
                  className="shrink-0"
                >
                  <Image 

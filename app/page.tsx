@@ -7,7 +7,7 @@ import TrustBanner from "@/components/TrustBanner";
 import CategoryBar from "@/components/CategoryBar";
 import TrustBar from "@/components/TrustBar";
 import ServicesGrid from "@/components/ServicesGrid";
-import AboutMaharaj from "@/components/AboutMaharaj";
+import AboutExpert from "@/components/AboutMaharaj";
 import ExtraServices from "@/components/ExtraServices";
 import ComparisonTable from "@/components/ComparisonTable";
 import WhyChooseUs from "@/components/WhyChooseUs";
@@ -49,7 +49,7 @@ export default function Home() {
         <TrustBanner />
         <CategoryBar />
         <TrustBar />
-        <AboutMaharaj />
+        <AboutExpert />
         <ExtraServices />
         <ComparisonTable />
         <WhyChooseUs />
@@ -194,7 +194,7 @@ export default function Home() {
           
           <div className="flex flex-col md:flex-row items-center justify-center gap-6 mb-4">
             <a 
-              href="tel:+919929563493"
+              href="tel:+919875958008"
               className="w-full sm:w-auto bg-white text-crimson px-8 py-4 rounded-[20px] font-black text-xl md:text-3xl hover:scale-105 transition-all shadow-[0_20px_50px_rgba(0,0,0,0.4)] active:scale-95 border-b-4 border-gray-200"
             >
               {t.footer.callBtn.split(": ")[1]}
@@ -211,7 +211,7 @@ export default function Home() {
 
           <div className="bg-black/20 p-4 rounded-[30px] border border-white/10 backdrop-blur-sm mb-4">
              <p className="text-sm md:text-lg font-bold uppercase tracking-wide leading-relaxed">
-               Don&apos;t wait for a miracle. <span className="text-saffron">MAKE IT HAPPEN.</span> Maharaj has helped thousands of people just like you to get their love back, stop divorce, and solve relationship issues. <span className="underline decoration-saffron">Your solution is just one call away.</span>
+               Don&apos;t wait for a miracle. <span className="text-saffron">MAKE IT HAPPEN.</span> Astrologer Pawan Swami has helped thousands of people just like you to get their love back, stop divorce, and solve relationship issues. <span className="underline decoration-saffron">Your solution is just one call away.</span>
              </p>
           </div>
           

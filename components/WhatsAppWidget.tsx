@@ -37,14 +37,14 @@ export default function WhatsAppWidget() {
             <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-white/20 relative">
               <Image
                 src="/images/new/expert-maharaj.png"
-                alt="Vishvanath Maharaj"
+                alt="Astrologer Pawan Swami"
                 fill
                 className="object-cover"
                 sizes="48px"
               />
             </div>
             <div>
-              <h4 className="font-black text-sm uppercase tracking-tight">Vishvanath Maharaj</h4>
+              <h4 className="font-black text-sm uppercase tracking-tight">Astrologer Pawan Swami</h4>
               <div className="flex items-center gap-1.5">
                 <span className="w-2 h-2 bg-saffron rounded-full animate-pulse"></span>
                 <span className="text-[10px] font-bold opacity-80 uppercase">Online Now</span>
@@ -64,7 +64,7 @@ export default function WhatsAppWidget() {
 
           <div className="p-4 bg-white flex items-center gap-2">
             <a 
-              href="https://wa.me/919929563493"
+              href="https://wa.me/919875958008"
               className="flex-1 bg-saffron text-white py-3 rounded-xl font-black text-xs flex items-center justify-center gap-2 hover:bg-saffron/90 transition-all active:scale-95"
             >
               START CHAT ON WHATSAPP

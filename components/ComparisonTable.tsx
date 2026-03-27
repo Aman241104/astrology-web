@@ -36,7 +36,7 @@ export default function ComparisonTable() {
                       Spiritual Comparison
                     </th>
                     <th className="py-6 px-6 text-center border-b-2 border-saffron bg-saffron/5">
-                       <div className="text-saffron font-black text-sm md:text-lg uppercase tracking-tight italic">Vishvanath Maharaj</div>
+                       <div className="text-saffron font-black text-sm md:text-lg uppercase tracking-tight italic">Astrologer Pawan Swami</div>
                     </th>
                     <th className="py-6 px-6 text-center border-b-2 border-gray-200">
                        <div className="text-gray-400 font-black text-sm md:text-lg uppercase tracking-tight">Other Experts</div>

@@ -49,7 +49,7 @@ export default function Hero() {
 
           <div className="reveal-text flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start">
             <a 
-              href="https://wa.me/919929563493"
+              href="https://wa.me/919875958008"
               className="w-full sm:w-auto bg-[#25D366] hover:bg-[#20bd5a] text-white px-8 py-4 rounded-xl font-black text-lg flex items-center justify-center gap-3 transition-all hover:scale-105 active:scale-95"
             >
               <WhatsAppIcon />
@@ -57,7 +57,7 @@ export default function Hero() {
             </a>
             
             <a 
-              href="tel:+919929563493"
+              href="tel:+919875958008"
               className="w-full sm:w-auto bg-crimson hover:bg-crimson/90 text-white px-8 py-4 rounded-xl font-black text-lg flex items-center justify-center gap-3 transition-all hover:scale-105 active:scale-95"
             >
               <PhoneCall fill="white" />

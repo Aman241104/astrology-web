@@ -52,7 +52,7 @@ export default function ExtraServices() {
           {extraServices.map((s, i) => (
             <a 
               key={i}
-              href="https://wa.me/919929563493"
+              href="https://wa.me/919875958008"
               className="service-card group relative block"
             >
               {/* Modern Card Design - Matching ServicesGrid */}

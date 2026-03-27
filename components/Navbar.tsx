@@ -37,7 +37,7 @@ export default function Navbar() {
           <div className="flex items-center gap-2 md:gap-6 relative">
             <LanguageSwitcher />
             <a 
-              href="tel:+919929563493"
+              href="tel:+919875958008"
               className="bg-crimson text-white px-3 md:px-8 py-2 md:py-3 rounded-full font-black flex items-center gap-1.5 md:gap-2 text-[10px] md:text-base animate-pulse-slow active:scale-95 transition-all hover:scale-105"
             >
               <Phone size={12} fill="white" className="md:w-5 md:h-5" />
@@ -51,10 +51,10 @@ export default function Navbar() {
       <div className="hidden md:block bg-crimson text-white py-1 px-4 border-t border-white/10 relative z-[1000]">
         <div className="max-w-7xl mx-auto flex items-center justify-between gap-4">
           <p className="hidden md:block text-[10px] font-black uppercase tracking-[0.2em] text-white/90 italic">
-            &quot;Vishvanath Maharaj: Specialist In Solving All Love & Relationship Problems&quot;
+            &quot;Astrologer Pawan Swami: Specialist In Solving All Love & Relationship Problems&quot;
           </p>
           
-          <a href="tel:+919929563493" className="flex-1 md:flex-none flex items-center justify-center gap-3">
+          <a href="tel:+919875958008" className="flex-1 md:flex-none flex items-center justify-center gap-3">
             <div className="w-6 h-6 md:w-8 md:h-8 rounded-full bg-white flex items-center justify-center shrink-0 animate-bounce">
               <Phone size={14} className="text-crimson md:w-4 md:h-4" fill="currentColor" />
             </div>
