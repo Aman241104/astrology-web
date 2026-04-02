@@ -24,9 +24,9 @@ export default function TrustBanner() {
                 </div>
               </div>
               <div className="flex flex-col items-center">
-                <span className="text-crimson font-black text-sm md:text-lg uppercase tracking-tight">Best Online Astrologer</span>
+                <span className="text-crimson font-black text-sm md:text-lg uppercase tracking-tight">Best Online Astro</span>
                 <h2 className="text-3xl md:text-5xl font-black text-crimson uppercase tracking-tighter drop-shadow-[0_2px_0_rgba(255,215,0,1)]">
-                  ASTROLOGER <br className="hidden md:block" /> PAWAN SWAMI
+                  ASTRO <br className="hidden md:block" /> PAWAN SWAMI
                 </h2>
               </div>
             </div>
@@ -48,7 +48,7 @@ export default function TrustBanner() {
           {/* Middle Section: Global Trust & Stats */}
           <div className="flex flex-col items-center text-center">
             <h3 className="text-[#004D40] font-black text-lg md:text-2xl uppercase tracking-tighter mb-4">
-              TRUSTED WORLD FAMOUS NO.1 ASTROLOGER
+              TRUSTED WORLD FAMOUS NO.1 ASTRO
             </h3>
             
             <div className="flex items-center gap-6 mb-4">

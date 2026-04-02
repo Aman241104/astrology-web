@@ -51,7 +51,7 @@ export default function Navbar() {
       <div className="hidden md:block bg-crimson text-white py-1 px-4 border-t border-white/10 relative z-[1000]">
         <div className="max-w-7xl mx-auto flex items-center justify-between gap-4">
           <p className="hidden md:block text-[10px] font-black uppercase tracking-[0.2em] text-white/90 italic">
-            &quot;Astrologer Pawan Swami: Specialist In Solving All Love & Relationship Problems&quot;
+            &quot;Astro Pawan Swami: Specialist In Solving All Love & Relationship Problems&quot;
           </p>
           
           <a href="tel:+919875958008" className="flex-1 md:flex-none flex items-center justify-center gap-3">

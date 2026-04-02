@@ -15,12 +15,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Astrologer Pawan Swami | Love & Relationship Expert | +91-9875958008",
-  description: "Astrologer Pawan Swami: Specialist in solving all love and relationship problems within 24 hours. Get your ex-love back, stop divorce, and resolve family issues with traditional Vedic rituals. Trusted by 50,000+ clients worldwide.",
-  keywords: "love problem specialist, get love back, relationship expert, Pawan Swami, astrologer, Vedic rituals, marriage problem solution, breakup solution",
+  title: "Astro Pawan Swami | Love & Relationship Expert | +91-9875958008",
+  description: "Astro Pawan Swami: Specialist in solving all love and relationship problems within 24 hours. Get your ex-love back, stop divorce, and resolve family issues with traditional Vedic rituals. Trusted by 50,000+ clients worldwide.",
+  keywords: "love problem specialist, get love back, relationship expert, Pawan Swami, astro, Vedic rituals, marriage problem solution, breakup solution",
   openGraph: {
-    title: "Astrologer Pawan Swami | Love & Relationship Expert",
-    description: "Get permanent solutions for love and relationship problems from Astrologer Pawan Swami. Trusted by 50,000+ clients worldwide.",
+    title: "Astro Pawan Swami | Love & Relationship Expert",
+    description: "Get permanent solutions for love and relationship problems from Astro Pawan Swami. Trusted by 50,000+ clients worldwide.",
     images: ["/images/new/expert-maharaj.png"],
   },
 };
@@ -33,10 +33,10 @@ export default function RootLayout({
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": "Astrologer Pawan Swami",
+    "name": "Astro Pawan Swami",
     "image": "/images/new/expert-maharaj.png",
-    "@id": "https://www.astrologerpawanswami.com",
-    "url": "https://www.astrologerpawanswami.com",
+    "@id": "https://www.astropawanswami.com",
+    "url": "https://www.astropawanswami.com",
     "telephone": "+91-9875958008",
     "address": {
       "@type": "PostalAddress",

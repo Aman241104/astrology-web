@@ -211,7 +211,7 @@ export default function Home() {
 
           <div className="bg-black/20 p-4 rounded-[30px] border border-white/10 backdrop-blur-sm mb-4">
              <p className="text-sm md:text-lg font-bold uppercase tracking-wide leading-relaxed">
-               Don&apos;t wait for a miracle. <span className="text-saffron">MAKE IT HAPPEN.</span> Astrologer Pawan Swami has helped thousands of people just like you to get their love back, stop divorce, and solve relationship issues. <span className="underline decoration-saffron">Your solution is just one call away.</span>
+               Don&apos;t wait for a miracle. <span className="text-saffron">MAKE IT HAPPEN.</span> Astro Pawan Swami has helped thousands of people just like you to get their love back, stop divorce, and solve relationship issues. <span className="underline decoration-saffron">Your solution is just one call away.</span>
              </p>
           </div>
           

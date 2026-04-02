@@ -1,12 +1,12 @@
 # Landing Page Content & Layout Mapping
 
 ## 1. Top Bar / Sticky Header
-*   **Logo:** [Text: Astrologer Pawan Swami]
+*   **Logo:** [Text: Astro Pawan Swami]
 *   **Trust Hook:** [First 5 Minutes Consultation FREE]
 *   **CTA Button:** [Call Now: +91-9875958008] (Red pulse effect)
 
 ## 2. Hero Section (The "Immediate Solution" Hook)
-*   **Headline (H1):** 🕉️ World's No.1 Astrologer Pawan Swami
+*   **Headline (H1):** 🕉️ World's No.1 Astro Pawan Swami
 *   **Sub-headline:** Get Effective Solutions for All Your Life Problems within 24 Hours. **Complete Privacy & 100% Satisfaction.**
 *   **Key Points:**
     *   20+ Years of Vedic Experience
@@ -39,9 +39,9 @@
 ## 5. Our Commitment (The Conversion Hook)
 ... [existing content] ...
 
-## 6. Meet India’s Renowned Astrologer Pawan Swami (Detailed Bio)
+## 6. Meet India’s Renowned Astro Pawan Swami (Detailed Bio)
 *   **Headline:** 20+ Years of Ancient Wisdom & Spiritual Guidance
-*   **Copy:** Astrologer Pawan Swami is a world-renowned Vedic Astrologer, Vashikaran Specialist, and Psychic Healer with over two decades of experience. Hailing from a long lineage of spiritual masters, he has mastered the art of Kundli Analysis, Palmistry, and Numerology. His remedies are not just rituals; they are scientifically backed spiritual interventions designed to align your planetary energies for immediate success.
+*   **Copy:** Astro Pawan Swami is a world-renowned Vedic Astro, Vashikaran Specialist, and Psychic Healer with over two decades of experience. Hailing from a long lineage of spiritual masters, he has mastered the art of Kundli Analysis, Palmistry, and Numerology. His remedies are not just rituals; they are scientifically backed spiritual interventions designed to align your planetary energies for immediate success.
 
 ## 7. The Science of Our Vedic Remedies
 *   **Vashikaran:** Using positive energy and ancient mantras to influence a person's thoughts and feelings for righteous purposes, like bringing a lost partner back.
@@ -51,9 +51,9 @@
 ## 8. Serving Across All Major Cities
 *   **Locations:** Mumbai, Delhi, Bangalore, Hyderabad, Ahmedabad, Chennai, Kolkata, Surat, Pune, Jaipur, Lucknow, Kanpur, Nagpur, Indore, Thane, Bhopal, Visakhapatnam, Pimpri-Chinchwad, Patna, Vadodara, and Global NRI support in USA, UK, UAE, Canada.
 
-## 5. About Astrologer Pawan Swami (The "Guru" Narrative)
-*   **Headline:** Meet India’s Renowned Astrologer Pawan Swami
-*   **Copy:** With over two decades of experience, Astrologer Pawan Swami has helped thousands of people navigate life's toughest challenges. Specialized in Vedic Astrology, Vashikaran, and Black Magic removal, Astrologer Pawan Swami is known for his compassionate guidance and accurate predictions.
+## 5. About Astro Pawan Swami (The "Guru" Narrative)
+*   **Headline:** Meet India’s Renowned Astro Pawan Swami
+*   **Copy:** With over two decades of experience, Astro Pawan Swami has helped thousands of people navigate life's toughest challenges. Specialized in Vedic Astrology, Vashikaran, and Black Magic removal, Astro Pawan Swami is known for his compassionate guidance and accurate predictions.
 
 ## 6. Testimonials (The Social Proof)
 *   **Testimonial 1:** "I was about to lose my love, but Pawan Swami's remedies worked in just 3 days! We are now happily married." - *Riya S.*
@@ -67,9 +67,9 @@
 
 ## 8. Final CTA (Urgency Hook)
 *   **Headline:** Don't Let Your Problems Control Your Life!
-*   **Sub-headline:** One call can change your destiny. Contact Astrologer Pawan Swami today for a better tomorrow.
+*   **Sub-headline:** One call can change your destiny. Contact Astro Pawan Swami today for a better tomorrow.
 *   **CTA Button:** [WhatsApp Guruji Now] | [Call +91-9875958008]
 
 ## 9. Footer
-*   **Copyright:** © 2026 Astrologer Pawan Swami. All Rights Reserved.
+*   **Copyright:** © 2026 Astro Pawan Swami. All Rights Reserved.
 *   **Disclaimer:** Astrology is based on faith and ancient traditions. Individual results may vary.

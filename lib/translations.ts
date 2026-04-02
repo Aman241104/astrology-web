@@ -2,7 +2,7 @@ export type Locale = "en" | "hi";
 
 export const translations = {
   en: {
-    navbar: { logo: "ASTROLOGER PAWAN SWAMI", callNow: "CALL NOW" },
+    navbar: { logo: "ASTRO PAWAN SWAMI", callNow: "CALL NOW" },
     hero: {
       freeConsult: "FIRST 5 MINS FREE CONSULTATION",
       title: "FACING PROBLEMS IN LOVE OR MARRIAGE?",
@@ -13,7 +13,7 @@ export const translations = {
       privacy: "COMPLETE PRIVACY",
       results: "24HR RESULTS",
       exp: "20+ YRS EXP",
-      expertName: "ASTROLOGER PAWAN SWAMI",
+      expertName: "ASTRO PAWAN SWAMI",
       goldMedalist: "World-Renowned Spiritual Expert"
     },
     trustBar: {
@@ -37,7 +37,7 @@ export const translations = {
     },
     services: {
       title: "OUR SPECIALIZED SERVICES",
-      subTitle: "Astrologer Pawan Swami provides highly accurate and permanent solutions for all your relationship and life problems.",
+      subTitle: "Astro Pawan Swami provides highly accurate and permanent solutions for all your relationship and life problems.",
       getSolution: "GET SOLUTION NOW",
       loveMarriage: { title: "LOST LOVE BACK SPECIALIST", desc: "Overcome planetary obstacles and bring back your lost love with traditional Vedic rituals." },
       getLoveBack: { title: "BRING YOUR LOVE BACK", desc: "Get effective remedies to reunite with your partner and restore lost harmony within 24-48 hours." },
@@ -47,7 +47,7 @@ export const translations = {
       husbandWife: { title: "HUSBAND WIFE PROBLEM SOLUTION", desc: "Restore harmony and remove misunderstandings between husband and wife permanently with powerful relationship healing." }
     },
     comparison: {
-      title: "WHY CHOOSE ASTROLOGER PAWAN SWAMI?",
+      title: "WHY CHOOSE ASTRO PAWAN SWAMI?",
       row1: ["CONSULTATION FEE", "FREE (FIRST 5 MINS)", "HIGH CHARGES"],
       row2: ["SERVICE METHOD", "PROFESSIONAL & ETHICAL", "GENERIC ADVICE"],
       row3: ["SUCCESS RATE", "HIGHLY SUCCESSFUL", "UNRELIABLE"],
@@ -56,7 +56,7 @@ export const translations = {
     about: {
       meetTheMaster: "MEET THE MASTER",
       title: "20+ YEARS OF ANCIENT WISDOM & SPIRITUAL GUIDANCE",
-      bio1: "Astrologer Pawan Swami is a world-renowned Spiritual Guide and Relationship Expert with over two decades of dedicated service to humanity. Hailing from a prestigious lineage of spiritual gurus, he has helped over 50,000 people find their path through Life Chart Analysis and powerful spiritual rituals.",
+      bio1: "Astro Pawan Swami is a world-renowned Spiritual Guide and Relationship Expert with over two decades of dedicated service to humanity. Hailing from a prestigious lineage of spiritual gurus, he has helped over 50,000 people find their path through Life Chart Analysis and powerful spiritual rituals.",
       bio2: "His unique approach combines traditional wisdom with a deep understanding of modern psychological challenges. Whether it's love marriage problems, family issues, or complex relationship issues, Pawan Swami provides permanent and effective solutions.",
       quote: "My mission is to illuminate your life by aligning your positive energies for immediate success and peace.",
       relationshipExp: "RELATIONSHIP EXPERTISE",
@@ -72,7 +72,7 @@ export const translations = {
     },
     leadForm: {
       urgentHelp: "NEED URGENT HELP?",
-      sub: "Fill the form below and Astrologer Pawan Swami will contact you for a FREE Consultation.",
+      sub: "Fill the form below and Astro Pawan Swami will contact you for a FREE Consultation.",
       hook1: "TRANSPARENT PROCESS",
       hook2: "HIGHLY SECURE & PRIVATE",
       hook3: "RESPONSE IN 15 MINUTES",
@@ -106,7 +106,7 @@ export const translations = {
       s1Title: "STEP 1: CONTACT GURUJI",
       s1Desc: "Send your Name, Date of Birth, and Problem on WhatsApp or Call for instant response.",
       s2Title: "STEP 2: ANALYSIS",
-      s2Desc: "Astrologer Pawan Swami will perform a deep study of your Life Chart and Planetary positions.",
+      s2Desc: "Astro Pawan Swami will perform a deep study of your Life Chart and Planetary positions.",
       s3Title: "STEP 3: SOLUTION",
       s3Desc: "Get Highly Effective spiritual remedies (Upay) and results within 24 to 48 hours."
     },
@@ -140,13 +140,13 @@ export const translations = {
       ctaTitle: "DON'T LET PROBLEMS CONTROL YOUR LIFE!",
       ctaSub: "EFFECTIVE SPIRITUAL REMEDIES. RESULTS DRIVEN SOLUTIONS.",
       callBtn: "CALL: +91-9875958008",
-      copyright: "© 2026 Astrologer Pawan Swami. All Rights Reserved.",
+      copyright: "© 2026 Astro Pawan Swami. All Rights Reserved.",
       disclaimer: "Disclaimer: Spiritual guidance is an ancient tradition. Individual results may vary based on planetary alignments and karmic factors. We provide dedicated effort and traditional spiritual remedies."
     },
     whyChooseUs: {
       title: "WHY CHOOSE US?",
-      subTitle: "Lets Know Why You Can Choose Astrologer Pawan Swami",
-      desc: "The well-known spiritual guide Astrologer Pawan Swami is available to assist those who are experiencing difficulties. His spiritual answers are worthwhile, and individuals can use them to solve a variety of concerns, such as marital troubles, relationship issues, and family problems, among others. He receives visits from people all around the world who are looking for the best treatments. His treatments are the most dependable and produce the greatest outcomes. Here, people can easily obtain the most trustworthy spiritual cures. He is someone who has genuinely changed a lot of people's lives in a short amount of time.",
+      subTitle: "Lets Know Why You Can Choose Astro Pawan Swami",
+      desc: "The well-known spiritual guide Astro Pawan Swami is available to assist those who are experiencing difficulties. His spiritual answers are worthwhile, and individuals can use them to solve a variety of concerns, such as marital troubles, relationship issues, and family problems, among others. He receives visits from people all around the world who are looking for the best treatments. His treatments are the most dependable and produce the greatest outcomes. Here, people can easily obtain the most trustworthy spiritual cures. He is someone who has genuinely changed a lot of people's lives in a short amount of time.",
       chatBtn: "CHAT TO GURUJI",
       pills: [
         "LOVE PROBLEM SPECIALIST",
@@ -310,7 +310,7 @@ export const translations = {
       pills: [
         "प्रेम समस्या विशेषज्ञ",
         "प्रेम विवाह समाधान",
-        "ब्रेકઅપ સમસ્યા ઉપचार",
+        "ब्रेકઅપ સમસ્યા ઉપચારો",
         "पूर्व प्यार वापस",
         "पति पत्नी विवाद",
         "अतिरिक्त मामला निवारण"

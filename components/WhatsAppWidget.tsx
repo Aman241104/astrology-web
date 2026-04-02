@@ -37,14 +37,14 @@ export default function WhatsAppWidget() {
             <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-white/20 relative">
               <Image
                 src="/images/new/expert-maharaj.png"
-                alt="Astrologer Pawan Swami"
+                alt="Astro Pawan Swami"
                 fill
                 className="object-cover"
                 sizes="48px"
               />
             </div>
             <div>
-              <h4 className="font-black text-sm uppercase tracking-tight">Astrologer Pawan Swami</h4>
+              <h4 className="font-black text-sm uppercase tracking-tight">Astro Pawan Swami</h4>
               <div className="flex items-center gap-1.5">
                 <span className="w-2 h-2 bg-saffron rounded-full animate-pulse"></span>
                 <span className="text-[10px] font-bold opacity-80 uppercase">Online Now</span>
