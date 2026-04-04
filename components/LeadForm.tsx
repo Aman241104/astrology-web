@@ -2,22 +2,67 @@
 
 import { useState } from "react";
 import { useLanguage } from "@/context/LanguageContext";
-import { Send } from "lucide-react";
+import { Send, Loader2 } from "lucide-react";
 
 export default function LeadForm() {
   const { t } = useLanguage();
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [formData, setFormData] = useState({
+    name: "",
+    phone: "",
+    problem: ""
+  });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
+    setLoading(true);
+
+    try {
+      // 1. Send to Google Sheets (Apps Script URL)
+      // Note: You must replace this URL with your deployed Google Apps Script Web App URL
+      const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwnGNsJpkNEf18nx1ZOcaafhZeDX0_C-qh-8vwPJ2Mm1iZGUYCQw3KZRZ9nxOidx9_x/exec"; 
+      
+      // We send it as a background task
+      fetch(SCRIPT_URL, {
+        method: "POST",
+        mode: "no-cors",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData).toString(),
+      }).catch(err => console.error("Sheets Error:", err));
+
+      // 2. Prepare WhatsApp message
+      const whatsappNumber = "919875958008";
+      const message = `*New Lead from Website*\n\n*Name:* ${formData.name}\n*Phone:* ${formData.phone}\n*Problem:* ${formData.problem}`;
+      const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+
+      // 3. Redirect to WhatsApp (Automatic)
+      window.open(whatsappUrl, "_blank");
+
+      setSubmitted(true);
+    } catch (error) {
+      console.error("Submission error:", error);
+      alert("Something went wrong. Please try again or call Guruji directly.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   if (submitted) {
     return (
-      <div className="bg-saffron/10 p-12 rounded-3xl border border-saffron/20 text-center animate-pulse">
+      <div className="bg-saffron/10 p-12 rounded-3xl border border-saffron/20 text-center">
         <h3 className="text-2xl font-black text-crimson mb-2">{t.leadForm.successTitle}</h3>
         <p className="text-saffron font-bold uppercase tracking-widest text-xs">{t.leadForm.successSub}</p>
+        <button 
+          onClick={() => setSubmitted(false)}
+          className="mt-6 text-crimson font-bold underline"
+        >
+          Submit another request
+        </button>
       </div>
     );
   }
@@ -54,21 +99,54 @@ export default function LeadForm() {
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>
               <label className="block text-xs font-black text-gray-400 uppercase tracking-[0.2em] mb-2">{t.leadForm.name}</label>
-              <input required type="text" className="w-full bg-cream/30 border-2 border-gold/10 rounded-xl px-6 py-4 font-bold text-gray-800 focus:border-saffron outline-none transition-all text-lg" placeholder="Enter your full name" />
+              <input 
+                required 
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                type="text" 
+                className="w-full bg-cream/30 border-2 border-gold/10 rounded-xl px-6 py-4 font-bold text-gray-800 focus:border-saffron outline-none transition-all text-lg" 
+                placeholder="Enter your full name" 
+              />
             </div>
             <div className="grid grid-cols-1 gap-6">
               <div>
                 <label className="block text-xs font-black text-gray-400 uppercase tracking-[0.2em] mb-2">{t.leadForm.phone}</label>
-                <input required type="tel" className="w-full bg-cream/30 border-2 border-gold/10 rounded-xl px-6 py-4 font-bold text-gray-800 focus:border-saffron outline-none transition-all text-lg" placeholder="Your phone number" />
+                <input 
+                  required 
+                  name="phone"
+                  value={formData.phone}
+                  onChange={handleChange}
+                  type="tel" 
+                  className="w-full bg-cream/30 border-2 border-gold/10 rounded-xl px-6 py-4 font-bold text-gray-800 focus:border-saffron outline-none transition-all text-lg" 
+                  placeholder="Your phone number" 
+                />
               </div>
             </div>
             <div>
               <label className="block text-xs font-black text-gray-400 uppercase tracking-[0.2em] mb-2">{t.leadForm.problem}</label>
-              <textarea required className="w-full bg-cream/30 border-2 border-gold/10 rounded-xl px-6 py-4 font-bold text-gray-800 focus:border-saffron outline-none transition-all min-h-[120px] text-lg" placeholder="How can Guruji help you?"></textarea>
+              <textarea 
+                required 
+                name="problem"
+                value={formData.problem}
+                onChange={handleChange}
+                className="w-full bg-cream/30 border-2 border-gold/10 rounded-xl px-6 py-4 font-bold text-gray-800 focus:border-saffron outline-none transition-all min-h-[120px] text-lg" 
+                placeholder="How can Guruji help you?"
+              ></textarea>
             </div>
-            <button type="submit" className="w-full bg-crimson text-white py-5 rounded-2xl font-black text-xl flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-3 hover:bg-crimson/90 transition-all active:scale-[0.98]">
-              <Send fill="white" size={20} className="sm:w-6 sm:h-6" />
-              <span className="text-center sm:text-left">{t.leadForm.submit}</span>
+            <button 
+              disabled={loading}
+              type="submit" 
+              className="w-full bg-crimson text-white py-5 rounded-2xl font-black text-xl flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-3 hover:bg-crimson/90 transition-all active:scale-[0.98] disabled:opacity-50"
+            >
+              {loading ? (
+                <Loader2 className="animate-spin" size={24} />
+              ) : (
+                <>
+                  <Send fill="white" size={20} className="sm:w-6 sm:h-6" />
+                  <span className="text-center sm:text-left">{t.leadForm.submit}</span>
+                </>
+              )}
             </button>
           </form>
         </div>
