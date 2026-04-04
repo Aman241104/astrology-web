@@ -24,15 +24,19 @@ export default function LeadForm() {
 
     try {
       // 1. Send to Google Sheets (Apps Script URL)
-      // Note: You must replace this URL with your deployed Google Apps Script Web App URL
       const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwnGNsJpkNEf18nx1ZOcaafhZeDX0_C-qh-8vwPJ2Mm1iZGUYCQw3KZRZ9nxOidx9_x/exec"; 
       
-      // We send it as a background task
+      const submissionData = new URLSearchParams({
+        name: formData.name,
+        phone: formData.phone,
+        problem: formData.problem
+      });
+
       fetch(SCRIPT_URL, {
         method: "POST",
         mode: "no-cors",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams(formData).toString(),
+        body: submissionData.toString(),
       }).catch(err => console.error("Sheets Error:", err));
 
       // 2. Prepare WhatsApp message
