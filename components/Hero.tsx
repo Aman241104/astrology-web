@@ -49,7 +49,7 @@ export default function Hero() {
 
           <div className="reveal-text flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start">
             <a 
-              href="https://wa.me/919875958008"
+              href="https://wa.me/919875958008?text=Hello"
               className="w-full sm:w-auto bg-[#25D366] hover:bg-[#20bd5a] text-white px-8 py-4 rounded-xl font-black text-lg flex items-center justify-center gap-3 transition-all hover:scale-105 active:scale-95"
             >
               <WhatsAppIcon />

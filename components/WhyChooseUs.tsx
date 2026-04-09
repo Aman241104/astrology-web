@@ -64,7 +64,7 @@ export default function WhyChooseUs() {
 
               <div className="flex justify-center">
                 <a
-                  href={`https://wa.me/${t.whyChooseUs.phone.replace(/[^0-9]/g, '')}`}
+                  href={`https://wa.me/${t.whyChooseUs.phone.replace(/[^0-9]/g, '')}?text=Hello`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-white hover:bg-gold text-crimson font-black px-12 py-6 rounded-2xl transition-all duration-500 hover:scale-105 flex items-center gap-4 active:scale-95 group/btn w-full md:w-auto justify-center"

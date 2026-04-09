@@ -23,7 +23,7 @@ export default function FloatingActionButton() {
   return (
     <div className="fixed bottom-24 right-4 z-50 animate-bounce-in hidden lg:block">
       <a
-        href="https://wa.me/919875958008"
+        href="https://wa.me/919875958008?text=Hello"
         className="bg-saffron text-white p-4 rounded-full shadow-2xl flex items-center gap-3 hover:scale-110 transition-transform group"
       >        <div className="bg-white/20 p-2 rounded-full">
           <WhatsAppIcon size={24} />

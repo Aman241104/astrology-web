@@ -7,7 +7,7 @@ export default function StickyCTAs() {
   return (
     <div className="fixed bottom-0 left-0 w-full z-50 flex border-t-2 border-gold/20">
       <a
-        href="https://wa.me/919875958008"
+        href="https://wa.me/919875958008?text=Hello"
         className="flex-1 bg-[#25D366] text-white py-3 flex flex-col items-center justify-center gap-0.5 font-black shadow-inner active:scale-95 transition-transform border-r border-white/10"
       >
         <WhatsAppIcon size={20} />

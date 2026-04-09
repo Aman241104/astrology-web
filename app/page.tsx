@@ -1,6 +1,7 @@
 "use client";
 
 import Navbar from "@/components/Navbar";
+import HeaderBanner from "@/components/HeaderBanner";
 import Hero from "@/components/Hero";
 import LoveProblemBanner from "@/components/LoveProblemBanner";
 import TrustBanner from "@/components/TrustBanner";
@@ -43,6 +44,7 @@ export default function Home() {
     <main className="min-h-screen">
       <Navbar />
       <div className="relative">
+        <HeaderBanner />
         <Hero />
         <LoveProblemBanner />
         <ServicesGrid />

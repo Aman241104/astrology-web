@@ -95,7 +95,7 @@ export default function TrustBanner() {
                  +91-9875958008
                </a>
                <a 
-                 href="https://wa.me/919875958008"
+                 href="https://wa.me/919875958008?text=Hello"
                  className="shrink-0"
                >
                  <Image 

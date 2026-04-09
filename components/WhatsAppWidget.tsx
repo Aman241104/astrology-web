@@ -64,7 +64,7 @@ export default function WhatsAppWidget() {
 
           <div className="p-4 bg-white flex items-center gap-2">
             <a 
-              href="https://wa.me/919875958008"
+              href="https://wa.me/919875958008?text=Hello"
               className="flex-1 bg-saffron text-white py-3 rounded-xl font-black text-xs flex items-center justify-center gap-2 hover:bg-saffron/90 transition-all active:scale-95"
             >
               START CHAT ON WHATSAPP

@@ -4,12 +4,13 @@ import { useLanguage } from "@/context/LanguageContext";
 import { Phone, Star } from "lucide-react";
 import LanguageSwitcher from "./LanguageSwitcher";
 import Link from "next/link";
+import HeaderBanner from "./HeaderBanner";
 
 export default function Navbar() {
   const { t } = useLanguage();
 
   return (
-    <header className="fixed top-0 w-full z-[1000]">
+    <header className="sticky top-0 w-full z-[1000]">
       {/* Top Marquee */}
       <div className="bg-crimson text-white py-1 md:py-1.5 text-center overflow-hidden h-7 md:h-9 flex items-center border-b border-gold/20 relative z-[1001]">
          <div className="whitespace-nowrap animate-marquee font-bold text-[9px] md:text-xs uppercase tracking-[0.2em] opacity-90">

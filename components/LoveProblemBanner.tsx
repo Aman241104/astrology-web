@@ -22,7 +22,7 @@ export default function LoveProblemBanner() {
            {/* CENTRAL COUPLE IMAGE - Now on the left for md+ */}
            <div className="w-full max-w-[360px] md:max-w-[450px] lg:max-w-[550px] relative my-6 md:my-0 order-2 md:order-1">
               <a 
-                href="https://wa.me/919875958008"
+                href="https://wa.me/919875958008?text=Hello"
                 className="block relative aspect-[4/3] rounded-[40px] md:rounded-[60px] overflow-hidden border-[12px] md:border-[15px] border-[#FFD700] shadow-[0_30px_70px_rgba(0,0,0,0.9)] scale-105 hover:scale-110 transition-transform cursor-pointer"
               >
                  <Image 
