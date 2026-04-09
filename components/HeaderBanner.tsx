@@ -5,8 +5,8 @@ import { Phone } from "lucide-react";
 
 export default function HeaderBanner() {
   return (
-    <div className="bg-white border-b border-gray-100 py-2 hidden lg:block overflow-hidden">
-      <div className="max-w-[1600px] mx-auto px-4 flex items-center justify-between gap-2 xl:gap-6">
+    <div className="bg-white border-b border-gray-100 py-2 overflow-hidden">
+      <div className="max-w-[1600px] mx-auto px-4 flex flex-col lg:flex-row items-center justify-between gap-4 lg:gap-2 xl:gap-6 pb-2 lg:pb-0">
         {/* Left Side: Ganesha & Name */}
         <div className="flex items-center gap-4 xl:gap-8 shrink-0">
           <div className="relative w-24 h-24 xl:w-40 xl:h-40 shrink-0">
